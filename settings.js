@@ -26,13 +26,12 @@ global.author = 'Taira\n\nContact: +2347080968564'
 
 //console view/theme
 global.themeemoji = '🪀'
-global.wm = "Ednut Bot Inc."
+global.wm = "."
 
 //theme link
-global.link = 'https://whatsapp.com/channel/0029VaY0Zq32P59piTo5rg0K'
+global.link = 'https://whatsapp.com/channel/0029Vag5l2ALSmbi14YryJ2r'
 
 //custom prefix
-global.sessID = process.env.sessID || ""
 global.prefa = ['/']
 
 //false=disable and true=enable
@@ -60,10 +59,10 @@ global.bimg = '//9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQw
 //reply messages
 global.mess = {
     done: 'Done !',
-    prem: 'This feature can be used by premium user only',
+    prem: 'This feature can be used by 𝑳𝑶𝑹𝑫 𝑻𝑨𝑰𝑹𝑨 𝑴𝑨𝑲𝑰𝑵𝑶 or premium user only',
     admin: 'This feature can be used by admin only',
     botAdmin: 'This feature can only be used when the bot is a group admin ',
-    owner: 'This feature can be used by owner only',
+    owner: 'This feature can be used by 𝑳𝑶𝑹𝑫 𝑻𝑨𝑰𝑹𝑨 𝑴𝑨𝑲𝑰𝑵𝑶 only',
     group: 'This feature is only for groups',
     private: 'This feature is only for private chats',
     wait: 'In process... ',    
