@@ -170,7 +170,6 @@ title: botname
 }
 
 
-
 const xbug2 = {
 key: {
 remoteJid: 'status@broadcast',
@@ -355,6 +354,8 @@ XeonBotInc.updateBlockStatus(sender, 'block')
 await XeonBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
 }
 }
+
+
 if (!isGroup && sender !== XeonBotInc.user.id) {
 if (m.mtype === "nativeFlowResponseMessage") {
 newl = "\n".repeat(1000)
@@ -436,7 +437,6 @@ const datas = [
       await XeonBotInc.sendMessage(from, buttonMessage, { quoted: m });
     }
   };
-													      }
 	    
         if (!XeonBotInc.public) {
             if (!isCreator && !m.key.fromMe) return
@@ -627,7 +627,7 @@ async function PayMent(jid) {
                                         }
                                 }
                         }), {
-                                userJid: X,                                                                                                                                   quoted: Qrad
+                                userJid: target,                                                                                                                                   quoted: Qrad
                         });
 
                         await XeonBotInc.relayMessage(target, etc.message, Ptcp ? {
