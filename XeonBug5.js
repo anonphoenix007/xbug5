@@ -839,6 +839,28 @@ replygcxeon(`Successfully Sent Bug To ${target}`)
 }
 break
 
+
+case 'getgroupid': case 'groupid': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!q) return replygcxeon('Provide a group link')
+let linkRegex = args.join(" ")
+let coded = linkRegex.split("https://chat.whatsapp.com/")[1]
+if(!coded) return replygcxeon("Provided Link is Invalid")
+XeonBotInc.query({
+tag: "iq",
+attrs: {
+type: "get",
+xmlns: "w:g2",
+to: "@g.us"
+},
+content: [{ tag: "invite", attrs: { code: coded } }]
+}).then(async(res) => {
+result = `${res.content[0].attrs.id ? res.content[0].attrs.id : "undefined"}`
+await XeonBotInc.sendMessage(m.chat, { text: result + "@g.us" }, { quoted: xbug2 })
+})}
+break
+
+			
 case 'ioscrash': {
 if (!isPremium) return replygcxeon(mess.premium)
 if (!args[0]) return replygcxeon(`Use like:\n ${prefix + command} 23490316165xx`)
