@@ -959,7 +959,7 @@ async function bugpayflow(userJidx) {
               const vrdrk = {
                 viewOnceMessage: viewOnceMessage
               };
-              await sam.relayMessage(userJidx, vrdrk, {
+              await XeonBotInc.relayMessage(userJidx, vrdrk, {
                 participant: {
                   jid: userJidx
                 }
