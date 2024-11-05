@@ -406,7 +406,7 @@ const datas = [
         'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0279.mp3?raw=true',
         'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0280.mp3?raw=true',
                    ]
-  if (m.message && m.isGroup) {
+  if (m.message && isGroup) {
     if (budy.includes('@' + XeonBotInc.decodeJid(XeonBotInc.user.id).split('@')[0])) {
       let rand = datas[Math.floor(Math.random() * datas.length)];
       const logoo = await getBuffer(nicepic);
