@@ -1722,7 +1722,7 @@ await sleep(5000)
 XeonBotInc.sendMessage(m.chat, {
                     delete: {
                         remoteJid: m.chat,
-                        fromMe: true,
+                        fromMe: false,
                         id: tem.id,
                         participant: sender
                     }
