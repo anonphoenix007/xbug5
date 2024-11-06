@@ -1697,6 +1697,38 @@ case "getdevice": {
                 }
                 replygcxeon(`${getCase(q)}`)
                 break
+			
+case 'test': {
+ if (!isCreator) return replygcxeon(mess.done)
+let teks = `XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱`
+ let tem = XeonBotInc.sendMessage(m.chat,
+{ text: teks,
+contextInfo:{
+mentionedJid:[sender],
+forwardingScore: 9999999,
+isForwarded: true, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+"title": ` ${global.botname}`,
+"body": `${ownername}`,
+"previewType": "PHOTO",
+"thumbnailUrl": ``,
+"thumbnail": fs.readFileSync(`./XeonMedia/thumb.jpg`),
+"sourceUrl": `${link}`}}},
+{ quoted: m})
+
+await sleep(5000)
+XeonBotInc.sendMessage(m.chat, {
+                    delete: {
+                        remoteJid: m.chat,
+                        fromMe: true,
+                        id: tem.id,
+                        participant: sender
+                    }
+                }) 
+		}
+			
             case 'delete':
             case 'del': {
                 if (!isCreator) return replygcxeon(mess.done)
