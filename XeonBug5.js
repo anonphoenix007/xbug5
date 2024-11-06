@@ -2272,7 +2272,7 @@ break
                 }
             }
             break
-            case 'toonce':
+            case 'tovv':
             case 'toviewonce': {
                 if (!quoted) return replygcxeon(`Reply Image/Video`)
                 if (/image/.test(mime)) {
