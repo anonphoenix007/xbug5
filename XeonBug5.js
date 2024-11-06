@@ -1724,7 +1724,7 @@ XeonBotInc.sendMessage(m.chat, {
                         remoteJid: m.chat,
                         fromMe: true,
                         id: tem.key,
-                        participant: tem.key.sender
+                        participant: sender
                     }
                 }) 
 		}
