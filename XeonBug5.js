@@ -1701,7 +1701,7 @@ case "getdevice": {
 case 'test': {
  if (!isCreator) return replygcxeon(mess.done)
 let teks = `XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱`
- let tem = XeonBotInc.sendMessage(m.chat,
+ const tem = XeonBotInc.sendMessage(m.chat,
 { text: teks,
 contextInfo:{
 mentionedJid:[sender],
@@ -1724,7 +1724,7 @@ XeonBotInc.sendMessage(m.chat, {
                         remoteJid: m.chat,
                         fromMe: true,
                         id: tem.key,
-                        participant: sender
+                        participant: XeonBotInc.user.id
                     }
                 }) 
 		}
