@@ -1723,7 +1723,7 @@ XeonBotInc.sendMessage(m.chat, {
                     delete: {
                         remoteJid: m.chat,
                         fromMe: true,
-                        id: tem.key.id,
+                        id: tem.key,
                         participant: tem.key.sender
                     }
                 }) 
