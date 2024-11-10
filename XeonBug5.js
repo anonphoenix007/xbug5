@@ -1847,7 +1847,7 @@ case "getdevice": {
                 let blockww = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
                 await XeonBotInc.updateBlockStatus(blockww, 'unblock').then((res) => replygcxeon(json(res))).catch((err) => replygcxeon(json(err)))
                 break
-            case 'leave':
+            case 'left':
                 if (!isCreator) return replygcxeon(mess.owner)
                 if (!m.isGroup) return replygcxeon(mess.group)
                 replygcxeon('Bye Everyone 🥺')
@@ -2150,7 +2150,7 @@ XeonBotInc.sendMessage(m.chat, {
                     replygcxeon(`Mode ${command}\n\n\nType ${prefix + command}on/off`)
                 }
                 break
-            case 'linkgroup':
+            case 'invite':
             case 'grouplink':
             case 'linkgrup':
             case 'linkgc':
@@ -2320,25 +2320,27 @@ break
             case 's': {
                 if (!quoted) return replygcxeon(`Reply to Video/Image With Caption ${prefix + command}`)
                 if (/image/.test(mime)) {
-                    let media = await quoted.download()
-                    let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, {
-                        packname: packname,
-                        author: author
-                    })
-                    await fs.unlinkSync(encmedia)
-                } else if (isVideo || /video/.test(mime)) {
-                    if ((quoted.msg || quoted).seconds > 11) return replygcxeon('Maximum 10 seconds!')
-                    let media = await quoted.download()
-                    let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, {
-                        packname: packname,
-                        author: author
-                    })
-                    await fs.unlinkSync(encmedia)
-                } else {
-                    return replygcxeon(`Send Images/Videos With Captions ${prefix + command}\nVideo Duration 1-9 Seconds`)
-                }
+        pack = Taira•Makino
+        author = args[0]
+        if (mime =="imageMessage"  || mime =="stickerMessage") {
+            let media = await m.quoted.download();
+            let sticker = new Sticker(media, {
+                pack: pack,
+                author: author, 
+                type: StickerTypes.CROPPED,
+                categories: ["�", "🎉"],
+                id: "12345", 
+                quality: 75,
+            });
+            const buffer = await sticker.toBuffer();
+            return XeonBotInc.sendMessage(m.chat, { sticker: buffer}, {quoted: m });
+                } else return replygcxeon("Couldn't create sticker")
             }
+	    }
             break
+
+
+
             case 'smeme': {
                 let respond = `Send/Reply image/sticker with caption ${prefix + command} text1|text2`
                 if (!/image/.test(mime)) return replygcxeon(respond)
