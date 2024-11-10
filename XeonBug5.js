@@ -162,7 +162,7 @@ participant: '0@s.whatsapp.net'
 },
 message: {
 listResponseMessage: {
-title: `${pushname}\n${m.sender.split("@")[0]}\n♱XBUG5♱`
+title: `${pushname}\n\n${m.sender.split("@")[0]}\n\n♱XBUG5♱`
 }
 }
 }
