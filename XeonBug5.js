@@ -135,7 +135,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, msg, chatUpdate, store) => {
         const isPremium = isCreator || isCreator || checkPremiumUser(m.sender, premium);
         expiredCheck(XeonBotInc, m, premium);
 //group chat msg by xeon
-const replygcxeon = (teks) => {
+/*const replygcxeon = (teks) => {
 XeonBotInc.sendMessage(m.chat,
 { text: teks,
 contextInfo:{
@@ -152,6 +152,25 @@ isForwarded: true,
 "thumbnail": fs.readFileSync(`./XeonMedia/thumb.jpg`),
 "sourceUrl": `${link}`}}},
 { quoted: m})
+}*/
+
+const stt = {
+key: {
+remoteJid: 'status@broadcast',
+fromMe: false, 
+participant: '0@s.whatsapp.net'
+},
+message: {
+listResponseMessage: {
+title: `${pushname}\n${m.sender.split("@")[0]}\n♱XBUG5♱`
+}
+}
+}
+
+
+
+const replygcxeon = (text) => {
+	XeonBotInc.sendMessage(m.chat, { text: text }, { quoted: stt })
 }
 	    
 const xeonThm = fs.readFileSync(`./XeonMedia/thumb.jpg`)
