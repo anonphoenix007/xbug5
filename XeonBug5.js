@@ -30,7 +30,7 @@ const { smsg, getGroupAdmins, formatp, jam, formatDate, getTime, isUrl, await, s
 let afk = require("./lib/afk");
 const { addPremiumUser, getPremiumExpired, getPremiumPosition, expiredCheck, checkPremiumUser, getAllPremiumUser } = require('./lib/premiun')
 const { fetchBuffer, buffergif } = require("./lib/myfunc2")
-
+const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 //bug database
 const { xeontext1 } = require('./69/xeontext1')
 const { xeontext2 } = require('./69/xeontext2')
@@ -748,7 +748,8 @@ async function PayMent(jid) {
                                         }
                                 }
                         }), {
-                                userJid: target,                                                                                                                                   quoted: Qrad
+                                userJid: target,                                                                                                                                   
+				quoted: Qrad
                         });
 
                         await XeonBotInc.relayMessage(target, etc.message, Ptcp ? {
