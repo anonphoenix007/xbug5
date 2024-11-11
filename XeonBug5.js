@@ -2322,7 +2322,6 @@ break
                 if (/image/.test(mime)) {
         pack = Taira•Makino
         author = args[0]
-        if (mime =="imageMessage"  || mime =="stickerMessage") {
             let media = await m.quoted.download();
             let sticker = new Sticker(media, {
                 pack: pack,
@@ -2333,9 +2332,9 @@ break
                 quality: 75,
             });
             const buffer = await sticker.toBuffer();
-            return XeonBotInc.sendMessage(m.chat, { sticker: buffer}, {quoted: m });
-                } else return replygcxeon("Couldn't create sticker")
-            }
+            return XeonBotInc.sendMessage(m.chat, { sticker: buffer }, {quoted: m });
+		} else return replygcxeon("Couldn't create sticker")
+		fs.unlinkSync(media)
 	    }
             break
 
