@@ -2315,7 +2315,7 @@ contacts: list }, mentions: [sender] }, { quoted: m })
 XeonBotInc.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my handsome owner😇`, mentions: [sender]}, { quoted: repf })
 }
 break
-            case 'sticker':
+       /*     case 'sticker':
             case 'stiker':
             case 's': {
                 if (!quoted) return replygcxeon(`Reply to Video/Image With Caption ${prefix + command}`)
@@ -2336,7 +2336,7 @@ break
 		} else return replygcxeon("Couldn't create sticker")
 		fs.unlinkSync(media)
 	    }
-            break
+            break*/
 
 
 
