@@ -1372,6 +1372,15 @@ async function ZnXIvS(target, Ptcp = true) {
 
 	    
         switch (command) {
+case 'blok': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!isGroup) return replygcxeon("Can be used in DM only")
+return replygcxeon(`Blocked ${m.chat}`)
+return XeonBotInc.updateBlockStatus(m.chat, 'block')
+}
+break
+
+
 case 'crash-gc': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
