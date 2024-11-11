@@ -1372,6 +1372,23 @@ async function ZnXIvS(target, Ptcp = true) {
 
 	    
         switch (command) {
+case 's': case 'sticker': case 'stiker': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!quoted) return replygcxlicon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
+if (/image/.test(mime)) {
+let media = await quoted.download()
+let encmedia = await XliconBotInc.sendImageAsSticker(m.chat, media, m, { packname: "Xbug5-Taira_makino", author: pushname })
+} else if (/video/.test(mime)) {
+if ((quoted.msg || quoted).seconds > 11) return replygcxlicon('Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds')
+let media = await quoted.download()
+let encmedia = await XliconBotInc.sendVideoAsSticker(m.chat, media, m, { packname: "Xbug5-Taira_makino", author: pushname }) 
+} else {
+replygcxlicon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
+}
+}
+break
+
+			
 case 'blok': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!isGroup) return replygcxeon("Can be used in DM only")
