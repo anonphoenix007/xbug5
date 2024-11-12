@@ -1393,6 +1393,59 @@ async function ZnXIvS(target, Ptcp = true) {
 
 	    
         switch (command) {
+case 'button': {
+ if (!isCreator) return replygcxeon(mess.prem)
+let msg = generateWAMessageFromContent(m.key.remoteJid, {
+            viewOnceMessage: {
+              message: {
+                "messageContextInfo": {
+                  "deviceListMetadata": {},
+                  "deviceListMetadataVersion": 2
+                },
+                interactiveMessage: proto.Message.InteractiveMessage.create({
+                  body: proto.Message.InteractiveMessage.Body.create({
+                    text: helpMenuText
+                  }),
+                  footer: proto.Message.InteractiveMessage.Footer.create({
+                    text: "XBUG5"
+                  }),
+                  header: proto.Message.InteractiveMessage.Header.create({
+
+                    title: "",
+                    subtitle: "",
+                    hasMediaAttachment: false
+                  }),
+                  nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+                    buttons: [
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"OWNER 🫠","id":'${prefix}owner'}`
+                      },
+	              {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"menu","id":'${prefix}menu'}`
+                      },
+                    ]
+                  })
+                })
+              }
+            }
+          }, {});
+
+
+          if (!msg || !msg.key || !msg.key.remoteJid || !msg.key.id) {
+            const errorMessage = 'Error: Invalid message key.';
+            console.error(errorMessage);
+            return reply(errorMessage);
+          }
+
+          await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
+            messageId: msg.key.id
+          });
+}
+break
+
+
 case 'vv2': {
 	if (!isCreator) return replygcxeon(mess.prem)
         if (!m.quoted) return replygcxeon(`Reply to a view once message`)
