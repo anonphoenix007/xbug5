@@ -7,7 +7,21 @@
 //WhatsApp: +916909137213
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
 
-const { default: makeWaSocket, useMultiFileAuthState, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@whiskeysockets/baileys')
+const { 
+	default: makeWaSocket, 
+	useMultiFileAuthState, 
+	BufferJSON, 
+	WA_DEFAULT_EPHEMERAL, 
+	generateWAMessageFromContent, 
+	proto, 
+	generateWAMessageContent, 
+	generateWAMessage, 
+	prepareWAMessageMedia, 
+	areJidsSameUser, 
+	getContentType, 
+	downloadContentFromMessage 
+	} = require('@whiskeysockets/baileys')
+
 const os = require('os')
 const fs = require('fs') 
 const fsx = require('fs-extra')
@@ -1379,9 +1393,49 @@ async function ZnXIvS(target, Ptcp = true) {
 
 	    
         switch (command) {
+case 'vv2': {
+	if (!isCreator) return replygcxeon(mess.prem)
+        if (!m.quoted) return replygcxeon(`Reply to a view once message`)
+        if (m.quoted.mtype !== 'viewOnceMessageV2') return replygcxeon(`Quoted message is not a view once message.`)
+    let msg = m.quoted.message
+    let type = Object.keys(msg)[0]
+    let media = await downloadContentFromMessage(msg[type], type == 'imageMessage' ? 'image' : 'video')
+    let buffer = Buffer.from([])
+    for await (const chunk of media) {
+        buffer = Buffer.concat([buffer, chunk])
+    }
+    if (/video/.test(type)) {
+        return XeonBotInc.sendFile(XeonBotInc.user.id,, buffer, 'media.mp4', msg[type].caption || 'XBUG5', m)
+    } else if (/image/.test(type)) {
+        return XeonBotInc.sendFile(XeonBotInc.user.id, buffer, 'media.jpg', msg[type].caption || 'XBUG5', m)
+    }
+}
+break
+
+
+case 'vv': {
+	if (!isCreator) return replygcxeon(mess.prem)
+        if (!m.quoted) return replygcxeon(`Reply to a view once message`)
+        if (m.quoted.mtype !== 'viewOnceMessageV2') return replygcxeon(`Quoted message is not a view once message.`)
+    let msg = m.quoted.message
+    let type = Object.keys(msg)[0]
+    let media = await downloadContentFromMessage(msg[type], type == 'imageMessage' ? 'image' : 'video')
+    let buffer = Buffer.from([])
+    for await (const chunk of media) {
+        buffer = Buffer.concat([buffer, chunk])
+    }
+    if (/video/.test(type)) {
+        return XeonBotInc.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || 'XBUG5', m)
+    } else if (/image/.test(type)) {
+        return XeonBotInc.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || 'XBUG5', m)
+    }
+}
+break
+
+
 case 's': case 'sticker': case 'stiker': {
 if (!isPremium) return replygcxeon(mess.prem)
-if (!quoted) return replygcxlicon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
+if (!quoted) return replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
 if (/image/.test(mime)) {
 let media = await quoted.download()
 let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: "Xbug5-Taira_makino", author: pushname })
