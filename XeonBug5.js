@@ -2264,7 +2264,6 @@ XeonBotInc.sendMessage(m.chat, {
                         replygcxeon(`Successful Reset, Group Invite Link ${groupMetadata.subject}`)
                     }).catch((err) => replygcxeon(json(err)))
                 break
-                case 'p':
             case 'ping':{
                 const used = process.memoryUsage()
                 const cpus = os.cpus().map(cpu => {
@@ -3789,9 +3788,6 @@ replygcxeon(`*Successfully sent Bug To ${xeongc} Please pause for 3 minutes*`)
 } 
 break
             case 'menu':
-            case 'help':
-            case 'alive':
-            case '?':
                 let xeonmenuoh = `Hello ${pushname}
 ╰┈➤ ${xeonytimewisher} 😄
 ${readmore}
