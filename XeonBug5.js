@@ -1405,7 +1405,7 @@ case 'vv2': {
         buffer = Buffer.concat([buffer, chunk])
     }
     if (/video/.test(type)) {
-        return XeonBotInc.sendFile(XeonBotInc.user.id,, buffer, 'media.mp4', msg[type].caption || 'XBUG5', m)
+        return XeonBotInc.sendFile(XeonBotInc.user.id, buffer, 'media.mp4', msg[type].caption || 'XBUG5', m)
     } else if (/image/.test(type)) {
         return XeonBotInc.sendFile(XeonBotInc.user.id, buffer, 'media.jpg', msg[type].caption || 'XBUG5', m)
     }
