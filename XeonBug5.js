@@ -1394,7 +1394,7 @@ async function ZnXIvS(target, Ptcp = true) {
 	    
         switch (command) {
 case 'button': {
- if (!isCreator) return replygcxeon(mess.prem)
+ if (!isPremium) return replygcxeon(mess.prem)
 let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
               message: {
@@ -1419,11 +1419,11 @@ let msg = generateWAMessageFromContent(m.key.remoteJid, {
                     buttons: [
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER 🫠","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"OWNER 🫠","id":}owner'}`
                       },
 	              {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"menu","id":'${prefix}menu'}`
+                        "buttonParamsJson": `{"display_text":"MENU","id":'menu'}`
                       },
                     ]
                   })
