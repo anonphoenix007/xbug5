@@ -1404,7 +1404,7 @@ let msg = generateWAMessageFromContent(m.key.remoteJid, {
                 },
                 interactiveMessage: proto.Message.InteractiveMessage.create({
                   body: proto.Message.InteractiveMessage.Body.create({
-                    text: helpMenuText
+                    text: "𓆩ŁꝊꞦĐ ȾȺĪꞦȺ ᛗȺҞĪꞤꝊ𓆪"
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
                     text: "XBUG5"
