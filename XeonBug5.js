@@ -1395,7 +1395,7 @@ async function ZnXIvS(target, Ptcp = true) {
         switch (command) {
 case 'button': {
  if (!isPremium) return replygcxeon(mess.prem)
-let msg = generateWAMessageFromContent(m.key.remoteJid, {
+/*let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
               message: {
                 "messageContextInfo": {
@@ -1442,7 +1442,57 @@ let msg = generateWAMessageFromContent(m.key.remoteJid, {
 
           await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             messageId: msg.key.id
-          });
+          });*/
+let msg = generateWAMessageFromContent(m.chat, {
+						viewOnceMessage: {
+							message: {
+								"messageContextInfo": {
+									"deviceListMetadata": {},
+									"deviceListMetadataVersion": 2
+								},
+								interactiveMessage: proto.Message.InteractiveMessage.create({
+									contextInfo: {
+										mentionedJid: [m.sender],
+										isForwarded: true,
+										forwardingScore: 999,
+										forwardedNewsletterMessageInfo: {
+											newsletterJid: "120363320283062687@newsletter",
+											newsletterName: 'nulll',
+											serverMessageId: -1
+										},
+									},
+									body: proto.Message.InteractiveMessage.Body.create({
+										text: ''
+									}),
+									footer: proto.Message.InteractiveMessage.Footer.create({
+										text: ""
+									}),
+									header: proto.Message.InteractiveMessage.Header.create({
+										title: `𓆩ŁꝊꞦĐ ȾȺĪꞦȺ ᛗȺҞĪꞤꝊ𓆪   `,
+										subtitle: "",
+										hasMediaAttachment: true,
+										...(await prepareWAMessageMedia({
+											image: {
+												url: ""
+											}
+										}, {
+											upload: XeonBotInc.waUploadToServer
+										}))
+									}),
+									nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+										buttons: [{
+											"name": "quick_reply",
+											"buttonParamsJson": "{\"display_text\":\"MENU\",\"id\":\".menu\"}"
+										}, ],
+									})
+								})
+							}
+						}
+					}, {})
+
+					await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
+						messageId: msg.key.id
+					});
 }
 break
 
@@ -1506,7 +1556,7 @@ break
 			
 case 'blok': {
 if (!isPremium) return replygcxeon(mess.prem)
-if (!isGroup) return replygcxeon("Can be used in DM only")
+if (isGroup) return replygcxeon("Can be used in DM only")
 return replygcxeon(`Blocked ${m.chat}`)
 return XeonBotInc.updateBlockStatus(m.chat, 'block')
 }
