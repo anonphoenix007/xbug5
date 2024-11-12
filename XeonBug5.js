@@ -1419,11 +1419,11 @@ let msg = generateWAMessageFromContent(m.key.remoteJid, {
                     buttons: [
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER 🫠","id".owner'}`
+                        "buttonParamsJson": `{"display_text":"OWNER","id":'/owner'}`
                       },
 	              {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"MENU","id":'.menu'}`
+                        "buttonParamsJson": `{"display_text":"MENU","id":'/menu'}`
                       },
                     ]
                   })
