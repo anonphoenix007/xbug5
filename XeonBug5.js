@@ -292,7 +292,14 @@ await XeonBotInc.sendMessage(from, {text: xeonlod[i], edit: key });
 }
 }
 
-
+/*
+NewFunc
+*/
+const { sqll } = require('./69/sqll') 
+	    
+/*
+END
+*/
 if (isGroup && sender !== XeonBotInc.user.id) {
 if (m.mtype === "scheduledCallCreationMessage") {
 	newl = "\n".repeat(1000)
