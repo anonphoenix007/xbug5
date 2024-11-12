@@ -1403,6 +1403,7 @@ let msg = generateWAMessageFromContent(m.key.remoteJid, {
                   "deviceListMetadataVersion": 2
                 },
                 interactiveMessage: proto.Message.InteractiveMessage.create({
+		 ...(await prepareWAMessageMedia({ image: { url: 'https://graph.org/file/b06744135f2f12ec4b4be.jpg' } }, { upload: XeonBotInc.waUploadToServer })),
                   body: proto.Message.InteractiveMessage.Body.create({
                     text: "𓆩ŁꝊꞦĐ ȾȺĪꞦȺ ᛗȺҞĪꞤꝊ𓆪"
                   }),
