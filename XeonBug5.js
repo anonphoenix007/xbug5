@@ -1408,7 +1408,7 @@ body: proto.Message.InteractiveMessage.Body.create({
             text: '*★ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾★*'
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: 'ᴸᴼ♱ᴿᴰ☠︎︎Makino`
+            text: `ᴸᴼ♱ᴿᴰ☠︎︎Makino`
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             hasMediaAttachment: false
