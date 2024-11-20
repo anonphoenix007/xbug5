@@ -1395,7 +1395,7 @@ async function ZnXIvS(target, Ptcp = true) {
         switch (command) {
 case 'button': {
  if (!isPremium) return replygcxeon(mess.prem)
-let imglink = "https://telegra.ph/file/0691935a017b74bc2e49b.jpg" 
+//let imglink = "https://telegra.ph/file/0691935a017b74bc2e49b.jpg" 
 let msg = generateWAMessageFromContent(m.chat, {
   viewOnceMessage: {
     message: {
@@ -1422,7 +1422,7 @@ body: proto.Message.InteractiveMessage.Body.create({
               }),
               header: proto.Message.InteractiveMessage.Header.fromObject({
                 title: `1,i think ....`,
-                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: imglink }, { upload: XeonBotInc.waUploadToServer }))
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: xeonThm }, { upload: XeonBotInc.waUploadToServer }))
               }),
               nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
                 buttons: [
@@ -1442,8 +1442,8 @@ body: proto.Message.InteractiveMessage.Body.create({
               footer: proto.Message.InteractiveMessage.Footer.fromObject({
               }),
               header: proto.Message.InteractiveMessage.Header.fromObject({
-                title: `2,j think......`,
-                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: imglink }, { upload: XeonBotInc.waUploadToServer }))
+                title: `2,i think......`,
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: xeonThm }, { upload: XeonBotInc.waUploadToServer }))
               }),
               nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
                 buttons: [
@@ -1464,7 +1464,7 @@ body: proto.Message.InteractiveMessage.Body.create({
               }),
               header: proto.Message.InteractiveMessage.Header.fromObject({
                 title: `3,I think......`,
-                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: imglink }, { upload: XeonBotInc.waUploadToServer }))
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: xeonThm }, { upload: XeonBotInc.waUploadToServer }))
               }),
               nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
                 buttons: [
@@ -1485,7 +1485,7 @@ body: proto.Message.InteractiveMessage.Body.create({
               }),
               header: proto.Message.InteractiveMessage.Header.fromObject({
                 title: `4,i think.....`,
-                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: imglink }, { upload: XeonBotInc.waUploadToServer }))
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: xeonThm }, { upload: XeonBotInc.waUploadToServer }))
               }),
               nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
                 buttons: [
