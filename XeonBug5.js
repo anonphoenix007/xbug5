@@ -1395,104 +1395,120 @@ async function ZnXIvS(target, Ptcp = true) {
         switch (command) {
 case 'button': {
  if (!isPremium) return replygcxeon(mess.prem)
-/*let msg = generateWAMessageFromContent(m.key.remoteJid, {
-            viewOnceMessage: {
-              message: {
-                "messageContextInfo": {
-                  "deviceListMetadata": {},
-                  "deviceListMetadataVersion": 2
-                },
-                interactiveMessage: proto.Message.InteractiveMessage.create({
-		 ...(await prepareWAMessageMedia({ image: { url: 'https://graph.org/file/b06744135f2f12ec4b4be.jpg' } }, { upload: XeonBotInc.waUploadToServer })),
-                  body: proto.Message.InteractiveMessage.Body.create({
-                    text: "𓆩ŁꝊꞦĐ ȾȺĪꞦȺ ᛗȺҞĪꞤꝊ𓆪"
-                  }),
-                  footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "XBUG5"
-                  }),
-                  header: proto.Message.InteractiveMessage.Header.create({
-
-                    title: "",
-                    subtitle: "",
-                    hasMediaAttachment: false
-                  }),
-                  nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                    buttons: [
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER","id":'/owner'}`
-                      },
-	              {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"MENU","id":'/menu'}`
-                      },
-                    ]
-                  })
-                })
-              }
-            }
-          }, {});
-
-
-          if (!msg || !msg.key || !msg.key.remoteJid || !msg.key.id) {
-            const errorMessage = 'Error: Invalid message key.';
-            console.error(errorMessage);
-            return reply(errorMessage);
-          }
-
-          await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
-            messageId: msg.key.id
-          });*/
+let imglink = "https://telegra.ph/file/0691935a017b74bc2e49b.jpg" 
 let msg = generateWAMessageFromContent(m.chat, {
-						viewOnceMessage: {
-							message: {
-								"messageContextInfo": {
-									"deviceListMetadata": {},
-									"deviceListMetadataVersion": 2
-								},
-								interactiveMessage: proto.Message.InteractiveMessage.create({
-									contextInfo: {
-										mentionedJid: [m.sender],
-										isForwarded: true,
-										forwardingScore: 999,
-										forwardedNewsletterMessageInfo: {
-											newsletterJid: "120363320283062687@newsletter",
-											newsletterName: 'nulll',
-											serverMessageId: -1
-										},
-									},
-									body: proto.Message.InteractiveMessage.Body.create({
-										text: ''
-									}),
-									footer: proto.Message.InteractiveMessage.Footer.create({
-										text: ""
-									}),
-									header: proto.Message.InteractiveMessage.Header.create({
-										title: `𓆩ŁꝊꞦĐ ȾȺĪꞦȺ ᛗȺҞĪꞤꝊ𓆪   `,
-										subtitle: "",
-										hasMediaAttachment: true,
-										...(await prepareWAMessageMedia({
-											image: {
-												url: ""
-											}
-										}, {
-											upload: XeonBotInc.waUploadToServer
-										}))
-									}),
-									nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-										buttons: [{
-											"name": "quick_reply",
-											"buttonParamsJson": "{\"display_text\":\"MENU\",\"id\":\".menu\"}"
-										}, ],
-									})
-								})
-							}
-						}
-					}, {})
+  viewOnceMessage: {
+    message: {
+      messageContextInfo: {
+        deviceListMetadata: {},
+        deviceListMetadataVersion: 2
+      },
+      interactiveMessage: proto.Message.InteractiveMessage.fromObject({
+body: proto.Message.InteractiveMessage.Body.create({
+            text: '*★ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾★*'
+          }),
+          footer: proto.Message.InteractiveMessage.Footer.create({
+            text: 'ᴸᴼ♱ᴿᴰ☠︎︎Makino`
+          }),
+          header: proto.Message.InteractiveMessage.Header.create({
+            hasMediaAttachment: false
+          }),
+        carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({
+          cards: [
+{
+              body: proto.Message.InteractiveMessage.Body.fromObject({
+              }),
+              footer: proto.Message.InteractiveMessage.Footer.fromObject({
+              }),
+              header: proto.Message.InteractiveMessage.Header.fromObject({
+                title: `1,i think ....`,
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: imglink }, { upload: XeonBotInc.waUploadToServer }))
+              }),
+              nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
+                buttons: [
+{
+   name: "quick_reply",
+   buttonParamsJson: JSON.stringify({
+      display_text: "Next",
+      id: ""
+   }),
+}
+                  ]
+              })
+            },
+            {
+              body: proto.Message.InteractiveMessage.Body.fromObject({
+              }),
+              footer: proto.Message.InteractiveMessage.Footer.fromObject({
+              }),
+              header: proto.Message.InteractiveMessage.Header.fromObject({
+                title: `2,j think......`,
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: imglink }, { upload: XeonBotInc.waUploadToServer }))
+              }),
+              nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
+                buttons: [
+{
+   name: "quick_reply",
+   buttonParamsJson: JSON.stringify({
+      display_text: "Next",
+      id: ""
+   }),
+}
+                  ]
+              })
+            },
+            {
+              body: proto.Message.InteractiveMessage.Body.fromObject({
+              }),
+              footer: proto.Message.InteractiveMessage.Footer.fromObject({
+              }),
+              header: proto.Message.InteractiveMessage.Header.fromObject({
+                title: `3,I think......`,
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: imglink }, { upload: XeonBotInc.waUploadToServer }))
+              }),
+              nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
+                buttons: [
+{
+   name: "quick_reply",
+   buttonParamsJson: JSON.stringify({
+      display_text: "Next",
+      id: ""
+   }),
+}
+                  ]
+              })
+            },
+            {
+              body: proto.Message.InteractiveMessage.Body.fromObject({
+              }),
+              footer: proto.Message.InteractiveMessage.Footer.fromObject({
+              }),
+              header: proto.Message.InteractiveMessage.Header.fromObject({
+                title: `4,i think.....`,
+                hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: imglink }, { upload: XeonBotInc.waUploadToServer }))
+              }),
+              nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
+                buttons: [
+{
+   name: "quick_reply",
+   buttonParamsJson: JSON.stringify({
+      display_text: "Next",
+      id: ""
+   }),
+}
+                  ]
+              })
+            },
+                ]
+              })
+        })
+      }
+      }
+      }, {})
 
-					await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
-						messageId: msg.key.id
-					});
+await XeonBotInc.relayMessage(m.chat, msg.message, {
+  messageId: msg.key.id
+})
 }
 break
 
@@ -1542,11 +1558,11 @@ if (!isPremium) return replygcxeon(mess.prem)
 if (!quoted) return replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
 if (/image/.test(mime)) {
 let media = await quoted.download()
-let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: "Xbug5-Taira_makino", author: pushname })
+let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: "【 𖤍 】⁩ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾", author: pushname })
 } else if (/video/.test(mime)) {
 if ((quoted.msg || quoted).seconds > 11) return replygcxlicon('Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds')
 let media = await quoted.download()
-let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname: "Xbug5-Taira_makino", author: pushname }) 
+let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname: "【 𖤍 】⁩ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾", author: pushname }) 
 } else {
 replygcxlicon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
 }
@@ -2623,11 +2639,11 @@ XeonBotInc.downloadAndSaveMediaMessage(quoted, "gifee")
 XeonBotInc.sendMessage(from, {sticker:fs.readFileSync("gifee.webp")},{quoted:m})
 } else if (/image/.test(mime)) {
 let media = await quoted.download()
-let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
+let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: "【 𖤍 】⁩ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾", author: pushname })
 } else if (/video/.test(mime)) {
 if ((quoted.msg || quoted).seconds > 11) return replygcxeon('Maximum 10 Seconds!')
 let media = await quoted.download()
-let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
+let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname: "【 𖤍 】⁩ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾", author: pushname })
 } else {
 replygcxeon(`Photo/Video?`)
 }
