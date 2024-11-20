@@ -1553,7 +1553,7 @@ case 'vv': {
 break
 
 
-case 's': case 'sticker': case 'stiker': {
+/*case 's': case 'sticker': case 'stiker': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!quoted) return replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
 if (/image/.test(mime)) {
@@ -1567,8 +1567,47 @@ let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname:
 replygcxlicon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
 }
 }
-break
+break*/
 
+case 'take': case 'sticker': case 's': case 'thief': case 'steal': {
+        if (!isPremium) return                                                                                                                                                            
+	if (!m.quoted) return replygcxeon(`*Reply to an image or video.*`);
+        XeonBotInc.sendMessage(m.chat, { react: { text: "🌝", key: m.key } })
+            let mime = m.quoted.mtype
+            pack = " 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾"
+            author = pushname
+            if (m.quoted) {
+                let media = await m.quoted.download();
+                let sticker = new Sticker(media, {
+                    pack: pack, // The pack name
+                    author: author, // The author name                                                                                                                                                
+		    type: text.includes("--crop" || '-c') ? StickerTypes.CROPPED : StickerTypes.FULL,
+                    categories: ["🤩", "🎉"], // The sticker category
+                    id: "12345", // The sticker id
+                    quality: 75, // The quality of the output file
+                    background: "transparent", // The sticker background color (only for full stickers)
+                });
+                const buffer = await sticker.toBuffer();
+                return XeonBotInc.sendMessage(m.chat, {sticker: buffer}, {quoted: m });
+          } else if (/video/.test(mime)) {
+                if ((quoted.msg || m.quoted).seconds > 20) return replygcxeon("Cannot fetch videos longer than *20 Seconds*");
+                let media = await m.quoted.download();
+                let sticker = new Sticker(media, {
+                    pack: pack, // The pack name
+                    author: author, // The author name
+                    type: StickerTypes.FULL, // The sticker type
+                    categories: ["🤩", "🎉"], // The sticker category
+                    id: "12345", // The sticker id
+                    quality: 70, // The quality of the output file
+                    background: "transparent", // The sticker background color (only for full stickers)
+                });
+                const stikk = await sticker.toBuffer();
+                return XeonBotInc.sendMessage(m.chat, {  sticker: stikk   }, {    quoted: m });
+            } else {
+                replygcxeon("*Uhh,Please reply to any image or video*");
+        }
+}
+        break;
 			
 case 'blok': {
 if (!isPremium) return replygcxeon(mess.prem)
@@ -2629,7 +2668,7 @@ break
                 fs.unlinkSync(pop)
             }
             break
-case 'swm': case 'steal': case 'stickerwm': case 'take':{
+/*case 'swm': case 'steal': case 'stickerwm': case 'take':{
 if (!args.join(" ")) return replygcxeon(`Where is the text?`)
 const swn = args.join(" ")
 const pcknm = swn.split("|")[0]
@@ -2648,7 +2687,7 @@ let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname:
 replygcxeon(`Photo/Video?`)
 }
 }
-break
+break*/
             case 'toimage':
             case 'toimg': {
                 if (!/webp/.test(mime)) return replygcxeon(`Reply sticker with caption *${prefix + command}*`)
