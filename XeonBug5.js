@@ -1914,13 +1914,15 @@ let target = q
 await loading()
 for (let i = 0; i < 100; i++) {
 caltx(target)
-ioscrash(target)
-freezegc(target)
-ioscrash(target)
-callbg(target)
-ioscrash(target)
+await galx(target, Ptcp = false)
+await ioscrash(target)
+await freezegc(target)
+await ioscrash(target)
+await galx(target, Ptcp = false)
+await callbg(target)
+await ioscrash(target)
 }
-await XeonBotInc.groupLeave(target)
+await replygcxeon('Done')
 }
 break
 
