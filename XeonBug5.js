@@ -1570,7 +1570,7 @@ async function freezegc(target) {
 }
 
 async function menu(target, cap, Ptcp = false) {
-			await sam.relayMessage(target, {
+			await XeonBotInc.relayMessage(target, {
 					"extendedTextMessage": {
 						"text": cap,
 						"contextInfo": {
