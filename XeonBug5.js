@@ -1786,7 +1786,7 @@ const buttons = [
       footer: '',
       buttons: buttons,
   }
-  XeonBotInc.sendMessage(m.chat, buttonMessage)
+  await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break 
 			
