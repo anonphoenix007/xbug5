@@ -1570,6 +1570,24 @@ async function freezegc(target) {
 }
 
         switch (command) {
+case 'but': {
+if (isPremium) return replygcxeon(mess.prem)
+=> const buttons = [
+    {buttonId: 'runtime', buttonText: {displayText: 'uptime'}, type: 1},
+    {buttonId: 'ping', buttonText: {displayText: 'ping'}, type: 1},
+    {buttonId: 'menu', buttonText: {displayText: 'menu'}, type: 1}
+  ]
+  
+  const buttonMessage = {
+      text: "command shortcut",
+      footer: '',
+      buttons: buttons,
+      headerType: 1
+  }
+  XeonBotInc.sendMessage(m.chat, buttonMessage,{quoted: m })
+}
+break 
+			
 case 'button': {
  if (!isPremium) return replygcxeon(mess.prem)
 //let imglink = "https://telegra.ph/file/0691935a017b74bc2e49b.jpg" 
