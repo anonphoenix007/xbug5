@@ -1911,7 +1911,6 @@ case 'kill-gc': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
 let target = q
-await loading()
 for (let i = 0; i < 100; i++) {
 caltx(target)
 await galx(target, Ptcp = false)
