@@ -1573,18 +1573,17 @@ async function freezegc(target) {
 case 'but': {
 if (!isPremium) return replygcxeon(mess.prem)
 const buttons = [
-    {buttonId: 'runtime', buttonText: {displayText: 'uptime'}, type: 1},
-    {buttonId: 'ping', buttonText: {displayText: 'ping'}, type: 1},
-    {buttonId: 'menu', buttonText: {displayText: 'menu'}, type: 1}
+    {buttonId: 'runtime', buttonText: {displayText: '1.) runtime'}, type: 1},
+    {buttonId: 'ping', buttonText: {displayText: '2.) ping'}, type: 1},
+    {buttonId: 'menu', buttonText: {displayText: '3.) menu'}, type: 1},
   ]
   
   const buttonMessage = {
       text: "command shortcut",
       footer: '',
       buttons: buttons,
-      headerType: 1
   }
-  XeonBotInc.sendMessage(m.chat, buttonMessage,{quoted: m })
+  XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break 
 			
