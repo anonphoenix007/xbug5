@@ -3456,7 +3456,7 @@ ytmp3
 ytmp4
 sound1 - sound161`
 			
-await menu(m.chat, xeonmenuoh, Ptcp = true)
+await menu(m.chat, xeonmenuoh)
 /*if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         text: xeonmenuoh,
