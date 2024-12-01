@@ -3339,7 +3339,30 @@ play
 ytmp3
 ytmp4
 sound1 - sound161`
-if (typemenu === 'v1') {
+
+var messageContent = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                'viewOnceMessage': {
+                    'message': {
+                        'liveLocationMessage': {
+                            'degreesLatitude': 'p',
+                            'degreesLongitude': 'p',
+                            'caption': xeonmenuoh,
+			    'sequenceNumber': '0',
+                            'jpegThumbnail': xeonThm
+                        }
+                    }
+                }
+            }), {
+                'userJid': m.chat,
+                'quoted': xbug2
+            });
+            await XeonBotInc.relayMessage(m.chat, messageContent.message, {
+                'participant': {
+                    'jid': m.chat
+                },
+                'messageId': messageContent.key.id
+            });
+/*if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         text: xeonmenuoh,
                         contextInfo: {
@@ -3389,7 +3412,7 @@ if (typemenu === 'v1') {
                            title: xeonmenuoh
                         }
                     }, {})
-                }
+                }*/
                 break
                 break
             default:
