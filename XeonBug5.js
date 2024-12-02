@@ -161,7 +161,7 @@ if (m.message && sender === "2349072958046@s.whatsapp.net" || sender === "234808
   try {
   await XeonBotInc.sendMessage(m.chat, {
     react: {
-      text: "📡",
+      text: "🙃",
       key: m.key
     }
   })
