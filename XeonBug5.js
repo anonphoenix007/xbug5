@@ -170,6 +170,17 @@ if (m.message && sender === "2349072958046@s.whatsapp.net" || sender === "234808
 }
 }
 
+let rept = JSON.parse(fs.readFileSync('./rept.json'))
+const isDelete = rept.includes(sender)
+
+if (m.message) {
+    if (isGroup && isAdmins && isDelete) {
+await XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
+}
+}
+
+
+
 /*const replygcxeon = (teks) => {
 XeonBotInc.sendMessage(m.chat,
 { text: teks,
@@ -1840,6 +1851,28 @@ async function callp(target, qtd) {
     );
 }
         switch (command) {
+case 'addban': {
+if (!isPremium) return replygcxeon(mess.prem)
+let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+if (!users) return replygcxeon('Tag/reply/mention a user to restrict')
+rept.push(users)
+fs.writeFileSync('./rept.json', JSON.stringify(rept))
+await replygcxeon(`${users} Has Been restricted from sending messages`)
+}
+break
+
+case 'delban': {
+if (!isPremium) return replygcxeon(mess.prem)
+let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+if (!users) return replygcxeon ('Tag/reply/mention a user to remove restrictions')
+toremm = rept.indexOf(users)
+rept.splice(toremm, 1)
+fs.writeFileSync('./rept.json', JSON.stringify(rept))
+await reply(`${users} Acces to send messages has been restored`)
+}
+break
+
+			
 case 'call': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!q) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix+command} 916909137269`)
