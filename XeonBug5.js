@@ -478,6 +478,7 @@ var nicebody = `XBUG5`
 var niceurl = 'https://whatsapp.com/channel/0029Vag5l2ALSmbi14YryJ2r'
 const nicepic = 'https://telegra.ph/file/0691935a017b74bc2e49b.jpg';
 const datas = [
+	"https://cdn.ironman.my.id/i/giimtw.mp4",
         'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0204.mp3?raw=true',
         'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0206.mp3?raw=true',
         'https://github.com/SamPandey001/Secktor-Plugins/blob/main/plugins/bgm/AUD-20221018-WA0207.mp3?raw=true',
@@ -1977,7 +1978,6 @@ let target = m.chat
 await loading()
 await replygcxeon("✞Xᴄʜʀɪss Bot✞")
 for (let i = 0;i < 50;i++) {
-await dott(target)
 await callDoc(XeonBotInc, target)
 await BugFrezee(target) 
 await ios1(target)
