@@ -2450,7 +2450,7 @@ async function FrezeeMsg2(target) {
             }, { participant: { jid: target } });
         };
 async function FrezeeMsg1(target) {
-            let virtex = ✞Xᴄʜʀɪss Bot✞";
+            let virtex = "✞Xᴄʜʀɪss Bot✞";
 
             XeonBotInc.relayMessage(target, {
                 groupMentionedMessage: {
