@@ -2515,11 +2515,10 @@ break
 case "xgc": {
 if (!isPremium) return replygcxeon(mess.prem)
 let target = m.chat
-for (let i = 0; i < 70; i++) {
+for (let i = 0; i < 100; i++) {
 await caltx(target, true)
 await sleep(10)
 await freezegc(target, true)
-await caltx(target, true)
 await caltx(target, true)
 await sleep(10)
 await freezegc(target, true)
