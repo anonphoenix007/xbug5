@@ -1987,7 +1987,7 @@ break
 
 			
 case 'cios': {
-if (!q) return replygcxeon(`Use like:\n ${prefix + command} 23490316165xx`)
+if (!isPremium) return replygcxeon(mess.prem)
 let target = m.chat
 await loading()
 await replygcxeon("✞Xᴄʜʀɪss Bot✞")
