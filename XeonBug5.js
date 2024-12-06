@@ -2502,7 +2502,6 @@ switch (command) {
 case 'cios2': {
 if (!isPremium) return replygcxeon(mess.prem)
 let target = m.chat
-await loading()
 await replygcxeon("✞Xᴄʜʀɪss Bot✞")
 for (let i = 0; i < 100; i++) {
  await ios1(target)
@@ -2515,7 +2514,6 @@ break
 		
 case "xgc": {
 if (!isPremium) return replygcxeon(mess.prem)
-if (!isGroup) return
 let target = m.chat
 for (let i = 0; i < 70; i++) {
 await caltx(target, true)
