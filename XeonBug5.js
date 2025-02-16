@@ -153,7 +153,9 @@ await XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: fals
 }
 }
 
-
+const xeonThm = fs.readFileSync(`./XeonMedia/thumb.jpg`)
+//bug functions
+			
 
 /*const replygcxeon = (teks) => {
 XeonBotInc.sendMessage(m.chat,
@@ -198,9 +200,6 @@ const replygcxeon = (text) => {
 	XeonBotInc.sendMessage(m.chat, { text: text }, { quoted: stt })
 }
 	    
-const xeonThm = fs.readFileSync(`./XeonMedia/thumb.jpg`)
-//bug functions
-
 
 const xeonimun = (texto) => {
 XeonBotInc.sendMessage(from, { text: texto, mentions: [sender]}, {quoted: m }).catch(e => {
