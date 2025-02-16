@@ -373,7 +373,7 @@ const datas = [
           'externalAdReply': {
             'title': nicetitle,
             'body': nicebody,
-            'renderLargerThumbnail': false,
+            'renderLargerThumbnail': true,
             'thumbnail': logoo,
             'mediaUrl': '',
             'mediaType': 1,
