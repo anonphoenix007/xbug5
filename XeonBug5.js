@@ -448,8 +448,45 @@ list.push({
         }
         
     
-
-switch (command) {		
+global.antilink = false
+if (global.antilink && isBotAdmins && budy.includes('http://') || budy.includes('https://') || budy.includes('.com') || budy.includes('.net') || budy.includes('.org')) {
+  const txt = `*_${pushname} detected sending a link..._*`;
+  
+  if (!isGroup) return;
+  if (isAdmins) return;
+  if (m.key.fromMe) return;
+  if (isPremium) return;
+  
+  await replygcxeon(txt);
+  await XeonBotInc.sendMessage(m.chat, {
+    delete: {
+      remoteJid: m.chat,
+      fromMe: false,
+      id: m.key.id,
+      participant: m.key.participant
+    }
+  });
+  await XeonBotInc.groupParticipantsUpdate(m.chat, [sender], 'remove');
+}
+            
+switch (command) {	
+case 'antilink': {
+        if (!isPremium) return
+        if (!isGroup) return replygcxeon("Group only");
+        if (!isBotAdmins) return 
+        if (!isAdmins && !isPremium) return 
+        if (args[0] === "on") {
+          global.antilink = true
+          XeonBotInc.sendMessage(from, { text: `Antilink Has been Activated, Do not Send links`, contextInfo: { mentionedJid: participants.map(a => a.id)} }, { quoted: stt })
+        } else if (args[0] === "off") {
+           global.antilink = false
+          replygcxeon('*Antilink has been disabled!*!')
+        } else {
+          let msg = 'Type ' + `${prefix}${command}` + ' on to turn on antilink feature or Type ' + `${prefix + command}` + ' off to turn off antilink feature'
+          await XeonBotInc.sendMessage(m.chat, { text: msg})
+        }
+      }
+        break;
 case 'addban': {
 if (!isPremium) return replygcxeon(mess.prem)
 let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
