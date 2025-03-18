@@ -19,7 +19,7 @@ global.location = "India, Mizoram, Aizawl"
 global.ownernumber = "2349151864541"  //creator number
 global.ownername = 'Taira' //owner name
 global.botname = 'Taira Xbug' //name of the bot
-
+global.antilink = true
 //sticker details
 global.packname = 'Sticker By'
 global.author = 'Taira\n\nContact: +2347080968564'
