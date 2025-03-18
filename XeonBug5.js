@@ -448,7 +448,6 @@ list.push({
         }
         
     
-global.antilink = false
 if (global.antilink && isBotAdmins && budy.includes('http://') || budy.includes('https://') || budy.includes('.com') || budy.includes('.net') || budy.includes('.org')) {
   const txt = `*_${pushname} detected sending a link..._*`;
   
