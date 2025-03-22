@@ -11,7 +11,7 @@ const chalk = require('chalk')
 
 //contact details
 global.ownernomer = "2349151864541"
-global.ownername = "Taira Makino"
+global.ownername = "𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾"
 global.ytname = "YT: "
 global.socialm = "GitHub: Anonphoenix007"
 global.location = "India, Mizoram, Aizawl"
@@ -20,9 +20,11 @@ global.ownernumber = "2349151864541"  //creator number
 global.ownername = 'Taira' //owner name
 global.botname = 'Taira Xbug' //name of the bot
 global.antilink = true
+global.reactNum = "2349151864541" //sender number to react to.
+global.emojiReact = "🧎" // emoji to react to.
 //sticker details
 global.packname = 'Sticker By'
-global.author = 'Taira\n\nContact: +2347080968564'
+global.author = 'Taira\n\nContact: +2349072958046'
 
 //console view/theme
 global.themeemoji = '🪀'
@@ -43,13 +45,6 @@ global.autobio = true //auto update bio
 global.anti92 = false //auto block +92 
 global.autoswview = false //auto view status/story
 
-//menu type 
-//v1 is image menu, 
-//v2 is link + image menu,
-//v3 is video menu,
-//v4 is call end menu
-global.typemenu = 'v1'
-
 //text bug
 global.xbugtex = {
 xtxt: '🚨DGXeon🚨',
@@ -59,10 +54,10 @@ global.bimg = '//9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQw
 //reply messages
 global.mess = {
     done: 'Done !',
-    prem: 'This feature can be used by 𝑳𝑶𝑹𝑫 𝑻𝑨𝑰𝑹𝑨 𝑴𝑨𝑲𝑰𝑵𝑶 or premium user only',
+    prem: 'This feature can be used by 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾 or premium user only',
     admin: 'This feature can be used by admin only',
     botAdmin: 'This feature can only be used when the bot is a group admin ',
-    owner: 'This feature can be used by 𝑳𝑶𝑹𝑫 𝑻𝑨𝑰𝑹𝑨 𝑴𝑨𝑲𝑰𝑵𝑶 only',
+    owner: 'This feature can be used by 𝚃𝙰𝙸𝚁𝙰 𝙼𝙰𝙺𝙸𝙽𝙾 only',
     group: 'This feature is only for groups',
     private: 'This feature is only for private chats',
     wait: 'In process... ',    
