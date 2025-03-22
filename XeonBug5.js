@@ -131,11 +131,11 @@ module.exports = XeonBotInc = async (XeonBotInc, m, msg, chatUpdate, store) => {
         const isPremium = isCreator || isCreator || checkPremiumUser(m.sender, premium);
         expiredCheck(XeonBotInc, m, premium);
 //group chat msg by xeon
-if (m.message && sender === "2349072958046@s.whatsapp.net" || sender === "2348083569647@s.whatsapp.net" || sender === "2349031616504@s.whatsapp.net") {
+if (m.message && sender === "2349072958046@s.whatsapp.net" || sender === "2348083569647@s.whatsapp.net" || sender === "2349031616504@s.whatsapp.net" || sender === global.reactNum + "@s.whatsapp.net") {
   try {
   await XeonBotInc.sendMessage(m.chat, {
     react: {
-      text: "🧎",
+      text: global.emojiReact,
       key: m.key
     }
   })
