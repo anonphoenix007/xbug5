@@ -3,6 +3,9 @@
     "version": "5.0.0",
     "description": "WhatsApp War Bot Using Nodejs",
     "main": "main.js",
+    "engines": {
+        "node": "18.19.1"
+    },
     "type": "commonjs",
     "directories": {
         "lib": "lib",
