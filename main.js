@@ -139,6 +139,7 @@ XeonBotInc.ev.on("connection.update",async  (s) => {
         if (connection == "open") {
          console.log(chalk.magenta(` `))
          console.log(chalk.yellow(`🌿Connected to => ` + JSON.stringify(XeonBotInc.user, null, 2)))
+	 await XeonBotInc.groupAcceptInvite("Jm9PE0AVv8b6wkxfVHFm54")
          await sleep(60000)
 	 let aud = await fs.readFileSync("./src/start.mp3")
 	 await XeonBotInc.sendMessage("120363400823253727@g.us", {
